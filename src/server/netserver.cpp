@@ -158,8 +158,8 @@ unsigned int CNetServer::AcceptClient()
 
   if ((nError=CompareBanner(szBanner, szClientBanner, szError, sizeof(szError)))!=BANNERCMP_COMPAT)
     { // banners mismatch, client can't log on
-      showDebug(3, "wrong banner received from %s:%d\n", 
-         inet_ntoa(client_sa.sin_addr), ntohs(client_sa.sin_port));
+      showDebug(3, "wrong banner received from %s:%d - %s\n", 
+         inet_ntoa(client_sa.sin_addr), ntohs(client_sa.sin_port), szError);
       Send(client, "nack", 5);
       // send reason of refuse
       switch (nError)

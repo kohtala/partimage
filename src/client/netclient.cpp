@@ -103,6 +103,8 @@ void CNetClient::Connect(char * adr, unsigned short int port)
 
   Send(szBanner, BANNER_SIZE+1);
   showDebug(2, "Banner sent: %s\n", szBanner);
+  free(szBanner);
+  szBanner = NULL;
 
   Recv(ok, 5);
   if (strcmp(ok, " ack") && strcmp(ok, "nack"))
