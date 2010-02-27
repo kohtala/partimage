@@ -1,0 +1,2218 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: partimage-0.6.8\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-10-23 13:25-0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Valerij Kruvjalis <valkru@mail.ru>\n"
+"Language-Team: PuppyRus Linux\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+"X-Poedit-SourceCharset: iso-8859-1\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Bookmarks: 315,-1,-1,-1,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../src/client/cbitmap.cpp:85
+#: ../src/client/fs/fs_ntfs.cpp:239
+#: ../src/client/fs/fs_ntfs.cpp:608
+msgid "Out of memory"
+msgstr "Недостаточно памяти"
+
+#: ../src/client/interface_newt.cpp:37
+msgid "Newt debug information"
+msgstr "Отладочная информация Newt"
+
+#: ../src/client/interface_newt.cpp:37
+#: ../src/client/interface_newt.cpp:117
+#: ../src/client/interface_newt.cpp:353
+#: ../src/client/interface_newt.cpp:385
+#: ../src/client/interface_newt.cpp:438
+msgid "Ok"
+msgstr ""
+
+#: ../src/client/interface_newt.cpp:130
+#: ../src/client/interface_newt.cpp:141
+#: ../src/client/interface_newt.cpp:158
+#: ../src/client/interface_newt.cpp:386
+#: ../src/client/interface_newt.cpp:439
+#: ../src/client/gui_text.cpp:957
+msgid "Cancel"
+msgstr "Отменить"
+
+#: ../src/client/interface_newt.cpp:141
+#: ../src/client/interface_base.cpp:40
+#: ../src/client/misc.cpp:1954
+#: ../src/client/fs/fs_ntfs.cpp:187
+msgid "Error"
+msgstr "Ошибка"
+
+#: ../src/client/interface_newt.cpp:158
+msgid "Continue"
+msgstr "Продолжить"
+
+#: ../src/client/interface_newt.cpp:181
+msgid "Yes"
+msgstr "Да"
+
+#: ../src/client/interface_newt.cpp:181
+msgid "No"
+msgstr "Нет"
+
+#: ../src/client/interface_newt.cpp:220
+msgid "* Partition to save/restore"
+msgstr "* Раздел для сохранения / восстановления"
+
+#: ../src/client/interface_newt.cpp:222
+msgid "* Image file to create/use"
+msgstr "* Файл-образ для создания / использования"
+
+#: ../src/client/interface_newt.cpp:224
+msgid "Action to be done:"
+msgstr "Что будем делать:"
+
+#: ../src/client/interface_newt.cpp:225
+msgid "Save partition into a new image file"
+msgstr "Сохранять раздел в новый файл-образ"
+
+#: ../src/client/interface_newt.cpp:226
+msgid "Restore partition from an image file"
+msgstr "Восстанавливать раздел из файл-образа"
+
+#: ../src/client/interface_newt.cpp:227
+msgid "Restore an MBR from the imagefile"
+msgstr "Восстанавливать MBR из образа"
+
+#: ../src/client/interface_newt.cpp:229
+msgid "Connect to server"
+msgstr "Соединение с сервером"
+
+#: ../src/client/interface_newt.cpp:231
+msgid "Encrypt data on the network with SSL"
+msgstr "Шифровать данные в сети с помощью SSL"
+
+#: ../src/client/interface_newt.cpp:234
+msgid "SSL disabled at compile time"
+msgstr "SSL отключен при сборке"
+
+#: ../src/client/interface_newt.cpp:236
+msgid "SSL&login disabled at compile time"
+msgstr "SSL&login отключен при сборке"
+
+#: ../src/client/interface_newt.cpp:239
+msgid "IP/name of the server:"
+msgstr "IPадрес / имя сервера"
+
+#: ../src/client/interface_newt.cpp:241
+msgid "Port:"
+msgstr "Порт:"
+
+#: ../src/client/interface_newt.cpp:245
+msgid "Next (F5)"
+msgstr "Далее (F5)"
+
+#: ../src/client/interface_newt.cpp:246
+msgid "About"
+msgstr "О программе"
+
+#: ../src/client/interface_newt.cpp:247
+#: ../src/client/gui_text.cpp:318
+msgid "Exit (F6)"
+msgstr "Выход (F6)"
+
+#: ../src/client/interface_newt.cpp:277
+msgid "The \"Image\" filed is empty. Cannot continue"
+msgstr "Поле \"Образ\" пустое. Невозможно продолжать"
+
+#: ../src/client/interface_newt.cpp:285
+msgid "The \"Server IP/Name\" field is empty. Cannot continue"
+msgstr "Поле \"IP / имя сервера\" пустое. Невозможно продолжать"
+
+#: ../src/client/interface_newt.cpp:291
+msgid "The \"Server Port\" field is not a valid integer. Cannot continue"
+msgstr "Поле \"Порт сервера\" содержит неправильное значение. Невозможно продолжать"
+
+#: ../src/client/interface_newt.cpp:349
+#: ../src/client/misc.cpp:904
+msgid "Partition description"
+msgstr "Описание раздела"
+
+#: ../src/client/interface_newt.cpp:351
+msgid "You can enter a description of the saved partition:"
+msgstr "Вы можете указать описание сохраняемого раздела:"
+
+#: ../src/client/interface_newt.cpp:403
+#: ../src/client/interface_newt.cpp:459
+msgid "Text cannot be empty"
+msgstr "Поле не должно быть пустым"
+
+#: ../src/client/interface_newt.cpp:428
+msgid "Password required"
+msgstr "Требуется пароль"
+
+#: ../src/client/interface_newt.cpp:431
+msgid "Enter your login"
+msgstr "Введите имя пользователя"
+
+#: ../src/client/interface_newt.cpp:435
+msgid "Enter your password"
+msgstr "Введите ваш пароль"
+
+#: ../src/client/interface_newt.cpp:475
+#, c-format
+msgid ""
+"Disk full! Can't write next volume file (%s.%.3d)\n"
+"to %s\n"
+"Please, enter another directory path (without filename):"
+msgstr ""
+"Диск заполнен! Невозможно записать следующий том (%s.%.3d)\n"
+"на %s\n"
+"Укажите, пожалуйста, путь в другой каталог (без имени файла):"
+
+#: ../src/client/interface_newt.cpp:480
+msgid "New Volume location"
+msgstr "Размещение нового тома"
+
+#: ../src/client/interface_base.cpp:48
+#, c-format
+msgid "About Partition Image %s"
+msgstr "О программе Partition Image %s"
+
+#: ../src/client/interface_base.cpp:50
+#, c-format
+msgid ""
+"Partition Image is distributed under the GNU GPL 2 (General Public License)\n"
+"\n"
+"version:...%s\n"
+"web:.......http://www.partimage.org/\n"
+"\n"
+"Authors:\n"
+"Francois Dupoux  <fdupoux@partimage.org>\n"
+"Franck Ladurelle <ladurelf@partimage.org>"
+msgstr ""
+"Partition Image распространяется под лицензией GNU GPL 2\n"
+"\n"
+"Версия:...%s\n"
+"Веб-сайт:.......http://www.partimage.org/\n"
+"\n"
+"Авторы:\n"
+"Francois Dupoux  <fdupoux@partimage.org>\n"
+"Franck Ladurelle <ladurelf@partimage.org>"
+
+#: ../src/client/interface_base.cpp:61
+#, c-format
+msgid "Can't write block %ld to image"
+msgstr "Не удаётся записать блок %ld в образ"
+
+#: ../src/client/interface_base.cpp:65
+#, c-format
+msgid "Can't write %s to image"
+msgstr "Не удаётся записать %s в образ"
+
+#: ../src/client/interface_base.cpp:69
+#, c-format
+msgid "Can't write bitmap block %ld to image"
+msgstr "Не удаётся записать bitmap блок %ld в образ"
+
+#: ../src/client/interface_base.cpp:73
+#, c-format
+msgid "Can't read bitmap block %ld from image"
+msgstr "Не удаётся прочитать bitmap блок %ld из образа"
+
+#: ../src/client/interface_base.cpp:77
+#, c-format
+msgid "Can't write block %ld to harddrive"
+msgstr "Не удаётся записать блок %ld на диск"
+
+#: ../src/client/interface_base.cpp:81
+#, c-format
+msgid "Can't read block %ld from image (%d)"
+msgstr "Не удаётся прочитать блок %ld из образа (%d)"
+
+#: ../src/client/interface_base.cpp:85
+#, c-format
+msgid "Can't read %s from image"
+msgstr "Не удаётся прочитать %s из образа"
+
+#: ../src/client/interface_base.cpp:89
+msgid "Can't read SuperBlock"
+msgstr "Не удаётся прочитать SuperBlock"
+
+#: ../src/client/interface_base.cpp:93
+msgid "Can't write SuperBlock"
+msgstr "Не удаётся записать SuperBlock"
+
+#: ../src/client/interface_base.cpp:97
+#, c-format
+msgid "Can't read block %ld from harddrive partition"
+msgstr "Не удаётся прочитать блок %ld с раздела диска"
+
+#: ../src/client/interface_base.cpp:101
+#, c-format
+msgid "Can't read bitmap block %ld from harddrive partition (%s)"
+msgstr "Не удаётся прочитать bitmap блок %ld с раздела диска (%s)"
+
+#: ../src/client/interface_base.cpp:106
+msgid "Can't write the MBR"
+msgstr "Не удаётся записать MBR"
+
+#: ../src/client/interface_base.cpp:112
+msgid "Can't read the MBR"
+msgstr "Не удаётся прочитать MBR"
+
+#: ../src/client/interface_base.cpp:118
+#, c-format
+msgid "Not a %s partition. Check the filesystem type"
+msgstr "%s не является  разделом. Проверьте тип файловой системы"
+
+#: ../src/client/interface_base.cpp:124
+msgid "The partition was saved with a newer version of Partion Image. Please download the last one."
+msgstr "Раздел был сохранен в новой версии Partion Image. Обновите, пожалуйста, версию."
+
+#: ../src/client/interface_base.cpp:131
+msgid "Error while writing image file: disk full !"
+msgstr "Ошибка записи файл-образа: диск заполнен !"
+
+#: ../src/client/interface_base.cpp:137
+#, c-format
+msgid "Can't detect file system of partition %s"
+msgstr "Не удаётся определить файловую систему в разделе %s"
+
+#: ../src/client/interface_base.cpp:143
+msgid "Can't write main header"
+msgstr "Не удаётся записать заголовок"
+
+#: ../src/client/interface_base.cpp:149
+msgid "Can't write main tail"
+msgstr "Не удаётся записать main tail"
+
+#: ../src/client/interface_base.cpp:155
+msgid "Can't read main tail"
+msgstr "Не удаётся прочитать main tail"
+
+#: ../src/client/interface_base.cpp:161
+msgid "The image you try to restore was encrypted. The current version doesn't support encryption. Please, download the latest version of partimage."
+msgstr "Вы хотите восстановить зашифрованный образ. Текущая версия не поддерживает шифрование. Обновите, пожалуйста, программу."
+
+#: ../src/client/interface_base.cpp:169
+#, c-format
+msgid "%s is not the first volume of an image. Please, retry with the volume number 000"
+msgstr "%s не является первым томом образа. Пожалуйста, повторите, указав том с номером 000"
+
+#: ../src/client/interface_base.cpp:176
+#, c-format
+msgid "%s is not a valid partition image file."
+msgstr "%s не является файл-образом раздела."
+
+#: ../src/client/interface_base.cpp:182
+#, c-format
+msgid ""
+"The partition is to small to be restored:\n"
+"Original partition size:........%llu bytes\n"
+"Destination partition size:.....%llu bytes"
+msgstr ""
+"Размер раздела диска слишком мал:\n"
+"Размер раздела в файл-образе:...%llu байтов\n"
+"Размер раздела диска:...........%llu байтов"
+
+#: ../src/client/interface_base.cpp:190
+#, c-format
+msgid ""
+"There was an error while restoring partition:\n"
+"CRC64 are differents, the imagefile was damaged:\n"
+"Original CRC64:.....%llu\n"
+"Current CRC64:......%llu"
+msgstr ""
+"Возникли ошибки при восстановлении раздела:\n"
+"CRC64 различаются, файл-образ повреждён:\n"
+"Оригинальная CRC64:.....%llu\n"
+"Имеющаяся CRC64:......%llu"
+
+#: ../src/client/interface_base.cpp:199
+#, c-format
+msgid "Invalid volume number (%ld instead of %ld)."
+msgstr "Неправильный номер тома (%ld вместо %ld)."
+
+#: ../src/client/interface_base.cpp:206
+msgid "Error on close"
+msgstr "Ошибка при закрытии"
+
+#: ../src/client/interface_base.cpp:213
+#, c-format
+msgid "The partition %s is already locked by another process. Can't work on it"
+msgstr "Раздел %s заблокирован другим процессом. Не работайте с ним"
+
+#: ../src/client/interface_base.cpp:226
+#, c-format
+msgid "Can't open partition %s"
+msgstr "Не удаётся открыть раздел %s"
+
+#: ../src/client/interface_base.cpp:232
+#, c-format
+msgid "Can't lock partition %s"
+msgstr "Не удаётся заблокировать %s"
+
+#: ../src/client/interface_base.cpp:238
+msgid "Can't read main header: imagefile was damaged"
+msgstr "Не удаётся прочитать заголовок: файл-образ повреждён"
+
+#: ../src/client/interface_base.cpp:244
+msgid "Can't write informations"
+msgstr "Не удаётся записать информацию"
+
+#: ../src/client/interface_base.cpp:250
+msgid "Can't read informations"
+msgstr "Не удаётся прочитать информацию"
+
+#: ../src/client/interface_base.cpp:256
+msgid "Can't read MBR Magic: imagefile was damaged"
+msgstr "Не удаётся прочитать MBR Magic: файл-образ повреждён"
+
+#: ../src/client/interface_base.cpp:278
+msgid "Know bug"
+msgstr "Известный дефект"
+
+#: ../src/client/interface_base.cpp:278
+msgid "Cannot restore the MBR from an image compressed with bzip2. You have to change the compression level."
+msgstr "Восстановить MBR из образа, сжатого bzip2, невозможно. Измените уровень сжатия."
+
+#: ../src/client/interface_base.cpp:288
+#: ../src/client/interface_base.cpp:316
+#: ../src/client/interface_base.cpp:323
+#: ../src/client/interface_base.cpp:330
+#: ../src/client/interface_base.cpp:338
+#: ../src/client/interface_base.cpp:345
+#: ../src/client/interface_base.cpp:368
+#: ../src/client/interface_base.cpp:388
+#: ../src/client/main.cpp:556
+#: ../src/client/misc.cpp:1946
+msgid "Warning"
+msgstr "Внимание"
+
+#: ../src/client/interface_base.cpp:288
+#: ../src/client/misc.cpp:1946
+msgid "You are not logged as root. You may have \"access denied\" errors when working."
+msgstr "Программа запущена не от пользователя root. При работе возможны ошибки \"доступ запрещён\""
+
+#: ../src/client/interface_base.cpp:298
+msgid "New Volume"
+msgstr "Новый том"
+
+#: ../src/client/interface_base.cpp:298
+#, c-format
+msgid ""
+"The volume has been changed.\n"
+"Old: %s\n"
+"New: %s/%s.%.3ld\n"
+"Press Enter to continue"
+msgstr ""
+"Том изменён.\n"
+"Старый: %s\n"
+"Новый: %s/%s.%.3ld\n"
+"Нажмите Enter для продолжения"
+
+#: ../src/client/interface_base.cpp:308
+msgid "Confirmation"
+msgstr "Подтвердить"
+
+#: ../src/client/interface_base.cpp:309
+#, c-format
+msgid "Do you really want to restore %s from the image file %s ?"
+msgstr "Вы действительно хотите восстановить %s из файл-образа %s?"
+
+#: ../src/client/interface_base.cpp:317
+#, c-format
+msgid "%s found errors on the file system."
+msgstr "Найдены ошибки файловой системы %s"
+
+#: ../src/client/interface_base.cpp:324
+#, c-format
+msgid "Partimage will not check partition because %s does't exist."
+msgstr "Partimage не может проверить раздел, т.к. %s не существует."
+
+#: ../src/client/interface_base.cpp:331
+#, c-format
+msgid "Partimage will not check partition because of run access denied for %s."
+msgstr "Partimage не может проверить раздел, поскольку для %s доступ запрещен."
+
+#: ../src/client/interface_base.cpp:338
+#, c-format
+msgid "The current %s support is experimental !"
+msgstr "%s поддерживается экспериментально !"
+
+#: ../src/client/interface_base.cpp:345
+#, c-format
+msgid "The current %s support is beta !"
+msgstr "%s поддерживается ограниченно !"
+
+#: ../src/client/interface_base.cpp:353
+msgid "Simulation mode"
+msgstr "Режим имитации"
+
+#: ../src/client/interface_base.cpp:353
+msgid "You are using simulation mode: no write will be performed"
+msgstr "Вы используете режим имитации: запись на диск производиться не будет"
+
+#: ../src/client/interface_base.cpp:369
+#, c-format
+msgid ""
+"The MBR is a very important data of the hard disk. If you write a bad MBR, you will lose all the partitions of your hard drive. Don't continue unless you know what you are doing. Press 'Continue' to restore.\n"
+"Device with MBR to restore:.........%s [%llu]\n"
+"Original MBR:.......................%s [%llu]"
+msgstr ""
+"MBR содержит очень важные данные жесткого диска. Если вы запишете неправильную MBR, можно потерять ВСЕ разделы вашего диска. Не продолжайте, если не уверены в том, что делаете. Нажмите 'Продолжить' для восстановления.\n"
+"Устройство для восстановления MBR:.........%s [%llu]\n"
+"Оригинальная MBR:.......................%s [%llu]"
+
+#: ../src/client/interface_base.cpp:389
+#, c-format
+msgid "The original hard disk does not fit with the current hard disk. The MBR you are trying to restore was saved from another hard disk. This means the original and current hard disks does not have the same size or they are not on the same device (%s and %s). Do you want to continue?"
+msgstr "Оригинальный жесткий диск не соответствует текущему диску. MBR, которую вы пытаетесь записать, была сохранена с другого диска. Это означает, что у оригинального и текущего жестких дисков не совпадают размеры или они не аналогичны по устройству (%s и %s). Вы хотите продолжить?"
+
+#: ../src/client/interface_base.cpp:399
+#: ../src/client/main.cpp:829
+#: ../src/client/main.cpp:851
+msgid "Success"
+msgstr "Выполнено"
+
+#: ../src/client/interface_base.cpp:399
+#, c-format
+msgid "The MBR of [%s] has beensuccessfully restored. You might need to reboot your computer if you wantthe operating system to use the new MBR."
+msgstr "MBR [%s] была успешно восстановлена. Необходимо перезагрузить компьютер для использования новой MBR."
+
+#: ../src/client/interface_base.cpp:420
+#: ../src/client/interface_base.cpp:430
+#, c-format
+msgid "Error: %s"
+msgstr "Ошибка: %s"
+
+#: ../src/client/interface_base.cpp:427
+msgid "Action canceled as user required"
+msgstr "Действие отменено по требованию пользователя"
+
+#: ../src/client/interface_base.cpp:433
+#: ../src/client/gui_text.cpp:1008
+msgid "Overwrite image?"
+msgstr "Перезаписать образ?"
+
+#: ../src/client/interface_base.cpp:433
+#, c-format
+msgid "The %s imagefile already exist. Do you want to overwrite it?"
+msgstr "Файл-образ %s уже существует. Перезаписать?"
+
+#: ../src/client/interface_base.cpp:440
+msgid "Access denied"
+msgstr "Доступ запрещён"
+
+#: ../src/client/interface_base.cpp:440
+#, c-format
+msgid "You don't have write access on %s"
+msgstr "Вы не имеете права на запись в %s"
+
+#: ../src/client/interface_base.cpp:444
+#, c-format
+msgid "Invalid compression level for %s"
+msgstr "Неправильный уровень сжатия для %s"
+
+#: ../src/client/interface_base.cpp:448
+#, c-format
+msgid "imagefile %s is already open"
+msgstr "файл-образ %s уже открыт"
+
+#: ../src/client/interface_base.cpp:458
+#, c-format
+msgid "file %s is too short to be a partimage volume: can't read header"
+msgstr "файл %s слишком мал для тома раздела: не удаётся прочитать  заголовок"
+
+#: ../src/client/interface_base.cpp:468
+#, c-format
+msgid "file %s is not an partimage file: magic string does not match"
+msgstr "файл %s не является файлом образа раздела: ID не совпадает"
+
+#: ../src/client/interface_base.cpp:473
+#, c-format
+msgid "magic string does not match: error in the image file [%s]"
+msgstr "ID не совпадает: ошибка в файл-образе [%s]"
+
+#: ../src/client/interface_base.cpp:477
+msgid "the current volume doesn't fit with current image: wrong identificator"
+msgstr "текущий том не соответствует образу: неверный идентификатор"
+
+#: ../src/client/interface_base.cpp:482
+msgid "Out of memory."
+msgstr "Недостаточно памяти."
+
+#: ../src/client/interface_base.cpp:486
+msgid "incorrect password or user not in partimagedusers file"
+msgstr "неправильный пароль"
+
+#: ../src/client/interface_base.cpp:490
+msgid "Too many clients connected to partimaged. Please, retry later"
+msgstr "Слишком много клиентов подключено к partimaged. Попробуйте позже"
+
+#: ../src/client/interface_base.cpp:495
+#, c-format
+msgid "Only 4096 bytes per block %s volumes are supported. Current one is %lu bytes/block"
+msgstr "В томах %s поддерживается только 4096 байтов в блоке. На текущем - %lu байт/блок"
+
+#: ../src/client/interface_base.cpp:500
+#, c-format
+msgid "The partition %s id already locked by anotherprocess. You can't work on it"
+msgstr "Раздел %s заблокирован другим процессом. Вы не можете работать с ним"
+
+#: ../src/client/interface_base.cpp:509
+msgid "Error while checking the data: Invalid block number.Maybe a volume or some data were skipped."
+msgstr "Ошибка проверки данных: Неправильный номер блока. Весь том или часть данных могут быть пропущены."
+
+#: ../src/client/interface_base.cpp:514
+#, c-format
+msgid "This volume (%ld) is not the expected one: %ld."
+msgstr "Том (%ld) не предполагается в: %ld."
+
+#: ../src/client/interface_base.cpp:519
+msgid ""
+"Hostname/IP Error!\n"
+"Perhaps the hostname could not be resolved. (Try again using IP address)"
+msgstr ""
+"Ошибка имени хоста / IP-адреса!\n"
+"Возможно, имя хоста не найдено. (Попытайтесь ещё раз, используя IP-адрес)"
+
+#: ../src/client/interface_base.cpp:559
+msgid "No MBR was found in this imagefile. We can't continue"
+msgstr "Не найдена MBR в файле образа. Продолжение работы невозможно"
+
+#: ../src/client/interface_base.cpp:563
+msgid "Partition checks found error(s) on partitions"
+msgstr "Проверка раздела выявила ошибки"
+
+#: ../src/client/interface_base.cpp:578
+msgid "Impossible to read MBR from disk"
+msgstr "Невозможно прочесть MBR с диска"
+
+#: ../src/client/interface_base.cpp:581
+#, c-format
+msgid "Invalid or damaged filesystem %s"
+msgstr "Неправильная или повреждённая файловая система %s"
+
+#: ../src/client/interface_base.cpp:587
+#, c-format
+msgid "Impossible to zero the block on harddrive: %s"
+msgstr "невозможный нулевой блок на жёстком диске: %s"
+
+#: ../src/client/interface_base.cpp:591
+msgid "Connexion refused by server: incompatibles networking options.Try disabling login option for server with '-L'"
+msgstr "Соединение разорвано сервером: неправильные параметры сети. Попробуйте отключить регистрацию на сервере с '-L'"
+
+#: ../src/client/interface_base.cpp:596
+msgid "Connexion refused by server: versions mismatch"
+msgstr "Соединение разорвано сервером: несовпадение версии"
+
+#: ../src/client/interface_base.cpp:600
+#, c-format
+msgid "The image file was created by a newer release (%s) of Partition Image. Please update this software and retry."
+msgstr "Файл-образ создан в более новой версии (%s) Partition Image. Обновите, пожалуйста, программу и попытайтесь ещё раз."
+
+#: ../src/client/interface_base.cpp:605
+#, c-format
+msgid "The image file was created by an older release (%s) of Partition Image. You must use the old version to restoreyour image or you have to recreate it with current version"
+msgstr "Файл-образ создан в более старой версии (%s) Partition Image. Для восстановления образа необходимо использовать старую версию или исправить его в новой версии"
+
+#: ../src/client/interface_base.cpp:612
+#, c-format
+msgid "%s is not a valid Partition Image file or it's damaged. Sorry, can't continue"
+msgstr "%s не является файлом Partition Image или повреждён. Невозможно продолжать"
+
+#: ../src/client/interface_base.cpp:617
+#, c-format
+msgid "File %s is not a regular file. For security reasons, we can't continue"
+msgstr "Файл %s не является обычным файлом. По соображениям безопасности продолжение невозможно"
+
+#: ../src/client/interface_base.cpp:622
+#, c-format
+msgid "Cannot mount %s"
+msgstr "Невозможно смонтировать %s"
+
+#: ../src/client/interface_base.cpp:626
+#, c-format
+msgid "Cannot unmount %s"
+msgstr "Невозможно размонтировать %s"
+
+#: ../src/client/interface_base.cpp:630
+#, c-format
+msgid "Cannot create temp file [%s]. Please, check there is space enough and you have access rights."
+msgstr "Невозможно создать временный файл [%s]. Проверьте, пожалуйста, свободное место и права доступа."
+
+#: ../src/client/interface_base.cpp:634
+#, c-format
+msgid "Cannot create temp file [%s]. No space left on device."
+msgstr "Невозможно создать временный файл [%s]. Нет свободного места"
+
+#: ../src/client/interface_base.cpp:639
+#, c-format
+msgid "Cannot create temp file in [%s]. Write access is denied for user 'partimag'"
+msgstr "Невозможно создать временный файл в [%s]. Отказано в доступе пользователю 'partimag'"
+
+#: ../src/client/interface_base.cpp:642
+#, c-format
+msgid "Cannot create temp file in [%s]. Write access is denied."
+msgstr "Невозможно создать временный файл [%s]. Нет доступа на запись."
+
+#: ../src/client/interface_base.cpp:647
+msgid "File too large. (larger than 2 GB). Can't continue. This problem can come from the kernel, the glibc, the file system which where the image is written"
+msgstr "Файл слишком большой (более 2 GB). Невозможно продолжать. Проблема возникла из-за ядра, библиотеки glibc или файловой системы, на которую записывается образ"
+
+#: ../src/client/interface_base.cpp:651
+#, c-format
+msgid "Unknown error %d -> %s"
+msgstr "Неизвестная ошибка %d -> %s"
+
+#: ../src/client/main.cpp:255
+#: ../src/client/misc.cpp:1981
+msgid "server's port must be between 1 and 65535\n"
+msgstr "порт сервера должен быть между 1 и 65535\n"
+
+#: ../src/client/main.cpp:264
+msgid "Compression mode must be 0 (none), 1(gzip), 2(bzip2)\n"
+msgstr "Уровень сжатия может быть: 0 (нет), 1 (gzip), 2 (bzip2)\n"
+
+#: ../src/client/main.cpp:274
+msgid "Finish mode must be 0 (wait), 1(halt), 2(reboot) or 3(quit)\n"
+msgstr "Можно выбрать действие после завершения работы: 0 (ждать), 1 (выкл. ПК), 2 (перезагрузить ПК) или 3 (выход)\n"
+
+#: ../src/client/main.cpp:284
+msgid "The debug level must be 0(none), 1(user), 2(developer) or 3(debugging)\n"
+msgstr "Уровень отладки может быть: 0 (нет), 1 (пользовательский), 2 (разработка) или 3 (отладка)\n"
+
+#: ../src/client/main.cpp:293
+#, c-format
+msgid "Volume size: %<PRIu64> bytes (%ld MiB)\n"
+msgstr "Размер тома: %<PRIu64> байт (%ld Мб)\n"
+
+#: ../src/client/main.cpp:323
+#, c-format
+msgid "Partition Image version %s (distributed under the GNU GPL2).\n"
+msgstr "Версия Partition Image %s (распространяется под GNU GPL2).\n"
+
+#: ../src/client/main.cpp:372
+msgid "Cannot open debug file.\n"
+msgstr "Не удаётся открыть отладочный файл.\n"
+
+#: ../src/client/main.cpp:557
+msgid "You have devfs enabled but not mounted. You have to do it to continue. You can also boot with non-devfs kernel if you have one."
+msgstr "У вас включена поддержка devfs, но не смонтирована. Необходимо выполнить это для продолжения работы. Можно также по возможности попробовать загрузить ядро без поддержки devfs. "
+
+#: ../src/client/main.cpp:748
+#: ../src/client/main.cpp:763
+msgid "commiting buffer cache to disk."
+msgstr "Запись буферного кэша на диск."
+
+#: ../src/client/main.cpp:818
+msgid "The MBR was successfully restored"
+msgstr "MBR успешно восстановлена"
+
+#: ../src/client/main.cpp:823
+#: ../src/client/main.cpp:847
+msgid "Simulation"
+msgstr "Имитация"
+
+#: ../src/client/main.cpp:825
+#: ../src/client/main.cpp:849
+msgid "Operation"
+msgstr "Операция"
+
+#: ../src/client/main.cpp:840
+msgid "Error: Cannot halt the computer"
+msgstr "Ошибка: Не удаётся выключить компьютер"
+
+#: ../src/client/main.cpp:857
+msgid "Error: Cannot reboot the computer"
+msgstr "Ошибка: Не удаётся перезагрузить компьютер"
+
+#: ../src/client/main.cpp:894
+#: ../src/client/main.cpp:917
+#: ../src/client/main.cpp:945
+msgid "Error: Cannot count remaining partimages"
+msgstr "Ошибка: Не удалось рассчитать оставшиеся файлы образов"
+
+#: ../src/client/main.cpp:904
+msgid "Error: Cannot create countfile"
+msgstr "Ошибка: Не удаётся создать countfile"
+
+#: ../src/client/main.cpp:934
+msgid "DEBUG: reboot the computer"
+msgstr "ОТЛАДКА: перезагрузка ПК"
+
+#: ../src/client/main.cpp:975
+#, c-format
+msgid ""
+"Partition Image (http://www.partimage.org/) version %s [%s]\n"
+"---- distributed under the GPL 2 license (GNU General Public License) ----\n"
+"\n"
+"Supported file systems: Ext2/3, ReiserFS, FAT16/32, HPFS, JFS, XFS,\n"
+"                        UFS(beta), HFS(beta), NTFS(experimental)\n"
+"\n"
+"usage: partimage [options] <action> <device> <image_file>\n"
+"       partimage <imginfo/restmbr> <image_file>\n"
+"\n"
+"ex: partimage -z1 -o -d save /dev/hda12 /mnt/backup/redhat-6.2.partimg.gz\n"
+"ex: partimage restore /dev/hda13 /mnt/backup/suse-6.4.partimg\n"
+"ex: partimage restmbr /mnt/backup/debian-potato-2.2.partimg.bz2\n"
+"ex: partimage -z1 -om save /dev/hda9 /mnt/backup/win95-osr2.partimg.gz\n"
+"ex: partimage imginfo /mnt/backup/debian-potato-2.2.partimg.bz2\n"
+"ex: partimage -a/dev/hda6#/mnt/partimg#vfat -V1440 save /dev/hda12 /mnt/partimg/redhat-6.2.partimg.gz\n"
+"\n"
+"Arguments:\n"
+"* <action>:\n"
+"  - save: save the partition datas in an image file\n"
+"  - restore: restore the partition from an image file\n"
+"  - restmbr: restore a MBR of the image file to an hard disk\n"
+"  - imginfo: show informations about the image file\n"
+"* <device>: partition to save/restore (example: /dev/hda1)\n"
+"* <image_file>: file where data will be read/written. Can be very big.\n"
+"                For restore, <image_file> can have the value 'stdin'. This allows\n"
+"                for providing image files through a pipe.\n"
+"\n"
+"Options:\n"
+"* -z,  --compress      (image file compression level):\n"
+"  -z0, --compress=0    don't compress: very fast but very big image file\n"
+"  -z1, --compress=1    compress using gzip: fast and small image file (default)\n"
+"  -z2, --compress=2    (compress using bzip2: very slow and very small image file):\n"
+"* -c,  --nocheck       don't check the partition before saving\n"
+"* -o,  --overwrite     overwrite the existing image file without confirmation\n"
+"* -d,  --nodesc        don't ask any description for the image file\n"
+"* -V,  --volume        (split image into multiple volumes files)\n"
+"  -VX, --volume=X      create volumes with a size of X MB\n"
+"* -w,  --waitvol       wait for a confirmation after each volume change\n"
+"* -e,  --erase         erase empty blocks on restore with zero bytes\n"
+"* -m,  --allowmnt      don't fail if the partition is mounted. Dangerous !\n"
+"* -M,  --nombr         don't create a backup of the MBR (Mast Boot Record) in the image file\n"
+"* -h,  --help          show help\n"
+"* -v,  --version       show version\n"
+"* -i,  --compilinfo    show compilation options used\n"
+"* -f,  --finish        (action to do if finished successfully):\n"
+"  -f0, --finish=0      wait: don't make anything\n"
+"  -f1, --finish=1      halt (power off) the computer\n"
+"  -f2, --finish=2      reboot (restart the computer):\n"
+"  -f3, --finish=3      quit\n"
+"* -b,  --batch         batch mode: the GUI won't wait for an user action\n"
+"* -BX, --fully-batch=X batch mode without GUI, X is a challenge response string\n"
+"* -y,  --nosync        don't synchronize the disks at the end of the operation (dangerous)\n"
+"* -sX, --server=X      give partimaged server's ip address\n"
+"* -pX, --port=X        give partimaged server's listening port\n"
+"* -g,  --debug=X       set the debug level to X (default: 1):\n"
+"* -L,  --nologin       disable login in network mode\n"
+"* -n,  --nossl         disable SSL in network mode\n"
+"* -S,  --simulate      simulation of restoration mode\n"
+"* -aX, --automnt=X     automatic mount with X options. Read the doc for more details\n"
+"* -UX  --username=X    username to authenticate to server\n"
+"* -PX  --password=X    password for authentication of user to server\n"
+msgstr ""
+"Partition Image (http://www.partimage.org/) версии %s [%s]\n"
+"---- распространяется под лицензией GPL 2 (GNU General Public License) ----\n"
+"\n"
+"Поддерживаемые файловые системы: Ext2/3, ReiserFS, FAT16/32, HPFS, JFS, XFS,\n"
+"                        UFS(beta), HFS(beta), NTFS(экспериментально)\n"
+"\n"
+"использование: partimage [параметры] <действие> <устройство> <файл-образ>\n"
+"       partimage <imginfo/restmbr> <файл-образ>\n"
+"\n"
+"Примеры:\n"
+"      partimage -z1 -o -d save /dev/hda12 /mnt/backup/redhat-6.2.partimg.gz\n"
+"      partimage restore /dev/hda13 /mnt/backup/suse-6.4.partimg\n"
+"      partimage restmbr /mnt/backup/debian-potato-2.2.partimg.bz2\n"
+"      partimage -z1 -om save /dev/hda9 /mnt/backup/win95-osr2.partimg.gz\n"
+"      partimage imginfo /mnt/backup/debian-potato-2.2.partimg.bz2\n"
+"      partimage -a/dev/hda6#/mnt/partimg#vfat -V1440 save /dev/hda12 /mnt/partimg/redhat-6.2.partimg.gz\n"
+"\n"
+"Аргументы:\n"
+"* <действие>:\n"
+"  - save: сохранить данные раздела в файл образа\n"
+"  - restore: восстановить раздел из файла образа\n"
+"  - restmbr: восстановить MBR из файла образа на жёсткий диск\n"
+"  - imginfo: показать информацию о файле образа\n"
+"* <устройство>: раздел, подлежащий сохранению / восстановлению (например: /dev/hda1)\n"
+"* <файл образа>: файл, используемый для записи / чтения данных раздела. Может быть очень большим.\n"
+"                При восстановлении <файл образа> может иметь значение 'stdin'. Это позволяет\n"
+"                использовать его в качестве канала.\n"
+"\n"
+"Параметры:\n"
+"* -z,  --compress      (уровень сжатия файла образа):\n"
+"  -z0, --compress=0    без сжатия: очень быстро, но очень большой размер файла\n"
+"  -z1, --compress=1    сжатие с использованием gzip: быстро и малый размер файла (по умолчанию)\n"
+"  -z2, --compress=2    (сжатие с использованием bzip2: очень медленно и очень маленький файл образа):\n"
+"* -c,  --nocheck       не проверять раздел перед сохранением\n"
+"* -o,  --overwrite     переписывать уже существующий файл образа без подтверждения\n"
+"* -d,  --nodesc        не запрашивать описание файла образа\n"
+"* -V,  --volume        (разбить образ на несколько файлов-томов)\n"
+"  -VX, --volume=X      создавать тома размером X Мб\n"
+"* -w,  --waitvol       ждать подтверждения после создания очередного файла-тома\n"
+"* -e,  --erase         затереть при восстановлении неиспользуемые блоки нулями\n"
+"* -m,  --allowmnt      не обращать внимания, если раздел смонтирован. Рискованно !\n"
+"* -M,  --nombr         не создавать резервную копию MBR (Mast Boot Record) в файле образа\n"
+"* -h,  --help          показать справку\n"
+"* -v,  --version       показать версию\n"
+"* -i,  --compilinfo    показать использовавшиеся параметры компиляции программы\n"
+"* -f,  --finish        (действие после успешного завершении работы):\n"
+"  -f0, --finish=0      ждать: ничего не делать\n"
+"  -f1, --finish=1      остановить (выключить) ПК\n"
+"  -f2, --finish=2      перезагрузить ПК:\n"
+"  -f3, --finish=3      выйти из программы\n"
+"* -b,  --batch         пакетный режим: GUI не будет ждать действий пользователя\n"
+"* -BX, --fully-batch=X пакетный режим без GUI, строка X содержит ответы на запросы\n"
+"* -y,  --nosync        не синхронизировать диски в конце операции (рискованно)\n"
+"* -sX, --server=X      указать ip-адрес сервера partimaged\n"
+"* -pX, --port=X        указать прослушиваемый сервером partimaged порт\n"
+"* -g,  --debug=X       установить режим отладки для X (по умолчанию: 1):\n"
+"* -L,  --nologin       отключить регистрацию при работе по сети\n"
+"* -n,  --nossl         отключить шифрование SSL при работе по сети\n"
+"* -S,  --simulate      имитировать процесс восстановления\n"
+"* -aX, --automnt=X     автоматически монтировать с параметрами X. См. дополнительную документацию\n"
+"* -UX  --username=X    имя пользователя при регистрации на сервере\n"
+"* -PX  --password=X    пароль при регистрации пользователя на сервере\n"
+
+#: ../src/client/main.cpp:1031
+msgid "stable"
+msgstr "стабильная"
+
+#: ../src/client/main.cpp:1031
+msgid "unstable"
+msgstr "нестабильная"
+
+#: ../src/client/main.cpp:1190
+#, c-format
+msgid ""
+"%s  successfully finished:\n"
+"\n"
+"Time elapsed: %s\n"
+"Speed: %s/min\n"
+"Data copied: %s"
+msgstr ""
+"%s  успешно завершена:\n"
+"\n"
+"Время выполнения:    %s\n"
+"Скорость:    %s/мин\n"
+"Скопировано данных: %s"
+
+#: ../src/client/gui_text.cpp:58
+msgid "Restore an MBR to the hard disk"
+msgstr "Восстановить MBR на жесткий диск"
+
+#: ../src/client/gui_text.cpp:61
+msgid "Disk with the MBR to restore"
+msgstr "Диск для восстановления MBR"
+
+#: ../src/client/gui_text.cpp:64
+msgid "Original MBR to use"
+msgstr "Использовать оригинальную MBR"
+
+#: ../src/client/gui_text.cpp:67
+msgid "What to restore:"
+msgstr "Что восстановить:"
+
+#: ../src/client/gui_text.cpp:69
+msgid "The whole MBR"
+msgstr "Вся MBR"
+
+#: ../src/client/gui_text.cpp:211
+#: ../src/client/misc.cpp:1813
+#, c-format
+msgid "Cannot read \"/proc/partitions\" (%s). Then, you must use the command line to run Partition Image. Type \"partimage --help\" for help."
+msgstr "Не удаётся прочитать \"/proc/partitions\" (%s). Можно попробовать запустить Partition Image из командной строки. Наберите \"partimage --help\" для получения справки."
+
+#: ../src/client/gui_text.cpp:317
+msgid "Continue (F5)"
+msgstr "Продолжить (F5)"
+
+#: ../src/client/gui_text.cpp:319
+msgid "Main window (F7)"
+msgstr "Главное окно (F7)"
+
+#: ../src/client/gui_text.cpp:329
+#: ../src/client/gui_text.cpp:459
+msgid "save partition to image file"
+msgstr "Сохранение раздела в файл образа"
+
+#: ../src/client/gui_text.cpp:331
+msgid "Compression level"
+msgstr "Уровень сжатия"
+
+#: ../src/client/gui_text.cpp:332
+msgid "None (very fast + very big file)"
+msgstr "Без сжатия (очень быстро, но большой файл)"
+
+#: ../src/client/gui_text.cpp:333
+msgid "Gzip (.gz: medium speed + small image file)"
+msgstr "Gzip (.gz: средняя скорость + малый файл образа)"
+
+#: ../src/client/gui_text.cpp:334
+msgid "Bzip2 (.bz2: very slow + very small image file)"
+msgstr "Bzip2 (.bz2: очень медлено + очень маленький файл образа)"
+
+#: ../src/client/gui_text.cpp:336
+#: ../src/client/gui_text.cpp:655
+msgid "Options"
+msgstr "Параметры"
+
+#: ../src/client/gui_text.cpp:337
+msgid "Check partition before saving"
+msgstr "Проверить раздел перед сохранением"
+
+#: ../src/client/gui_text.cpp:338
+msgid "Enter description"
+msgstr "Добавить описание"
+
+#: ../src/client/gui_text.cpp:339
+msgid "Overwrite without prompt"
+msgstr "Перезаписать без запросов"
+
+#: ../src/client/gui_text.cpp:341
+msgid "Image split mode"
+msgstr "Разбивать образ на тома"
+
+#: ../src/client/gui_text.cpp:342
+msgid "Automatic split (when no space left)"
+msgstr "Автоматически (при недостатке места)"
+
+#: ../src/client/gui_text.cpp:343
+msgid "Into files whose size is:............"
+msgstr "На файлы размером:............"
+
+#: ../src/client/gui_text.cpp:346
+msgid "MiB"
+msgstr "Мб"
+
+#: ../src/client/gui_text.cpp:347
+msgid "Wait after each volume change"
+msgstr "Ожидать после каждой смены тома"
+
+#: ../src/client/gui_text.cpp:349
+#: ../src/client/gui_text.cpp:660
+msgid "If finished successfully:"
+msgstr "После успешного завершения:"
+
+#: ../src/client/gui_text.cpp:350
+#: ../src/client/gui_text.cpp:661
+msgid "Wait"
+msgstr "Ожидать"
+
+#: ../src/client/gui_text.cpp:351
+#: ../src/client/gui_text.cpp:662
+msgid "Halt"
+msgstr "Выключить ПК"
+
+#: ../src/client/gui_text.cpp:352
+#: ../src/client/gui_text.cpp:663
+msgid "Reboot"
+msgstr "Перезагрузить ПК"
+
+#: ../src/client/gui_text.cpp:353
+#: ../src/client/gui_text.cpp:664
+msgid "Quit"
+msgstr "Выйти из программы"
+
+#: ../src/client/gui_text.cpp:354
+msgid "Last"
+msgstr "Последний"
+
+#: ../src/client/gui_text.cpp:462
+#, c-format
+msgid "Partition to save:...........%s"
+msgstr "Раздел для сохранения:....... %s"
+
+#: ../src/client/gui_text.cpp:465
+#, c-format
+msgid "Size of the Partition:.......%s = %<PRIu64> bytes"
+msgstr "Размер раздела:.............. %s = %<PRIu64> байт"
+
+#: ../src/client/gui_text.cpp:468
+#, c-format
+msgid "Image file to create.........%s"
+msgstr "Название файла-образа........ %s"
+
+#: ../src/client/gui_text.cpp:474
+#, c-format
+msgid "Detected file system:........%s"
+msgstr "Найдена файловая система:.... %s"
+
+#: ../src/client/gui_text.cpp:480
+msgid "Compression level:...........None"
+msgstr "Уровень сжатия:.............. без сжатия"
+
+#: ../src/client/gui_text.cpp:483
+msgid "Compression level:...........gzip"
+msgstr "Уровень сжатия:.............. gzip"
+
+#: ../src/client/gui_text.cpp:486
+msgid "Compression level:...........bzip2"
+msgstr "Уровень сжатия:.............. bzip2"
+
+#: ../src/client/gui_text.cpp:489
+msgid "Compression level:...........lzo"
+msgstr "Уровень сжатия:.............. lzo"
+
+#: ../src/client/gui_text.cpp:543
+#, c-format
+msgid "Time elapsed:................%s"
+msgstr "Прошло времени:.............. %s"
+
+#: ../src/client/gui_text.cpp:546
+#, c-format
+msgid "Estimated time remaining:....%s"
+msgstr "Время до окончания:.......... %s"
+
+#: ../src/client/gui_text.cpp:551
+#, c-format
+msgid "Speed:.......................%s/min"
+msgstr "Скорость:.................... %s/мин"
+
+#: ../src/client/gui_text.cpp:554
+#, c-format
+msgid "Data copied:.................%s / %s"
+msgstr "Данных скопировано:.......... %s / %s"
+
+#: ../src/client/gui_text.cpp:561
+#: ../src/client/gui_text.cpp:838
+#, c-format
+msgid "T:%-s/%-s"
+msgstr ""
+
+#: ../src/client/gui_text.cpp:563
+#: ../src/client/gui_text.cpp:840
+#, c-format
+msgid "R:%s/min"
+msgstr "R:%s/мин"
+
+#: ../src/client/gui_text.cpp:604
+#, c-format
+msgid "Current image file:..........%s"
+msgstr "Текущий файл образа:......... %s"
+
+#: ../src/client/gui_text.cpp:609
+#, c-format
+msgid "Image file size:.............%s"
+msgstr "Размер файл-образа:.......... %s"
+
+#: ../src/client/gui_text.cpp:613
+#, c-format
+msgid "Available space for image:...%s = %<PRIu64> bytes"
+msgstr "Доступно места для образа:... %s = %<PRIu64> байт"
+
+#: ../src/client/gui_text.cpp:626
+#: ../src/client/gui_text.cpp:627
+#: ../src/client/gui_text.cpp:632
+#: ../src/client/gui_text.cpp:635
+#: ../src/client/gui_text.cpp:921
+#: ../src/client/gui_text.cpp:922
+#: ../src/client/gui_text.cpp:928
+#: ../src/client/gui_text.cpp:931
+#, c-format
+msgid "%-s"
+msgstr ""
+
+#: ../src/client/gui_text.cpp:638
+#, c-format
+msgid "%-12s S:%-s "
+msgstr ""
+
+#: ../src/client/gui_text.cpp:652
+#: ../src/client/gui_text.cpp:731
+msgid "restore partition from image file"
+msgstr "Восстановление раздела из файл-образа"
+
+#: ../src/client/gui_text.cpp:657
+msgid "Erase free blocks with zero values"
+msgstr "Затереть пустые блоки нулями"
+
+#: ../src/client/gui_text.cpp:658
+msgid "Simulation of the restoration (nothing is written)"
+msgstr "Имитировать восстановление (ничего не записывается)"
+
+#: ../src/client/gui_text.cpp:729
+msgid "simulate partition restoration from image file"
+msgstr "Имитация восстановления раздела из файл-образа"
+
+#: ../src/client/gui_text.cpp:734
+#, c-format
+msgid "Partition to restore:.............%s"
+msgstr "Раздел для восстановления:........... %s"
+
+#: ../src/client/gui_text.cpp:737
+#, c-format
+msgid "Size of partition to restore:.....%s = %<PRIu64> bytes"
+msgstr "Размер раздела для восстановления:... %s = %<PRIu64> байтов"
+
+#: ../src/client/gui_text.cpp:740
+#, c-format
+msgid "Image file to use.................%s"
+msgstr "Используется файл-образ.............. %s"
+
+#: ../src/client/gui_text.cpp:743
+#, c-format
+msgid "File system:......................%s"
+msgstr "Файловая система:.................... %s"
+
+#: ../src/client/gui_text.cpp:748
+#, c-format
+msgid "Partition was on device:..........%s\n"
+msgstr "Раздел на диске:..................... %s\n"
+
+#: ../src/client/gui_text.cpp:751
+#, c-format
+msgid "Image created on:.................%s\n"
+msgstr "Дата создания образа:................ %s\n"
+
+#: ../src/client/gui_text.cpp:754
+#, c-format
+msgid "Size of the original partition:...%s = %<PRIu64> bytes"
+msgstr "Размер оригинального раздела:........ %s = %<PRIu64> байтов"
+
+#: ../src/client/gui_text.cpp:821
+#, c-format
+msgid "Time elapsed:.....................%s"
+msgstr "Прошло времени:...................... %s"
+
+#: ../src/client/gui_text.cpp:824
+#, c-format
+msgid "Estimated time remaining:.........%s"
+msgstr "Время до окончания:.................. %s"
+
+#: ../src/client/gui_text.cpp:829
+#, c-format
+msgid "Speed:............................%s/min"
+msgstr "Скорость:............................ %s/мин"
+
+#: ../src/client/gui_text.cpp:832
+#, c-format
+msgid "Data copied:......................%s / %s"
+msgstr "Данных скопировано:.................. %s / %s"
+
+#: ../src/client/gui_text.cpp:882
+#, c-format
+msgid "Current image file:...............%s"
+msgstr "Текущий файл образа:................. %s"
+
+#: ../src/client/gui_text.cpp:890
+msgid "Compression level:................None\n"
+msgstr "Уровень сжатия:.............без сжатия\n"
+
+#: ../src/client/gui_text.cpp:891
+msgid "None"
+msgstr "без сжатия"
+
+#: ../src/client/gui_text.cpp:894
+msgid "Compression level:................gzip"
+msgstr "Уровень сжатия:................gzip"
+
+#: ../src/client/gui_text.cpp:895
+msgid "gzip"
+msgstr ""
+
+#: ../src/client/gui_text.cpp:898
+msgid "Compression level:................bzip2"
+msgstr "Уровень сжатия:................bzip2"
+
+#: ../src/client/gui_text.cpp:899
+msgid "bzip2"
+msgstr ""
+
+#: ../src/client/gui_text.cpp:902
+msgid "Compression level:................lzo"
+msgstr "Уровень сжатия:................lzo"
+
+#: ../src/client/gui_text.cpp:903
+msgid "lzo"
+msgstr ""
+
+#: ../src/client/gui_text.cpp:907
+#, c-format
+msgid "Compression level:................%s"
+msgstr "Уровень сжатия:................%s"
+
+#: ../src/client/gui_text.cpp:934
+#, c-format
+msgid "%-12s %-s "
+msgstr ""
+
+#: ../src/client/gui_text.cpp:956
+msgid "Change"
+msgstr "Изменить"
+
+#: ../src/client/gui_text.cpp:959
+msgid "Enter new filename"
+msgstr "Введите новое имя файла"
+
+#: ../src/client/gui_text.cpp:1003
+#, c-format
+msgid ""
+"The following imagefile already exist.\n"
+"Do you want to overwrite or change image filename ?\n"
+"File: %s\n"
+"To change the filename, please enter a full path\n"
+"(location + filename) without volume number at the end, \n"
+"and press \"Change\""
+msgstr ""
+"Такой файл-образ уже существует.\n"
+"Xотите перезаписать его? Если нет,  измените название образа?\n"
+"Файл: %s\n"
+"Для изменения названия файла укажите полный путь к нему\n"
+"(расположение + название файла) без номера тома в конце \n"
+"и нажмите \"Изменить\""
+
+#: ../src/client/gui_text.cpp:1008
+msgid "Overwrite"
+msgstr "Перезаписать"
+
+#: ../src/client/gui_text.cpp:1020
+#, c-format
+msgid ""
+"The following imagefile is locked.\n"
+"Do you want to wait and retry or change image filename ?\n"
+"File: %s\n"
+"To change the filename, please enter a full path\n"
+"(location + filename) without volume number at the end, \n"
+"and press \"Change\""
+msgstr ""
+"Доступ к файлу-образу заблокирован.\n"
+"Хотите подождать и повторить попытку или изменить имя образа?\n"
+"Файл: %s\n"
+"Для изменения имени файла укажите полный путь к файлу\n"
+"(расположение + имя файла) без номера тома в конце  \n"
+"и нажмите \"Изменить\""
+
+#: ../src/client/gui_text.cpp:1025
+msgid "imagefile locked"
+msgstr "Файл образа заблокирован"
+
+#: ../src/client/gui_text.cpp:1025
+msgid "Retry"
+msgstr "Повторить"
+
+#: ../src/client/gui_text.cpp:1038
+#, c-format
+msgid ""
+"unable to access to %s\n"
+"\n"
+"Please, enteranother directory path (without filename):"
+msgstr ""
+"нет доступа к %s\n"
+"\n"
+"Укажите, пожалуйста, другой каталог (без имени файла):"
+
+#: ../src/client/gui_text.cpp:1041
+msgid "wrong path"
+msgstr "Неправильный путь"
+
+#: ../src/client/misc.cpp:402
+msgid "initializing the operation."
+msgstr "Подготовка операции."
+
+#: ../src/client/misc.cpp:445
+msgid "Bzip2 bug workaround"
+msgstr "Предупреждение об ошибке Bzip2"
+
+#: ../src/client/misc.cpp:446
+msgid "Because of a bug, you won't be able to restore MBR from any bzip2 compressed image unless you manualy run bzip2 -d on them"
+msgstr "В связи с известной ошибкой вы не сможете восстановить MBR из образов, сжатых в bzip2, пока вручную не выполните команду bzip2 -d"
+
+#: ../src/client/misc.cpp:636
+msgid "Saving partition to the image file..."
+msgstr "Сохранение раздела в файл-образ..."
+
+#: ../src/client/misc.cpp:752
+msgid "initializing the operation"
+msgstr "Подготовка операции"
+
+#: ../src/client/misc.cpp:960
+msgid "Restoring partition from the image file..."
+msgstr "Восстановление раздела из файл-образа..."
+
+#: ../src/client/misc.cpp:1058
+#: ../src/client/misc.cpp:1072
+#: ../src/client/misc.cpp:1082
+msgid "Error in Main Tail"
+msgstr "Ошибка в Main Tail"
+
+#: ../src/client/misc.cpp:1059
+msgid "Impossible to read the magic: the image is damaged"
+msgstr "Невозможно прочитать Magic: файл-образ повреждён"
+
+#: ../src/client/misc.cpp:1073
+msgid "CRC changed: the image is damaged"
+msgstr "Не совпадает контрольная сумма: файл-образ повреждён"
+
+#: ../src/client/misc.cpp:1083
+msgid "volume numbers changed: the image is damaged"
+msgstr "Количество томов изменено: файл-образ повреждён"
+
+#: ../src/client/misc.cpp:1705
+msgid "inode missing"
+msgstr "Отсутствует дескриптор устройства "
+
+#: ../src/client/misc.cpp:1705
+#, c-format
+msgid "%s inode doesn't exists. Partimage can create it for you. You can also use the manual mknod command. Do you want this inode to be created for you now ?"
+msgstr " %s не существует, но Partimage может его создать. Можно также сделать это позже вручную с помощью команды mknod. Создать дескриптор прямо сейчас?"
+
+#: ../src/client/misc.cpp:1722
+#, c-format
+msgid "%s is not a block device."
+msgstr "%s не являеися блочным устройством."
+
+#: ../src/client/misc.cpp:1774
+msgid "You haven't access to /proc/mounts."
+msgstr "У вас нет доступа к /proc/mounts."
+
+#: ../src/client/misc.cpp:1780
+msgid "An error occurred trying to read /proc/mounts."
+msgstr "Ошибка при чтении /proc/mounts."
+
+#: ../src/client/misc.cpp:1954
+#, c-format
+msgid "The %s partition is mounted. Partition Image can't work on mounted partitions. Please, unmount it before. You can do it with \"umount %s\""
+msgstr "Раздел %s в настоящее время смонтирован. Partition Image не может работать со смонтированными разделами. Сначала размонтируйте его, пожалуйста, командой \"umount %s\""
+
+#: ../src/client/misc.cpp:1974
+msgid "Split volumes size must be an integer greater than 1024 (size >= 1024 KB)"
+msgstr "Размер разбитых томов должен быть целым числом, большим чем 1024 (размер >= 1024 Кб)"
+
+#: ../src/client/misc.cpp:1994
+msgid "Invalid automount options. Read the manual for more details"
+msgstr "Неправильные параметры автомонтирования. Изучите руководство"
+
+#: ../src/client/misc.cpp:2002
+#, c-format
+msgid "The second argument [%s] must be a valid device (ex: /dev/hda1)"
+msgstr "Второй аргумент [%s] должен указывать на допустимое устройство (например: /dev/hda1)"
+
+#: ../src/client/misc.cpp:2011
+#, c-format
+msgid "The third argument [%s] must be a valid regular file (not a directory, a symlink, ...)"
+msgstr "Третий аргумент [%s] должен указывать на обычный существующий файл (не каталог, ссылку и т.д...)"
+
+#: ../src/client/imagefile.cpp:643
+msgid "Automatic mount"
+msgstr "Автоматическое монтирование"
+
+#: ../src/client/imagefile.cpp:644
+#, c-format
+msgid "Please, press \"ok\" to mount [%s] on [%s]"
+msgstr "Нажмите, пожалуйста, \"ok\" для монтирования [%s] на [%s]"
+
+#: ../src/client/imagefile.cpp:1012
+msgid "Wrong volume inserted"
+msgstr "Добавлен неправильный том"
+
+#: ../src/client/imagefile.cpp:1013
+msgid "You will be prompted to remove this media and insert the right one"
+msgstr "Вам будет предложено удалить этот носитель и вставить правильный"
+
+#: ../src/client/imagefile.cpp:1020
+#, c-format
+msgid ""
+"Can't read the following volume file:\n"
+"%s\n"
+"%s"
+msgstr ""
+"Невозможно прочитать том образа:\n"
+"%s\n"
+"%s"
+
+#: ../src/client/imagefile.cpp:1022
+msgid "Enter another full path (directory & name)"
+msgstr "Укажите другой полный путь к файлу (каталог + имя)"
+
+#: ../src/client/imagefile.cpp:1023
+msgid "Volume not found"
+msgstr "Том не найден"
+
+#: ../src/client/imginfo.cpp:67
+msgid "No flag set"
+msgstr "Флаг не установлен"
+
+#: ../src/client/imginfo.cpp:73
+msgid "No description"
+msgstr "Описания нет"
+
+#: ../src/client/imginfo.cpp:79
+#: ../src/client/imginfo.cpp:133
+msgid "none"
+msgstr "нет"
+
+#: ../src/client/imginfo.cpp:83
+#: ../src/client/imginfo.cpp:149
+msgid "unknown"
+msgstr "неизвестно"
+
+#: ../src/client/imginfo.cpp:87
+#, c-format
+msgid ""
+"Filesystem:............%s\n"
+"Description:...........%s\n"
+"Original device:.......%s\n"
+"Original filepath:.... %s\n"
+"Flags:.................%d: %s\n"
+"Creation date:.........%sPartition size:........%s\n"
+"Hostname:..............%s\n"
+"Compatible Version:....%s\n"
+"Encryption algorithm:..%d -> %s\n"
+"MBR saved count:.......%u\n"
+"\n"
+"System of the backup:\n"
+"- machine:.............%s\n"
+"- operating system:....%s\n"
+"- release:.............%s\n"
+"\n"
+"\n"
+msgstr ""
+"Файловая система:............%s\n"
+"Описание:...........%s\n"
+"Исходное устройство:.......%s\n"
+"Исходный путь:.... %s\n"
+"Флаги:.................%d: %s\n"
+"Дата создания:.........%sРазмер раздела:........%s\n"
+"Имя хоста:..............%s\n"
+"Поддерживаемая версия:....%s\n"
+"Алгоритм шифрования:..%d -> %s\n"
+"Количество сохранённых MBR:.......%u\n"
+"\n"
+"Инфо о системе:\n"
+"- компьютер:.............%s\n"
+"- операционная система:....%s\n"
+"- версия:.............%s\n"
+"\n"
+"\n"
+
+#: ../src/client/imginfo.cpp:112
+#, c-format
+msgid ""
+"-------------------- MBR %.3d -------------------\n"
+"Device:................%s\n"
+"Device blocks count:...%<PRIu64>\n"
+"Device model:..........%s\n"
+"\n"
+msgstr ""
+"-------------------- MBR %.3d -------------------\n"
+"Устройство:................%s\n"
+"Количество блоков:...%<PRIu64>\n"
+"Модель устройства:..........%s\n"
+"\n"
+
+#: ../src/client/imginfo.cpp:153
+#, c-format
+msgid ""
+"Volume number:.........%u\n"
+"Volume size:...........%s\n"
+"Compression level: ....%d -> %s\n"
+"Identificator:.........%<PRIu64>=%<PRIX64>\n"
+"\n"
+msgstr ""
+"Количество томов:.........%u\n"
+"Размер тома:...........%s\n"
+"Уровень сжатия: ....%d -> %s\n"
+"Идентификатор:.........%<PRIu64>=%<PRIX64>\n"
+"\n"
+
+#: ../src/client/imginfo.cpp:178
+#, c-format
+msgid "The image file \"%s\" cannot be found"
+msgstr "Файл-образ \"%s\" не найден"
+
+#: ../src/client/imginfo.cpp:199
+msgid "Cannot read image file"
+msgstr "Не удаётся прочитать файл-образ"
+
+#: ../src/client/imginfo.cpp:254
+msgid "Image informations"
+msgstr "Информация об образе"
+
+#: ../src/client/fs/fs_hpfs.cpp:148
+#, c-format
+msgid "%sHPFS version:.................%d\n"
+msgstr "%sВерсия HPFS:.................%d\n"
+
+#: ../src/client/fs/fs_hpfs.cpp:152
+msgid "HPFS informations"
+msgstr "Информация HPFS"
+
+#: ../src/client/fs/fs_hpfs.cpp:176
+msgid "Can't read boot block"
+msgstr "Невозможно прочитать загрузочный блок"
+
+#: ../src/client/fs/fs_hpfs.cpp:188
+msgid "Can't read super block"
+msgstr "Невозможно прочитать super block"
+
+#: ../src/client/fs/fs_hpfs.cpp:200
+msgid "Can't read spare block"
+msgstr "Невозможно прочитать резервный блок"
+
+#: ../src/client/fs/fs_hpfs.cpp:207
+msgid "Invalid HPFS magic numbers. Not a valid HPFS partition."
+msgstr ""
+
+#: ../src/client/fs/fs_base.cpp:84
+msgid "Exit partimage ?"
+msgstr "Завершить работу partimage?"
+
+#: ../src/client/fs/fs_base.cpp:84
+msgid "Do you really want to cancel the current operation ?"
+msgstr "Вы действительно хотите отменить текущую операцию?"
+
+#: ../src/client/fs/fs_base.cpp:350
+msgid "local check error"
+msgstr "ошибка локальной проверки"
+
+#: ../src/client/fs/fs_base.cpp:351
+msgid "Impossible to find a local check structure. Data may be damaged. Do you want to continue ?"
+msgstr "Невозможно найти схему локальной проверки. Данные могут быть повреждены. Хотите продолжить?"
+
+#: ../src/client/fs/fs_base.cpp:363
+#: ../src/client/fs/fs_base.cpp:375
+msgid "local CRC error"
+msgstr "ошибка локальной контрольной суммы"
+
+#: ../src/client/fs/fs_base.cpp:364
+msgid "There was a position error in CCheck. Data may be damaged. Do you want to continue ?"
+msgstr "Ошибка в CCheck. Данные могут быть повреждены. Хотите продолжить?"
+
+#: ../src/client/fs/fs_base.cpp:376
+msgid "There was a CRC error in CCheck. Data may be damaged. Do you want to continue ?"
+msgstr "Ошибка контрольной суммы в CCheck. Данные могут быть повреждены. Хотите продолжить?"
+
+#: ../src/client/fs/fs_base.cpp:477
+msgid "reading partition properties"
+msgstr "чтение свойств раздела"
+
+#: ../src/client/fs/fs_base.cpp:489
+msgid "checking the file system with fsck"
+msgstr "Проверка файловой системы с помощью fsck"
+
+#: ../src/client/fs/fs_base.cpp:511
+msgid "writing header"
+msgstr "запись заголовка"
+
+#: ../src/client/fs/fs_base.cpp:568
+#: ../src/client/fs/fs_base.cpp:706
+msgid "copying used data blocks"
+msgstr "Копирование блоков с данными"
+
+#: ../src/client/fs/fs_base.cpp:594
+msgid "reading partition informations"
+msgstr "чтение информации раздела"
+
+#: ../src/client/fs/fs_base.cpp:597
+msgid "reading header"
+msgstr "чтение заголовка"
+
+#: ../src/client/fs/fs_base.cpp:733
+#, c-format
+msgid ""
+"Block size....................%<PRIu64> bytes\n"
+"Total blocks count............%<PRIu64>\n"
+"Used blocks count.............%<PRIu64>\n"
+"Free blocks count.............%<PRIu64>\n"
+msgstr ""
+"Размер блока....................%<PRIu64> байт\n"
+"Всего блоков............%<PRIu64>\n"
+"Использовано.............%<PRIu64>\n"
+"Свободно.............%<PRIu64>\n"
+
+#: ../src/client/fs/fs_base.cpp:747
+#, c-format
+msgid ""
+"%sSpace usage:..................%<PRIu64> %%\n"
+"Used space....................%s\n"
+"Free space....................%s\n"
+"Bitmap size...................%s\n"
+"Label.........................%s\n"
+msgstr ""
+"%sИспользованное пространство:... %<PRIu64> %%\n"
+"Занято......................... %s\n"
+"Свободно....................... %s\n"
+"Размер Bitmap.................. %s\n"
+"Метка.......................... %s\n"
+
+#: ../src/client/fs/fs_ntfs.cpp:64
+#, c-format
+msgid "%s is not an NTFS file system partition"
+msgstr "%s не является разделом NTFS"
+
+#: ../src/client/fs/fs_ntfs.cpp:137
+#, c-format
+msgid "Out of memory: need %lu bytes to read file record in readBitmap()"
+msgstr "Недостаточно памяти: требуется %lu байтов для чтения записи в readBitmap()"
+
+#: ../src/client/fs/fs_ntfs.cpp:187
+msgid "Unable to read the $Bitmap MFT record. Do you want to make an experimental search for it ? (it can take a long time)"
+msgstr "Невозможно прочитать запись $Bitmap MFT (Главной таблицы файлов). Хотите попробовать найти её ? (процесс может занять длительное время)"
+
+#: ../src/client/fs/fs_ntfs.cpp:202
+msgid "Cannot find the $bitmap with experimental search"
+msgstr "Не удалось найти $bitmap"
+
+#: ../src/client/fs/fs_ntfs.cpp:214
+msgid "Cannot use $bitmap file record"
+msgstr "Не удаётся использовать запись $bitmap"
+
+#: ../src/client/fs/fs_ntfs.cpp:223
+msgid "NTFS $Bitmap is to small"
+msgstr "NTFS $Bitmap слишком мала"
+
+#: ../src/client/fs/fs_ntfs.cpp:311
+#, c-format
+msgid ""
+"%sBytes per sector..............%u\n"
+"Sectors per cluster...........%u\n"
+"File record size..............%u\n"
+"LCN of MFT Data attrib........%<PRIu64>\n"
+msgstr ""
+"%sБайтов в секторе..............%u\n"
+"Секторов в кластере...........%u\n"
+"Размер таблицы файлов..............%u\n"
+"LCN of MFT Data attrib........%<PRIu64>\n"
+
+#: ../src/client/fs/fs_ntfs.cpp:319
+msgid "NTFS informations"
+msgstr "Информация NTFS"
+
+#: ../src/client/fs/fs_ntfs.cpp:344
+#, c-format
+msgid "Out of memory: need %lu bytes to read file record in readVolumeLabel()"
+msgstr "Недостаточно памяти: необходимо %lu байтов для чтения записи в readVolumeLabel()"
+
+#: ../src/client/fs/fs_ntfs.cpp:447
+msgid "NTFS: \"Attribute List\" attribute is not yet supported."
+msgstr "NTFS: Атрибут \"Attribute List\" пока не поддерживается."
+
+#: ../src/client/fs/fs_ntfs.cpp:481
+#, c-format
+msgid "NTFS: Compression flag for DATA attribute not null: %ld"
+msgstr "NTFS: Флаг компрессии для атрибута DATA отличается от нуля: %ld"
+
+#: ../src/client/fs/fs_ntfs.cpp:496
+msgid "NTFS: Resident data attribute not supported"
+msgstr "NTFS: Резидентные атрибуты данных не поддерживаются"
+
+#: ../src/client/fs/fs_ntfs.cpp:509
+msgid "NTFS: processRunList() returned -1"
+msgstr "NTFS: processRunList() возвратил -1"
+
+#: ../src/client/fs/fs_ntfs.cpp:529
+msgid "Error in readFilenameAttribute"
+msgstr "Ошибка в readFilenameAttribute"
+
+#: ../src/client/fs/fs_ntfs.cpp:529
+msgid "The \"filename\" attribute must be resident !"
+msgstr "Атрибут \"filename\" должен быть резидентным !"
+
+#: ../src/client/fs/fs_ntfs.cpp:861
+msgid "$bitmap record search"
+msgstr "Поиск записи $bitmap"
+
+#: ../src/client/fs/fs_ntfs.cpp:861
+msgid "experimental search succeed"
+msgstr "поиск завершился успешно"
+
+#: ../src/client/fs/fs_ext2.cpp:105
+#, c-format
+msgid ""
+"%sNumber of groups..............%u\n"
+"First block...................%u\n"
+"Ext3fs journalization.........%s\n"
+"Sparse super block............%s\n"
+"Large files support...........%s\n"
+"File system revision..........%u\n"
+msgstr ""
+"%sКолчество групп................ %u\n"
+"Первый блок.................... %u\n"
+"Журналирование Ext3fs.......... %s\n"
+"Фрагментация super block....... %s\n"
+"Поддержка больших файлов....... %s\n"
+"Версия файловой системы........ %u\n"
+
+#: ../src/client/fs/fs_ext2.cpp:113
+#: ../src/client/fs/fs_ext2.cpp:114
+#: ../src/client/fs/fs_ext2.cpp:115
+msgid "yes"
+msgstr "да"
+
+#: ../src/client/fs/fs_ext2.cpp:113
+#: ../src/client/fs/fs_ext2.cpp:114
+#: ../src/client/fs/fs_ext2.cpp:115
+msgid "no"
+msgstr "нет"
+
+#: ../src/client/fs/fs_ext2.cpp:119
+msgid "Ext3fs informations"
+msgstr "Информация Ext3fs"
+
+#: ../src/client/fs/fs_ext2.cpp:121
+msgid "Ext2fs informations"
+msgstr "Информация Ext2fs"
+
+#: ../src/client/fs/fs_ext2.cpp:339
+#: ../src/client/fs/fs_afs.cpp:132
+msgid "There was an error while reading the bitmap"
+msgstr "Обнаружена ошибка чтения bitmap"
+
+#: ../src/client/fs/fs_fat.cpp:123
+#, c-format
+msgid ""
+"%sSector Size...................%u\n"
+"Sectors per cluster...........%u\n"
+"Reserved Sectors count........%u\n"
+"Root directory sectors........%u\n"
+"FAT tables count..............%u\n"
+"Total Sectors Count...........%u\n"
+"Sectors per FAT...............%u\n"
+"Clusters count:...............%u\n"
+"Used clusters.................%u\n"
+"Free clusters.................%u\n"
+"Damaged clusters..............%u\n"
+msgstr ""
+"%sРазмер сектора................. %u\n"
+"Секторов в кластере............ %u\n"
+"Резервных секторов............. %u\n"
+"Секторов в корневом каталоге... %u\n"
+"Количество FAT................. %u\n"
+"Всего секторов................. %u\n"
+"Секторов в FAT................. %u\n"
+"Количество кластеров:.......... %u\n"
+"Использовано кластеров......... %u\n"
+"Занято кластеров............... %u\n"
+"Поврежденных кластеров......... %u\n"
+
+#: ../src/client/fs/fs_fat.cpp:142
+msgid "FAT informations"
+msgstr "Информация FAT"
+
+#: ../src/client/fs/fs_fat.cpp:288
+msgid "Can't read boot sector"
+msgstr "Невозможно прочитать загрузочный сектор"
+
+#: ../src/client/fs/fs_fat.cpp:343
+msgid "m_cSectorsPerCluster can't be null. Check the partition to save is a FAT one."
+msgstr "m_cSectorsPerCluster не может быть нулевым. Проверьте раздел перед сохранением, если на нём файловая система FAT."
+
+#: ../src/client/fs/fs_fat.cpp:379
+msgid "Can't read FSInfo sector"
+msgstr "Невозможно прочитать FSInfo сектор"
+
+#: ../src/client/fs/fs_xfs.cpp:210
+#, c-format
+msgid ""
+"%sAllocation Group count:.......%u\n"
+"Blocks per Allocation Group...%u\n"
+"Allocation Group size:........%s\n"
+msgstr ""
+"%sКоличество Allocation Group (распределённых областей):.......%u\n"
+"Блоков а Allocation Group...%u\n"
+"Размер Allocation Group:........%s\n"
+
+#: ../src/client/fs/fs_xfs.cpp:217
+msgid "XFS informations"
+msgstr "Информация XFS"
+
+#: ../src/client/fs/fs_jfs.cpp:566
+msgid "JFS informations"
+msgstr "Информация JFS"
+
+#: ../src/client/fs/fs_reiser.cpp:113
+msgid "ReiserFS informations"
+msgstr "Информация ReiserFS"
+
+#: ../src/client/fs/fs_afs.cpp:287
+#, c-format
+msgid ""
+"%sAllocation groups count:......%u\n"
+"Byte order:...................%u\n"
+"Blocks per group:.............%u\n"
+"Boot loader size:.............%u blocks\n"
+msgstr ""
+"%sКоличество назначенных групп:......%u\n"
+"Порядок байтов:...................%u\n"
+"Блоков в группе:.............%u\n"
+"Размер загрузчика:.............%u blocks\n"
+
+#: ../src/client/fs/fs_afs.cpp:295
+msgid "AFS informations"
+msgstr "Информация AFS"
+
+#: ../src/client/fs/fs_ufs.cpp:215
+#, c-format
+msgid ""
+"%sCylinder groups count:........%u\n"
+"Cylinder group size:..........%s\n"
+"Basic blocks per CG:..........%u\n"
+"Basic block size:.............%u\n"
+"Data frags count:.............%<PRIu64>\n"
+msgstr ""
+"%sКоличество Cylinder groups (групп цилиндров):........%u\n"
+"Размер Cylinder group:..........%s\n"
+"Базовых блоков в CG:..........%u\n"
+"Размер базового блока:.............%u\n"
+"Количество Data:.............%<PRIu64>\n"
+
+#: ../src/client/fs/fs_ufs.cpp:225
+msgid "UFS informations"
+msgstr "Информация UFS"
+
+#: ../src/client/fs/fs_hfs.cpp:144
+#, c-format
+msgid ""
+"%sAllocation Group count:.......%<PRIu64>\n"
+"Blocks per Allocation Group...%u\n"
+"Allocation Group size:........%s\n"
+"First allocation block:.......%<PRIu64>\n"
+msgstr ""
+"%sКоличество Allocation Group (распределённых областей):.......%<PRIu64>\n"
+"Блоков а Allocation Group...%u\n"
+"Размер Allocation Group:........%s\n"
+"Первый распределённый блок:.......%<PRIu64>\n"
+
+#: ../src/client/fs/fs_hfs.cpp:152
+msgid "HFS informations"
+msgstr "Информация HFS"
+
+#: ../src/shared/common.cpp:78
+msgid "==== Partition Image: compilation options used ====\n"
+msgstr "==== Partition Image: параметры компиляции ====\n"
+
+#: ../src/shared/common.cpp:79
+#, c-format
+msgid ""
+"\n"
+"* Version is %s [%s].\n"
+msgstr ""
+"\n"
+"* Версия %s [%s].\n"
+
+#: ../src/shared/common.cpp:81
+msgid ""
+"\n"
+"* Supported file systems:\n"
+"  - "
+msgstr ""
+"\n"
+"* Поддерживаемые файловые системы:\n"
+"  - "
+
+#: ../src/shared/common.cpp:83
+msgid "\n"
+msgstr ""
+
+#: ../src/shared/common.cpp:86
+msgid "  - Ext2fs support: based on libext2fs library\n"
+msgstr "  - поддержка Ext2fs support: на основе библиотеки libext2fs\n"
+
+#: ../src/shared/common.cpp:88
+msgid "  - Ext2fs support: internal code\n"
+msgstr "  - поддержка Ext2fs: внутренний код\n"
+
+#: ../src/shared/common.cpp:91
+msgid ""
+"\n"
+"* Debug options:\n"
+msgstr ""
+"\n"
+"* Параметры отладки:\n"
+
+#: ../src/shared/common.cpp:94
+#, c-format
+msgid "  - PARTIMAGE_LOG=%s\n"
+msgstr ""
+
+#: ../src/shared/common.cpp:97
+#, c-format
+msgid "  - PARTIMAGED_LOG=%s\n"
+msgstr ""
+
+#: ../src/shared/common.cpp:101
+msgid "  - DEVEL ENABLED\n"
+msgstr ""
+
+#: ../src/shared/common.cpp:103
+msgid "  - DEVEL DISABLED\n"
+msgstr ""
+
+#: ../src/shared/common.cpp:106
+#, c-format
+msgid "  - DEFAULT_DEBUG_LEVEL=%d\n"
+msgstr ""
+
+#: ../src/shared/common.cpp:108
+#, c-format
+msgid "  - APPEND_PID=%s\n"
+msgstr ""
+
+#: ../src/shared/common.cpp:108
+msgid "true"
+msgstr ""
+
+#: ../src/shared/common.cpp:109
+msgid "false"
+msgstr ""
+
+#: ../src/shared/common.cpp:112
+msgid ""
+"\n"
+"* Other options:\n"
+msgstr ""
+"\n"
+"* Другие параметры:\n"
+
+#: ../src/shared/common.cpp:113
+#, c-format
+msgid "  - CURRENT_IMAGE_FORMAT=%s\n"
+msgstr ""
+
+#: ../src/shared/common.cpp:116
+msgid "  - USERS MUST LOGIN\n"
+msgstr ""
+
+#: ../src/shared/common.cpp:117
+#, c-format
+msgid "  - PARTIMAGED_USERS=%s\n"
+msgstr ""
+
+#: ../src/shared/common.cpp:119
+msgid "  - USERS DON'T LOGIN\n"
+msgstr ""
+
+#: ../src/shared/common.cpp:120
+msgid "  - PARTIMAGED_USERS not used\n"
+msgstr ""
+
+#: ../src/shared/common.cpp:123
+msgid "  - SSL ENABLED\n"
+msgstr ""
+
+#: ../src/shared/common.cpp:125
+msgid "  - SSL DISABLED\n"
+msgstr ""
+
+#: ../src/shared/common.cpp:128
+msgid "  - CHEUID ENABLED\n"
+msgstr ""
+
+#: ../src/shared/common.cpp:130
+msgid "  - CHEUID DISABLED\n"
+msgstr ""
+
+#: ../src/shared/common.cpp:274
+#, c-format
+msgid "%<PRId64> bytes"
+msgstr "%<PRId64> байтов"
+
+#: ../src/shared/common.cpp:279
+#, c-format
+msgid "%.2f KiB"
+msgstr "%.2f Кб"
+
+#: ../src/shared/common.cpp:284
+#, c-format
+msgid "%.2f MiB"
+msgstr "%.2f Мб"
+
+#: ../src/shared/common.cpp:289
+#, c-format
+msgid "%.2f GiB"
+msgstr "%.2f Гб"
+
+#: ../src/shared/common.cpp:294
+#, c-format
+msgid "%.2f TiB"
+msgstr "%.2f Тб"
+
+#: ../src/shared/common.cpp:313
+#, c-format
+msgid "%<PRId64>b"
+msgstr ""
+
+#: ../src/shared/common.cpp:318
+#, c-format
+msgid "%4.0fK"
+msgstr ""
+
+#: ../src/shared/common.cpp:323
+#, c-format
+msgid "%4.0fM"
+msgstr ""
+
+#: ../src/shared/common.cpp:328
+#, c-format
+msgid "%1.2fG"
+msgstr ""
+
+#: ../src/shared/common.cpp:333
+#, c-format
+msgid "%1.2fT"
+msgstr ""
+
+#: ../src/server/partimaged-main.cpp:117
+#, c-format
+msgid "Segmentation fault. Please report the bug and send the [%s] file to authors\n"
+msgstr "Ошибка сегментации. Составьте, пожалуйста, отчёт об ошибке и отправьте файл [%s] авторам\n"
+
+#: ../src/server/partimaged-main.cpp:128
+#, c-format
+msgid ""
+"Partition Image Daemon (http://www.partimage.org/) version %s\n"
+"---- distributed under the GPL 2 license (GNU General Public License) ----\n"
+"\n"
+"usage: partimaged [options]\n"
+"\n"
+"Options:\n"
+"* -h,  --help            show help\n"
+"* -v,  --version         show version\n"
+"* -d,  --dest            destination directory\n"
+"* -pX, --port=X          server's port listening (defaults to %d)\n"
+"* -D,  --daemon          start in daemon mode, not foreground\n"
+"* -i,  --compilinfo      show compilation options used\n"
+"* -r dir, --chroot dir   use chroot to improve security\n"
+"* -g, --debug=X          set the debug level to X (default: 1)\n"
+"* -L, --nologin          disable login from clients\n"
+"* -n, --nossl            disable SSL\n"
+msgstr ""
+"Демон Partition Image (http://www.partimage.org/) версия %s\n"
+"---- распространяется под лицензией GPL 2 (GNU General Public License) ----\n"
+"\n"
+"использование: partimaged [параметры]\n"
+"\n"
+"Параметры:\n"
+"* -h,  --help            показать справку\n"
+"* -v,  --version         показать версию\n"
+"* -d,  --dest            каталог назначения\n"
+"* -pX, --port=X          порт, прослушиваемый сервером (по умолчанию %d)\n"
+"* -D,  --daemon          запуск в режиме демона, не интерактивном\n"
+"* -i,  --compilinfo      показать параметры компиляции\n"
+"* -r dir, --chroot dir   использовать команду chroot для повышения безопасности\n"
+"* -g, --debug=X          установить уровень отладки в X (по умолчанию: 1)\n"
+"* -L, --nologin          отключить регистрацию клиентов при подключении\n"
+"* -n, --nossl            отключить SSL\n"
+
+#: ../src/server/partimaged-main.cpp:160
+#, c-format
+msgid "Impossible to open logfile %s: %s\n"
+msgstr "невозможно открыть файл журнала %s: %s\n"
+
+#: ../src/server/partimaged-main.cpp:162
+msgid "Fix this and retry.\n"
+msgstr "Исправьте это и попытайтесь ещё раз.\n"
+
+#: ../src/server/partimaged-main.cpp:183
+#, c-format
+msgid "impossible to find user \"%s\"\n"
+msgstr "не удалось найти пользователя \"%s\"\n"
+
+#: ../src/server/partimaged-main.cpp:184
+msgid "add it and retry\n"
+msgstr "Добавьте его и попытайтесь ещё раз\n"
+
+#: ../src/server/partimaged-main.cpp:187
+msgid ""
+"Warning: we couldn't changed euid because we weren't launched as root\n"
+"expect some access denied or troubles like this.\n"
+msgstr ""
+
+#: ../src/server/partimaged-main.cpp:237
+#, c-format
+msgid "Partition Image Daemon version %s+SSL\n"
+msgstr "Версия демона Partition Image %s+SSL\n"
+
+#: ../src/server/partimaged-main.cpp:239
+#, c-format
+msgid "Partition Image Daemon version %s\n"
+msgstr "Версия демона Partition Image %s\n"
+
+#: ../src/server/partimaged-main.cpp:241
+msgid "(distributed under the GNU GPL 2)\n"
+msgstr "(распространяется под лицензией GNU GPL 2)\n"
+
+#: ../src/server/partimaged-main.cpp:394
+msgid "Waiting for client ..."
+msgstr "Ожидание подключения клиента ..."
+
+#: ../src/server/partimaged-main.cpp:413
+msgid "too much client connected"
+msgstr "Подключено слишком много клиентов"
+
+#: ../src/server/partimaged.cpp:77
+msgid "waiting ..."
+msgstr "ожидание ..."
+
+#: ../src/server/partimaged.cpp:85
+msgid "error !"
+msgstr "ошибка !"
+
+#: ../src/server/partimaged.cpp:104
+msgid "getspace ..."
+msgstr "вычисление места ..."
+
+#: ../src/server/partimaged.cpp:118
+msgid "writing ..."
+msgstr "запись ..."
+
+#: ../src/server/partimaged.cpp:146
+msgid "opening for write ..."
+msgstr "открытие для записи ..."
+
+#: ../src/server/partimaged.cpp:157
+msgid "saving"
+msgstr "сохранено"
+
+#: ../src/server/partimaged.cpp:162
+msgid "reading ..."
+msgstr "чтение ..."
+
+#: ../src/server/partimaged.cpp:188
+msgid "closing ..."
+msgstr "закрытие ..."
+
+#: ../src/server/partimaged.cpp:200
+msgid "opening for read ..."
+msgstr "открытие для чтения ..."
+
+#: ../src/server/partimaged.cpp:201
+msgid "restoring"
+msgstr "восстановление"
+
+#: ../src/server/partimaged.cpp:382
+msgid "finished"
+msgstr "Завершено"
+
+#: ../src/server/partimaged-gui_newt.cpp:58
+#: ../src/server/partimaged-gui_newt.cpp:61
+#: ../src/server/partimaged-gui_newt.cpp:66
+#: ../src/server/partimaged-gui_newt.cpp:69
+msgid "Partimaged"
+msgstr ""
+
+#: ../src/server/partimaged-gui_newt.cpp:80
+msgid "Client #"
+msgstr "Клиент #"
+
+#: ../src/server/partimaged-gui_newt.cpp:81
+msgid "State"
+msgstr "Статус"
+
+#: ../src/server/partimaged-gui_newt.cpp:82
+msgid "Host"
+msgstr "Хост"
+
+#: ../src/server/partimaged-gui_newt.cpp:83
+msgid "Location"
+msgstr "Расположение"
+
+#: ../src/server/partimaged-gui_newt.cpp:84
+msgid "Size"
+msgstr "Размер"
+
+#: ../src/server/partimaged-gui_newt.cpp:106
+msgid "waiting"
+msgstr "ожидание"
+

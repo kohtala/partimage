@@ -1,0 +1,2422 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Partimage\n"
+"Report-Msgid-Bugs-To: partimage-debug@sourceforge.net\n"
+"POT-Creation-Date: 2010-02-19 20:26+0100\n"
+"PO-Revision-Date: 2007-03-28 18:52+0100\n"
+"Last-Translator: \n"
+"Language-Team: David García-Abad\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.8\n"
+"X-Poedit-Language: Basque\n"
+"X-Poedit-Country: SPAIN\n"
+
+#: src/client/cbitmap.cpp:85 src/client/fs/fs_ntfs.cpp:239
+#: src/client/fs/fs_ntfs.cpp:608
+msgid "Out of memory"
+msgstr ""
+
+#: src/client/fs/fs_afs.cpp:132 src/client/fs/fs_ext2.cpp:339
+msgid "There was an error while reading the bitmap"
+msgstr ""
+
+#: src/client/fs/fs_afs.cpp:287
+#, c-format
+msgid ""
+"%sAllocation groups count:......%u\n"
+"Byte order:...................%u\n"
+"Blocks per group:.............%u\n"
+"Boot loader size:.............%u blocks\n"
+msgstr ""
+
+#: src/client/fs/fs_afs.cpp:295
+#, fuzzy
+msgid "AFS informations"
+msgstr "Irudiari buruko informazioak"
+
+#: src/client/fs/fs_base.cpp:84
+#, fuzzy
+msgid "Exit partimage?"
+msgstr "Partimagetik irten?"
+
+#: src/client/fs/fs_base.cpp:84
+msgid "Do you really want to cancel the current operation?"
+msgstr ""
+
+#: src/client/fs/fs_base.cpp:350
+msgid "local check error"
+msgstr "CRC akats lokala"
+
+#: src/client/fs/fs_base.cpp:351
+msgid ""
+"Impossible to find a local check structure. Data may be damaged. Do you want "
+"to continue?"
+msgstr ""
+
+#: src/client/fs/fs_base.cpp:363 src/client/fs/fs_base.cpp:375
+msgid "local CRC error"
+msgstr "CRC akats lokala"
+
+#: src/client/fs/fs_base.cpp:364
+msgid ""
+"There was a position error in CCheck. Data may be damaged. Do you want to "
+"continue?"
+msgstr ""
+
+#: src/client/fs/fs_base.cpp:376
+msgid ""
+"There was a CRC error in CCheck. Data may be damaged. Do you want to "
+"continue?"
+msgstr ""
+
+#: src/client/fs/fs_base.cpp:477
+msgid "reading partition properties"
+msgstr ""
+
+#: src/client/fs/fs_base.cpp:489
+msgid "checking the file system with fsck"
+msgstr ""
+
+#: src/client/fs/fs_base.cpp:511
+msgid "writing header"
+msgstr "Goiburua idazten"
+
+#: src/client/fs/fs_base.cpp:568 src/client/fs/fs_base.cpp:706
+msgid "copying used data blocks"
+msgstr "erabilitako  datu blokeak kopiatzen"
+
+#: src/client/fs/fs_base.cpp:570
+msgid "File Name    Size     T:Elapsed/Estimated  Rate/min     Progress\n"
+msgstr ""
+
+#: src/client/fs/fs_base.cpp:594
+msgid "reading partition informations"
+msgstr ""
+
+#: src/client/fs/fs_base.cpp:597
+#, fuzzy
+msgid "reading header"
+msgstr "Goiburua idazten"
+
+#: src/client/fs/fs_base.cpp:708
+msgid "File name    Level    T:Elapsed/Estimated  Rate/min     Progress\n"
+msgstr ""
+
+#: src/client/fs/fs_base.cpp:733
+#, c-format
+msgid ""
+"Block size:...................%<PRIu64> bytes\n"
+"Total blocks count:...........%<PRIu64>\n"
+"Used blocks count:............%<PRIu64>\n"
+"Free blocks count:............%<PRIu64>\n"
+msgstr ""
+
+#: src/client/fs/fs_base.cpp:747
+#, c-format
+msgid ""
+"%sSpace usage:..................%<PRIu64> %%\n"
+"Used space:...................%s\n"
+"Free space:...................%s\n"
+"Bitmap size:..................%s\n"
+"Label:........................%s\n"
+msgstr ""
+
+#: src/client/fs/fs_ext2.cpp:105
+#, c-format
+msgid ""
+"%sNumber of groups:.............%u\n"
+"First block:..................%u\n"
+"Ext3fs journalization:........%s\n"
+"Sparse super block:...........%s\n"
+"Large files support:..........%s\n"
+"File system revision:.........%u\n"
+msgstr ""
+
+#: src/client/fs/fs_ext2.cpp:113 src/client/fs/fs_ext2.cpp:114
+#: src/client/fs/fs_ext2.cpp:115
+msgid "yes"
+msgstr "bai"
+
+#: src/client/fs/fs_ext2.cpp:113 src/client/fs/fs_ext2.cpp:114
+#: src/client/fs/fs_ext2.cpp:115
+msgid "no"
+msgstr "ez"
+
+#: src/client/fs/fs_ext2.cpp:119
+msgid "Ext3fs informations"
+msgstr ""
+
+#: src/client/fs/fs_ext2.cpp:121
+msgid "Ext2fs informations"
+msgstr ""
+
+#: src/client/fs/fs_fat.cpp:123
+#, c-format
+msgid ""
+"%sSector Size:..................%u\n"
+"Sectors per cluster:..........%u\n"
+"Reserved Sectors count:.......%u\n"
+"Root directory sectors:.......%u\n"
+"FAT tables count:.............%u\n"
+"Total Sectors Count:..........%u\n"
+"Sectors per FAT:..............%u\n"
+"Clusters count:...............%u\n"
+"Used clusters:................%u\n"
+"Free clusters:................%u\n"
+"Damaged clusters:.............%u\n"
+msgstr ""
+
+#: src/client/fs/fs_fat.cpp:142
+msgid "FAT informations"
+msgstr ""
+
+#: src/client/fs/fs_fat.cpp:288
+msgid "Can't read boot sector"
+msgstr ""
+
+#: src/client/fs/fs_fat.cpp:343
+msgid ""
+"The sectors per cluster number can't be null. Check the partition to verify "
+"it's a FAT one."
+msgstr ""
+
+#: src/client/fs/fs_fat.cpp:379
+#, fuzzy
+msgid "Can't read the filesystem information sector"
+msgstr "Ezin da detektatu %s partizioaren artxibo sistema"
+
+#: src/client/fs/fs_hfs.cpp:144
+#, c-format
+msgid ""
+"%sAllocation Group count:.......%<PRIu64>\n"
+"Blocks per Allocation Group:..%u\n"
+"Allocation Group size:........%s\n"
+"First allocation block:.......%<PRIu64>\n"
+msgstr ""
+
+#: src/client/fs/fs_hfs.cpp:152
+#, fuzzy
+msgid "HFS informations"
+msgstr "Irudiari buruko informazioak"
+
+#: src/client/fs/fs_hpfs.cpp:148
+#, c-format
+msgid "%sHPFS version:.................%d\n"
+msgstr ""
+
+#: src/client/fs/fs_hpfs.cpp:152
+msgid "HPFS informations"
+msgstr ""
+
+#: src/client/fs/fs_hpfs.cpp:176
+msgid "Can't read boot block"
+msgstr ""
+
+#: src/client/fs/fs_hpfs.cpp:188
+msgid "Can't read super block"
+msgstr ""
+
+#: src/client/fs/fs_hpfs.cpp:200
+msgid "Can't read spare block"
+msgstr ""
+
+#: src/client/fs/fs_hpfs.cpp:207
+msgid "Invalid HPFS magic numbers. Not a valid HPFS partition."
+msgstr ""
+
+#: src/client/fs/fs_jfs.cpp:566
+msgid "JFS informations"
+msgstr ""
+
+#: src/client/fs/fs_jfs.cpp:628 src/client/fs/fs_jfs.cpp:669
+#, fuzzy
+msgid "Error 1"
+msgstr "Errorea"
+
+#: src/client/fs/fs_ntfs.cpp:64
+#, c-format
+msgid "%s is not an NTFS file system partition"
+msgstr ""
+
+#: src/client/fs/fs_ntfs.cpp:137 src/client/fs/fs_ntfs.cpp:344
+#, c-format
+msgid "Out of memory: need %lu bytes to read file record"
+msgstr ""
+
+#: src/client/fs/fs_ntfs.cpp:187 src/client/interface_base.cpp:40
+#: src/client/interface_newt.cpp:149 src/client/misc.cpp:1922
+msgid "Error"
+msgstr "Errorea"
+
+#: src/client/fs/fs_ntfs.cpp:187
+msgid ""
+"Unable to read the $Bitmap MFT record. Do you want to make an experimental "
+"search for it? (it can take a long time)"
+msgstr ""
+
+#: src/client/fs/fs_ntfs.cpp:202
+msgid "Cannot find the $Bitmap with experimental search"
+msgstr ""
+
+#: src/client/fs/fs_ntfs.cpp:214
+#, fuzzy
+msgid "Cannot use $Bitmap file record"
+msgstr "Ezin da irudi artxiboa irakurri"
+
+#: src/client/fs/fs_ntfs.cpp:223
+msgid "NTFS $Bitmap is to small"
+msgstr ""
+
+#: src/client/fs/fs_ntfs.cpp:311
+#, c-format
+msgid ""
+"%sBytes per sector:.............%u\n"
+"Sectors per cluster:..........%u\n"
+"File record size:.............%u\n"
+"LCN of MFT Data attrib:.......%<PRIu64>\n"
+msgstr ""
+
+#: src/client/fs/fs_ntfs.cpp:319
+msgid "NTFS informations"
+msgstr ""
+
+#: src/client/fs/fs_ntfs.cpp:447
+msgid "NTFS: \"Attribute List\" attribute is not yet supported."
+msgstr ""
+
+#: src/client/fs/fs_ntfs.cpp:481
+#, c-format
+msgid "NTFS: Compression flag for DATA attribute not null: %ld"
+msgstr ""
+
+#: src/client/fs/fs_ntfs.cpp:496
+msgid "NTFS: Resident data attribute not supported"
+msgstr ""
+
+#: src/client/fs/fs_ntfs.cpp:509
+msgid "NTFS: processRunList() returned -1"
+msgstr ""
+
+#: src/client/fs/fs_ntfs.cpp:529
+msgid "Error in readFilenameAttribute"
+msgstr ""
+
+#: src/client/fs/fs_ntfs.cpp:529
+msgid "The \"filename\" attribute must be resident!"
+msgstr ""
+
+#: src/client/fs/fs_ntfs.cpp:861
+msgid "$Bitmap record search"
+msgstr ""
+
+#: src/client/fs/fs_ntfs.cpp:861
+msgid "experimental search succeed"
+msgstr ""
+
+#: src/client/fs/fs_reiser.cpp:113
+msgid "ReiserFS informations"
+msgstr ""
+
+#: src/client/fs/fs_ufs.cpp:215
+#, c-format
+msgid ""
+"%sCylinder groups count:........%u\n"
+"Cylinder group size:..........%s\n"
+"Basic blocks per CG:..........%u\n"
+"Basic block size:.............%u\n"
+"Data frags count:.............%<PRIu64>\n"
+msgstr ""
+
+#: src/client/fs/fs_ufs.cpp:225
+#, fuzzy
+msgid "UFS informations"
+msgstr "Irudiari buruko informazioak"
+
+#: src/client/fs/fs_xfs.cpp:210
+#, c-format
+msgid ""
+"%sAllocation Group count:.......%u\n"
+"Blocks per Allocation Group:..%u\n"
+"Allocation Group size:........%s\n"
+msgstr ""
+
+#: src/client/fs/fs_xfs.cpp:217
+msgid "XFS informations"
+msgstr ""
+
+#: src/client/gui_text.cpp:58
+msgid "Restore an MBR to the hard disk"
+msgstr "Berrezarri MBRa disko gogorrera"
+
+#: src/client/gui_text.cpp:61
+msgid "Disk with the MBR to restore"
+msgstr "Berrezarri beharreko MBR-a daukan diskoa"
+
+#: src/client/gui_text.cpp:64
+msgid "Original MBR to use"
+msgstr "Erabili beharreko jatorrizko MBRa"
+
+#: src/client/gui_text.cpp:67
+msgid "What to restore:"
+msgstr "Zer nahi duzu berrezarri:"
+
+#: src/client/gui_text.cpp:69
+msgid "The whole MBR"
+msgstr "MBR osoa"
+
+#: src/client/gui_text.cpp:70
+msgid "Only the boot loader"
+msgstr ""
+
+#: src/client/gui_text.cpp:71
+msgid "Only the primary partitions table"
+msgstr ""
+
+#: src/client/gui_text.cpp:171
+msgid "-extended-"
+msgstr ""
+
+#: src/client/gui_text.cpp:211 src/client/misc.cpp:1781
+#, c-format
+msgid ""
+"Cannot read \"/proc/partitions\" (%s). Then, you must use the command line "
+"to run Partition Image. Type \"partimage --help\" for help."
+msgstr ""
+"Ezin da \"/proc/partitions\" (%s) irakurri. Beraz, komando lerroa erabili "
+"behar duzu Partition Image exekutatzeko. Idatzi \"partimage --help\" "
+"laguntza ikusteko."
+
+#: src/client/gui_text.cpp:317
+msgid "Continue (F5)"
+msgstr "(F5) Jarraitu"
+
+#: src/client/gui_text.cpp:318 src/client/interface_newt.cpp:257
+msgid "Exit (F6)"
+msgstr "(F6) Irten"
+
+#: src/client/gui_text.cpp:319
+msgid "Main window (F7)"
+msgstr "(F7) Leiho nagusia"
+
+#: src/client/gui_text.cpp:329 src/client/gui_text.cpp:459
+msgid "save partition to image file"
+msgstr "Gorde partizioa irudi artxibo batera"
+
+#: src/client/gui_text.cpp:331
+msgid "Compression level"
+msgstr "Konpresio maila"
+
+#: src/client/gui_text.cpp:332
+msgid "None (very fast + very big file)"
+msgstr "Bat ere ez (oso arin + oso artxibo handia)"
+
+#: src/client/gui_text.cpp:333
+msgid "Gzip (.gz: medium speed + small image file)"
+msgstr ""
+
+#: src/client/gui_text.cpp:334
+#, fuzzy
+msgid "Bzip2 (.bz2: very slow + very small image file)"
+msgstr "Bat ere ez (oso arin + oso artxibo handia)"
+
+#: src/client/gui_text.cpp:336 src/client/gui_text.cpp:655
+msgid "Options"
+msgstr "Aukerak"
+
+#: src/client/gui_text.cpp:337
+msgid "Check partition before saving"
+msgstr "Egiaztatu partizioa gorde aurretik"
+
+#: src/client/gui_text.cpp:338
+msgid "Enter description"
+msgstr "Sartu deskribapen bat"
+
+#: src/client/gui_text.cpp:339
+msgid "Overwrite without prompt"
+msgstr "Gainidatzi galdetu gabe"
+
+#: src/client/gui_text.cpp:341
+msgid "Image split mode"
+msgstr "Irudi zatikatuaren modua"
+
+#: src/client/gui_text.cpp:342
+msgid "Automatic split (when no space left)"
+msgstr "Banaketa automatikoa (lekurik ez dagoenean)"
+
+#: src/client/gui_text.cpp:343
+msgid "Into files whose size is:............"
+msgstr ""
+
+#: src/client/gui_text.cpp:346
+msgid "MiB"
+msgstr ""
+
+#: src/client/gui_text.cpp:347
+msgid "Wait after each volume change"
+msgstr "Itxaron bolumen aldaketa bakoitzaren ondoren"
+
+#: src/client/gui_text.cpp:349 src/client/gui_text.cpp:660
+msgid "If finished successfully:"
+msgstr "Arrakastaz bukatzen bada:"
+
+#: src/client/gui_text.cpp:350 src/client/gui_text.cpp:661
+msgid "Wait"
+msgstr "Itxaron"
+
+#: src/client/gui_text.cpp:351 src/client/gui_text.cpp:662
+msgid "Halt"
+msgstr "Itzali"
+
+#: src/client/gui_text.cpp:352 src/client/gui_text.cpp:663
+msgid "Reboot"
+msgstr "Berrasi"
+
+#: src/client/gui_text.cpp:353 src/client/gui_text.cpp:664
+msgid "Quit"
+msgstr "Irten"
+
+#: src/client/gui_text.cpp:354
+msgid "Last"
+msgstr ""
+
+#: src/client/gui_text.cpp:462
+#, c-format
+msgid "Partition to save:...........%s"
+msgstr "Gorde beharreko partizioa:.........%s"
+
+#: src/client/gui_text.cpp:465
+#, fuzzy, c-format
+msgid "Size of the Partition:.......%s = %<PRIu64> bytes"
+msgstr "Partizioaren tamaina:.......%s=%llu byte"
+
+#: src/client/gui_text.cpp:468
+#, fuzzy, c-format
+msgid "Image file to create:........%s"
+msgstr "Sortu beharreko irdudi artxiboa.........%s"
+
+#: src/client/gui_text.cpp:474
+#, c-format
+msgid "Detected file system:........%s"
+msgstr "Detektatutako artxibo sistema:......%s"
+
+#: src/client/gui_text.cpp:480
+msgid "Compression level:...........None"
+msgstr "Konpresio maila:.............Bat ere ez"
+
+#: src/client/gui_text.cpp:483
+msgid "Compression level:...........gzip"
+msgstr "Konpresio maila:............gzip"
+
+#: src/client/gui_text.cpp:486
+msgid "Compression level:...........bzip2"
+msgstr "Konpresio maila:.............bzip2"
+
+#: src/client/gui_text.cpp:489
+msgid "Compression level:...........lzo"
+msgstr "Konpresio maila:.............Izo"
+
+#: src/client/gui_text.cpp:543
+#, c-format
+msgid "Time elapsed:................%s"
+msgstr "Iragandako denbora:.........%s"
+
+#: src/client/gui_text.cpp:546
+#, c-format
+msgid "Estimated time remaining:....%s"
+msgstr ""
+
+#: src/client/gui_text.cpp:551
+#, c-format
+msgid "Speed:.......................%s/min"
+msgstr "Abiadura:...................%s/min"
+
+#: src/client/gui_text.cpp:554
+#, c-format
+msgid "Data copied:.................%s / %s"
+msgstr "Kopiatutako datuak:.................%s / %s"
+
+#: src/client/gui_text.cpp:561 src/client/gui_text.cpp:838
+#, c-format
+msgid "T:%-s/%-s"
+msgstr ""
+
+#: src/client/gui_text.cpp:563 src/client/gui_text.cpp:840
+#, c-format
+msgid "R:%s/min"
+msgstr ""
+
+#: src/client/gui_text.cpp:565 src/client/gui_text.cpp:842
+#, c-format
+msgid "P:%3d%%"
+msgstr ""
+
+#: src/client/gui_text.cpp:604
+#, c-format
+msgid "Current image file:..........%s"
+msgstr "Erabilitako irudi artxiboa:...........%s"
+
+#: src/client/gui_text.cpp:609
+#, c-format
+msgid "Image file size:.............%s"
+msgstr "Irudi artxiboaren tamaina:...........%s"
+
+#: src/client/gui_text.cpp:613
+#, fuzzy, c-format
+msgid "Available space for image:...%s = %<PRIu64> bytes"
+msgstr "Irudirako libre dagoen lekua:.....%s = %llu bytes"
+
+#: src/client/gui_text.cpp:626 src/client/gui_text.cpp:627
+#: src/client/gui_text.cpp:632 src/client/gui_text.cpp:635
+#: src/client/gui_text.cpp:921 src/client/gui_text.cpp:922
+#: src/client/gui_text.cpp:928 src/client/gui_text.cpp:931
+#, c-format
+msgid "%-s"
+msgstr ""
+
+#: src/client/gui_text.cpp:638
+#, c-format
+msgid "%-12s S:%-s "
+msgstr ""
+
+#: src/client/gui_text.cpp:652 src/client/gui_text.cpp:731
+msgid "restore partition from image file"
+msgstr "Berrezarri partizioa irudi artxibo batetik"
+
+#: src/client/gui_text.cpp:657
+msgid "Erase free blocks with zero values"
+msgstr "Ezabatu libre dauden blokeak  zero balioekin."
+
+#: src/client/gui_text.cpp:658
+msgid "Simulation of the restoration (nothing is written)"
+msgstr "Berrezarpenaren simulazioa (ez da idazten)"
+
+#: src/client/gui_text.cpp:729
+msgid "simulate partition restoration from image file"
+msgstr "Simulatu partizioaren berrezarpena irudi artxibo batetik"
+
+#: src/client/gui_text.cpp:734
+#, c-format
+msgid "Partition to restore:.............%s"
+msgstr "Berrezarri beharreko partizioa:............%s"
+
+#: src/client/gui_text.cpp:737
+#, fuzzy, c-format
+msgid "Size of partition to restore:.....%s = %<PRIu64> bytes"
+msgstr "Berrezarri beharreko partizioaren tamaina:..........%s = %llu byte"
+
+#: src/client/gui_text.cpp:740
+#, fuzzy, c-format
+msgid "Image file to use:................%s"
+msgstr "Erabili beharreko irudi artxiboa.................%s"
+
+#: src/client/gui_text.cpp:743
+#, c-format
+msgid "File system:......................%s"
+msgstr "Artxibo sistema:..................%s"
+
+#: src/client/gui_text.cpp:748
+#, c-format
+msgid "Partition was on device:..........%s\n"
+msgstr ""
+
+#: src/client/gui_text.cpp:751
+#, c-format
+msgid "Image created on:.................%s\n"
+msgstr "Noiz sortu den irudia:......................%s \n"
+
+#: src/client/gui_text.cpp:754
+#, fuzzy, c-format
+msgid "Size of the original partition:...%s = %<PRIu64> bytes"
+msgstr "Jatorrizko partizoaren tamaina:...%s = %llu bytes"
+
+#: src/client/gui_text.cpp:821
+#, c-format
+msgid "Time elapsed:.....................%s"
+msgstr "Iragandako denbora:............%s"
+
+#: src/client/gui_text.cpp:824
+#, c-format
+msgid "Estimated time remaining:.........%s"
+msgstr "Falta den denbora (estimatua).........%s"
+
+#: src/client/gui_text.cpp:829
+#, c-format
+msgid "Speed:............................%s/min"
+msgstr "Abiadura:..................%s/min"
+
+#: src/client/gui_text.cpp:832
+#, c-format
+msgid "Data copied:......................%s / %s"
+msgstr "Kopiatutako datuak:..................%s / %s"
+
+#: src/client/gui_text.cpp:882
+#, c-format
+msgid "Current image file:...............%s"
+msgstr "Erabilitako irudi artxiboa:............%s"
+
+#: src/client/gui_text.cpp:890
+msgid "Compression level:................None\n"
+msgstr "Konpresio maila:....................Bat ere ez\n"
+
+#: src/client/gui_text.cpp:891
+#, fuzzy
+msgid "None"
+msgstr "Bat ere ez"
+
+#: src/client/gui_text.cpp:894
+msgid "Compression level:................gzip"
+msgstr "Konpresio maila:............gzip"
+
+#: src/client/gui_text.cpp:895
+msgid "gzip"
+msgstr ""
+
+#: src/client/gui_text.cpp:898
+msgid "Compression level:................bzip2"
+msgstr "Konpresio maila:...............bzip2"
+
+#: src/client/gui_text.cpp:899
+msgid "bzip2"
+msgstr ""
+
+#: src/client/gui_text.cpp:902
+msgid "Compression level:................lzo"
+msgstr "Konpresio maila:..........Izo"
+
+#: src/client/gui_text.cpp:903
+msgid "lzo"
+msgstr ""
+
+#: src/client/gui_text.cpp:907
+#, fuzzy, c-format
+msgid "Compression level:................%s"
+msgstr "Konpresio maila:..........Izo"
+
+#: src/client/gui_text.cpp:934
+#, c-format
+msgid "%-12s %-s "
+msgstr ""
+
+#: src/client/gui_text.cpp:955
+#, fuzzy
+msgid "(none)"
+msgstr "Bat ere ez"
+
+#: src/client/gui_text.cpp:956
+msgid "Change"
+msgstr "Aldaketa"
+
+#: src/client/gui_text.cpp:957 src/client/interface_newt.cpp:138
+#: src/client/interface_newt.cpp:149 src/client/interface_newt.cpp:166
+#: src/client/interface_newt.cpp:409 src/client/interface_newt.cpp:462
+#: src/client/interface_newt.cpp:629
+msgid "Cancel"
+msgstr "Ezeztatu"
+
+#: src/client/gui_text.cpp:959
+msgid "Enter new filename"
+msgstr "Sartu artxiboaren izen berria"
+
+#: src/client/gui_text.cpp:1003
+#, fuzzy, c-format
+msgid ""
+"The following image file already exist.\n"
+"Do you want to overwrite or change image filename?\n"
+"File: %s\n"
+"To change the filename, please enter a full path\n"
+"(location + filename) without volume number at the end, \n"
+"and press \"Change\""
+msgstr ""
+"Irudi artxiboa jada existitzen da\n"
+"Gainidatzi edo izena aldatu nahi duzu?\n"
+"Artxiboa: %s\n"
+"Artxiboaren izena aldatzeko, mesedez erabili path osoa\n"
+"(kokapena + artxiboaren izena) bukaeran bolumenaren zenbakia jarri gabe, \n"
+"eta sakatu \"Aldaketa\""
+
+#: src/client/gui_text.cpp:1008 src/client/interface_base.cpp:433
+msgid "Overwrite image?"
+msgstr "Irudia gainidatzi?"
+
+#: src/client/gui_text.cpp:1008
+msgid "Overwrite"
+msgstr "Gainidatzi"
+
+#: src/client/gui_text.cpp:1020
+#, fuzzy, c-format
+msgid ""
+"The following image file is locked.\n"
+"Do you want to wait and retry or change image filename?\n"
+"File: %s\n"
+"To change the filename, please enter a full path\n"
+"(location + filename) without volume number at the end, \n"
+"and press \"Change\""
+msgstr ""
+"Ondoko irudi artxiboa blokeatuta dago.\n"
+"Itxaron eta berriro saiatu edo irudi artxiboaren izena aldatu nahi duzu ?\n"
+"Artxiboa:%s\n"
+"Artxiboaren izena aldatzeko, mesedez erabili path osoa\n"
+"(kokapena + artxiboaren izena) bukaeran bolumenaren zenbakia jarri gabe, \n"
+"eta sakatu \"Aldaketa\""
+
+#: src/client/gui_text.cpp:1025
+#, fuzzy
+msgid "Image file locked"
+msgstr "Irudi artxiboa blokeatuta"
+
+#: src/client/gui_text.cpp:1025
+msgid "Retry"
+msgstr "Errepikatu"
+
+#: src/client/gui_text.cpp:1038
+#, c-format
+msgid ""
+"Unable to access to %s\n"
+"\n"
+"Please, enter another directory path (without filename):"
+msgstr ""
+
+#: src/client/gui_text.cpp:1041
+#, fuzzy
+msgid "Wrong path"
+msgstr "artxibo-bide okerra"
+
+#: src/client/imagefile.cpp:643
+msgid "Automatic mount"
+msgstr "Automatikoki muntatu"
+
+#: src/client/imagefile.cpp:644
+#, c-format
+msgid "Please, press \"ok\" to mount [%s] on [%s]"
+msgstr "Mesedez \"ok\" sakatu  [%s]  [%s] -n montatzeko"
+
+#: src/client/imagefile.cpp:1012
+msgid "Wrong volume inserted"
+msgstr ""
+
+#: src/client/imagefile.cpp:1013
+msgid "You will be prompted to remove this media and insert the right one"
+msgstr ""
+
+#: src/client/imagefile.cpp:1020
+#, c-format
+msgid ""
+"Can't read the following volume file:\n"
+"%s\n"
+"%s"
+msgstr ""
+"Ezin da ondoko bolumena irakurri:\n"
+"%s\n"
+"%s"
+
+#: src/client/imagefile.cpp:1022
+msgid "Enter another full path (directory & name)"
+msgstr "Beste path oso bat sartu (direktorioa eta izena)"
+
+#: src/client/imagefile.cpp:1023
+msgid "Volume not found"
+msgstr "Bolumen ez aurkitua"
+
+#: src/client/imginfo.cpp:67
+msgid "No flag set"
+msgstr ""
+
+#: src/client/imginfo.cpp:73
+msgid "No description"
+msgstr "Deskribapenik gabe"
+
+#: src/client/imginfo.cpp:79 src/client/imginfo.cpp:133
+msgid "none"
+msgstr "Bat ere ez"
+
+#: src/client/imginfo.cpp:83 src/client/imginfo.cpp:149
+msgid "unknown"
+msgstr "ezezaguna"
+
+#: src/client/imginfo.cpp:87
+#, c-format
+msgid ""
+"Filesystem:............%s\n"
+"Description:...........%s\n"
+"Original device:.......%s\n"
+"Original filepath:.... %s\n"
+"Flags:.................%d: %s\n"
+"Creation date:.........%sPartition size:........%s\n"
+"Hostname:..............%s\n"
+"Compatible Version:....%s\n"
+"Encryption algorithm:..%d -> %s\n"
+"MBR saved count:.......%u\n"
+"\n"
+"System of the backup:\n"
+"- machine:.............%s\n"
+"- operating system:....%s\n"
+"- release:.............%s\n"
+"\n"
+"\n"
+msgstr ""
+
+#: src/client/imginfo.cpp:112
+#, c-format
+msgid ""
+"-------------------- MBR %.3d -------------------\n"
+"Device:................%s\n"
+"Device blocks count:...%<PRIu64>\n"
+"Device model:..........%s\n"
+"\n"
+msgstr ""
+
+#: src/client/imginfo.cpp:153
+#, fuzzy, c-format
+msgid ""
+"Volume number:.........%u\n"
+"Volume size:...........%s\n"
+"Compression level: ....%d -> %s\n"
+"Identificator:.........%<PRIu64>=%<PRIX64>\n"
+"\n"
+msgstr ""
+"Bolumenaren zenbakia:.........%lu\n"
+"Bolumenaren tamaina:.........%s\n"
+"Konpresio maila:...........%ld -> %s\n"
+"Identifikatzailea:.................%llu=%llX\n"
+"\n"
+
+#: src/client/imginfo.cpp:178
+#, c-format
+msgid "The image file \"%s\" cannot be found"
+msgstr "\"%s\" irudi artxiboa ezin da aurkitu"
+
+#: src/client/imginfo.cpp:199
+msgid "Cannot read image file"
+msgstr "Ezin da irudi artxiboa irakurri"
+
+#: src/client/imginfo.cpp:254
+msgid "Image informations"
+msgstr "Irudiari buruko informazioak"
+
+#: src/client/interface_base.cpp:48
+#, c-format
+msgid "About Partition Image %s"
+msgstr "Partition Image-i buruz %s"
+
+#: src/client/interface_base.cpp:50
+#, c-format
+msgid ""
+"Partition Image is distributed under the GNU GPL 2 (General Public License)\n"
+"\n"
+"version:...%s\n"
+"web:.......http://www.partimage.org/\n"
+"\n"
+"Authors:\n"
+"Francois Dupoux  <fdupoux@partimage.org>\n"
+"Franck Ladurelle <ladurelf@partimage.org>"
+msgstr ""
+"Partition Image GNU GPL2 lizentziaren pean banatzen da ( General Public "
+"License)\n"
+"\n"
+"bertsioa:....%s\n"
+"web:.........http://www.partimage.org/\n"
+"\n"
+"Egileak:\n"
+"Fran?is Dupoux <fdupoux@partimage.org>\n"
+"Franck Ladurelle <ladurelf@partimage.org>"
+
+#: src/client/interface_base.cpp:61
+#, c-format
+msgid "Can't write block %ld to image"
+msgstr "Ezin da  %ld blokea irudira idatzi"
+
+#: src/client/interface_base.cpp:65
+#, c-format
+msgid "Can't write %s to image"
+msgstr "Ezin da %s idatzi irudira"
+
+#: src/client/interface_base.cpp:69
+#, c-format
+msgid "Can't write bitmap block %ld to image"
+msgstr ""
+
+#: src/client/interface_base.cpp:73
+#, c-format
+msgid "Can't read bitmap block %ld from image"
+msgstr ""
+
+#: src/client/interface_base.cpp:77
+#, c-format
+msgid "Can't write block %ld to harddrive"
+msgstr ""
+
+#: src/client/interface_base.cpp:81
+#, c-format
+msgid "Can't read block %ld from image (%d)"
+msgstr ""
+
+#: src/client/interface_base.cpp:85
+#, c-format
+msgid "Can't read %s from image"
+msgstr "Ezin da  %s irakurri iruditik"
+
+#: src/client/interface_base.cpp:89
+msgid "Can't read SuperBlock"
+msgstr "Ezin da Super Blokea irakurri"
+
+#: src/client/interface_base.cpp:93
+msgid "Can't write SuperBlock"
+msgstr "Ezin da Super Blokea idatzi"
+
+#: src/client/interface_base.cpp:97
+#, c-format
+msgid "Can't read block %ld from harddrive partition"
+msgstr ""
+
+#: src/client/interface_base.cpp:101
+#, c-format
+msgid "Can't read bitmap block %ld from harddrive partition (%s)"
+msgstr ""
+
+#: src/client/interface_base.cpp:106
+msgid "Can't write the MBR"
+msgstr "Ezin da MBR-a idatzi"
+
+#: src/client/interface_base.cpp:112
+msgid "Can't read the MBR"
+msgstr "Ezin da MBR-a irakurri"
+
+#: src/client/interface_base.cpp:118
+#, c-format
+msgid "Not a %s partition. Check the filesystem type"
+msgstr ""
+
+#: src/client/interface_base.cpp:124
+msgid ""
+"The partition was saved with a newer version of Partion Image. Please "
+"download the last one."
+msgstr ""
+
+#: src/client/interface_base.cpp:131
+msgid "Error while writing image file: disk full!"
+msgstr ""
+
+#: src/client/interface_base.cpp:137
+#, c-format
+msgid "Can't detect file system of partition %s"
+msgstr "Ezin da detektatu %s partizioaren artxibo sistema"
+
+#: src/client/interface_base.cpp:143
+msgid "Can't write main header"
+msgstr "Ezin da goiburu nagusia idatzi"
+
+#: src/client/interface_base.cpp:149
+msgid "Can't write main tail"
+msgstr ""
+
+#: src/client/interface_base.cpp:155
+msgid "Can't read main tail"
+msgstr ""
+
+#: src/client/interface_base.cpp:161
+msgid ""
+"The image you try to restore was encrypted. The current version doesn't "
+"support encryption. Please, download the latest version of partimage."
+msgstr ""
+
+#: src/client/interface_base.cpp:169
+#, c-format
+msgid ""
+"%s is not the first volume of an image. Please, retry with the volume number "
+"000"
+msgstr ""
+
+#: src/client/interface_base.cpp:176
+#, c-format
+msgid "%s is not a valid partition image file."
+msgstr "%s ez da partizio irudi artxibo baliozko bat"
+
+#: src/client/interface_base.cpp:182
+#, c-format
+msgid ""
+"The partition is to small to be restored:\n"
+"Original partition size:........%llu bytes\n"
+"Destination partition size:.....%llu bytes"
+msgstr ""
+"Partizioa oso txikia da berrezarria izateko:\n"
+"Jatorrizko partizioaren tamaina:...........%llu byte\n"
+"Helburu partizoaren tamaina:.........%llu byte"
+
+#: src/client/interface_base.cpp:190
+#, c-format
+msgid ""
+"There was an error while restoring partition:\n"
+"CRC64 are differents, the image file was damaged:\n"
+"Original CRC64:.....%llu\n"
+"Current CRC64:......%llu"
+msgstr ""
+
+#: src/client/interface_base.cpp:199
+#, c-format
+msgid "Invalid volume number (%ld instead of %ld)."
+msgstr ""
+
+#: src/client/interface_base.cpp:206
+msgid "Error on close"
+msgstr "Errorea ixterakoan"
+
+#: src/client/interface_base.cpp:213
+#, c-format
+msgid "The partition %s is already locked by another process. Can't work on it"
+msgstr ""
+
+#: src/client/interface_base.cpp:226
+#, c-format
+msgid "Can't open partition %s"
+msgstr "Ezin da %s partizioa ireki"
+
+#: src/client/interface_base.cpp:232
+#, c-format
+msgid "Can't lock partition %s"
+msgstr ""
+
+#: src/client/interface_base.cpp:238
+#, fuzzy
+msgid "Can't read main header: image file was damaged"
+msgstr "Ezin da irakurri goiburu nagusia: irudi artxiboa hondatuta dago"
+
+#: src/client/interface_base.cpp:244
+msgid "Can't write informations"
+msgstr "Ezin dira informazioak idatzi"
+
+#: src/client/interface_base.cpp:250
+msgid "Can't read informations"
+msgstr "Ezin dira informazioak irakurri"
+
+#: src/client/interface_base.cpp:256
+#, fuzzy
+msgid "Can't read MBR Magic: image file was damaged"
+msgstr "Ezin da irakurri goiburu nagusia: irudi artxiboa hondatuta dago"
+
+#: src/client/interface_base.cpp:278
+msgid "Known bug"
+msgstr ""
+
+#: src/client/interface_base.cpp:278
+msgid ""
+"Cannot restore the MBR from an image compressed with bzip2. You have to "
+"change the compression level."
+msgstr ""
+
+#: src/client/interface_base.cpp:288 src/client/interface_base.cpp:316
+#: src/client/interface_base.cpp:323 src/client/interface_base.cpp:330
+#: src/client/interface_base.cpp:338 src/client/interface_base.cpp:345
+#: src/client/interface_base.cpp:368 src/client/interface_base.cpp:388
+#: src/client/main.cpp:566 src/client/misc.cpp:1914
+msgid "Warning"
+msgstr "Kontuz"
+
+#: src/client/interface_base.cpp:288 src/client/misc.cpp:1914
+msgid ""
+"You are not logged as root. You may have \"access denied\" errors when "
+"working."
+msgstr ""
+
+#: src/client/interface_base.cpp:298
+msgid "New Volume"
+msgstr "Bolumen berria"
+
+#: src/client/interface_base.cpp:298
+#, c-format
+msgid ""
+"The volume has been changed.\n"
+"Old: %s\n"
+"New: %s/%s.%.3ld\n"
+"Press Enter to continue"
+msgstr ""
+
+#: src/client/interface_base.cpp:308
+msgid "Confirmation"
+msgstr "Baieztapena"
+
+#: src/client/interface_base.cpp:309
+#, c-format
+msgid "Do you really want to restore %s from the image file %s?"
+msgstr ""
+
+#: src/client/interface_base.cpp:317
+#, c-format
+msgid "%s found errors on the file system."
+msgstr ""
+
+#: src/client/interface_base.cpp:324
+#, c-format
+msgid "Partimage will not check partition because %s does't exist."
+msgstr ""
+
+#: src/client/interface_base.cpp:331
+#, c-format
+msgid "Partimage will not check partition because of run access denied for %s."
+msgstr ""
+
+#: src/client/interface_base.cpp:338
+#, c-format
+msgid "The current %s support is experimental!"
+msgstr ""
+
+#: src/client/interface_base.cpp:345
+#, c-format
+msgid "The current %s support is beta!"
+msgstr ""
+
+#: src/client/interface_base.cpp:353
+msgid "Simulation mode"
+msgstr "Simulazio modua"
+
+#: src/client/interface_base.cpp:353
+msgid "You are using simulation mode: no write will be performed"
+msgstr ""
+
+#: src/client/interface_base.cpp:369
+#, c-format
+msgid ""
+"The MBR is a very important data of the hard disk. If you write a bad MBR, "
+"you will lose all the partitions of your hard drive. Don't continue unless "
+"you know what you are doing. Press 'Continue' to restore.\n"
+"Device with MBR to restore:.........%s [%llu]\n"
+"Original MBR:.......................%s [%llu]"
+msgstr ""
+
+#: src/client/interface_base.cpp:389
+#, c-format
+msgid ""
+"The original hard disk does not fit with the current hard disk. The MBR you "
+"are trying to restore was saved from another hard disk. This means the "
+"original and current hard disks does not have the same size or they are not "
+"on the same device (%s and %s). Do you want to continue?"
+msgstr ""
+
+#: src/client/interface_base.cpp:399 src/client/main.cpp:839
+#: src/client/main.cpp:861
+msgid "Success"
+msgstr "Arrakasta"
+
+#: src/client/interface_base.cpp:399
+#, c-format
+msgid ""
+"The MBR of [%s] has been successfully restored. You might need to reboot "
+"your computer if you want the operating system to use the new MBR."
+msgstr ""
+
+#: src/client/interface_base.cpp:420 src/client/interface_base.cpp:430
+#, c-format
+msgid "Error: %s"
+msgstr "Errorea:%s"
+
+#: src/client/interface_base.cpp:427
+msgid "Action canceled as user required"
+msgstr "Eragiketa kantzelatua erabiltzaileak eskatu bezala"
+
+#: src/client/interface_base.cpp:433
+#, c-format
+msgid "The %s image file already exist. Do you want to overwrite it?"
+msgstr ""
+
+#: src/client/interface_base.cpp:440
+msgid "Access denied"
+msgstr "Atzipena debekatua"
+
+#: src/client/interface_base.cpp:440
+#, c-format
+msgid "You don't have write access on %s"
+msgstr ""
+
+#: src/client/interface_base.cpp:444
+#, c-format
+msgid "Invalid compression level for %s"
+msgstr "Konpresio maila  ez baliozkoa %s -rako"
+
+#: src/client/interface_base.cpp:448
+#, c-format
+msgid "image file %s is already open"
+msgstr ""
+
+#: src/client/interface_base.cpp:458
+#, c-format
+msgid "file %s is too short to be a partimage volume: can't read header"
+msgstr ""
+
+#: src/client/interface_base.cpp:468
+#, c-format
+msgid "file %s is not an partimage file: magic string does not match"
+msgstr ""
+
+#: src/client/interface_base.cpp:473
+#, c-format
+msgid "magic string does not match: error in the image file [%s]"
+msgstr ""
+
+#: src/client/interface_base.cpp:477
+msgid "the current volume doesn't fit with current image: wrong identificator"
+msgstr ""
+
+#: src/client/interface_base.cpp:482
+msgid "Out of memory."
+msgstr "Memoriatik kanpo"
+
+#: src/client/interface_base.cpp:486
+msgid "incorrect password or user not in partimagedusers file"
+msgstr ""
+
+#: src/client/interface_base.cpp:490
+msgid "Too many clients connected to partimaged. Please, retry later"
+msgstr ""
+
+#: src/client/interface_base.cpp:495
+#, c-format
+msgid ""
+"Only 4096 bytes per block %s volumes are supported. Current one is %lu bytes/"
+"block"
+msgstr ""
+
+#: src/client/interface_base.cpp:500
+#, c-format
+msgid ""
+"The partition %s id already locked by another process. You can't work on it"
+msgstr ""
+
+#: src/client/interface_base.cpp:509
+msgid ""
+"Error while checking the data: Invalid block number. Maybe a volume or some "
+"data were skipped."
+msgstr ""
+
+#: src/client/interface_base.cpp:514
+#, c-format
+msgid "This volume (%ld) is not the expected one: %ld."
+msgstr ""
+
+#: src/client/interface_base.cpp:519
+msgid ""
+"Hostname/IP Error!\n"
+"Perhaps the hostname could not be resolved. (Try again using IP address)"
+msgstr ""
+
+#: src/client/interface_base.cpp:526
+msgid "Problem with SSL. Ensure partimaged uses SSL"
+msgstr ""
+
+#: src/client/interface_base.cpp:530
+msgid "Problem with SSL. TLS/SSL initialization failed"
+msgstr ""
+
+#: src/client/interface_base.cpp:535
+#, c-format
+msgid "partimaged got trouble when loading SSL certificate %s"
+msgstr ""
+
+#: src/client/interface_base.cpp:540
+#, c-format
+msgid "partimaged got trouble when loading SSL keyfile %s"
+msgstr ""
+
+#: src/client/interface_base.cpp:544
+msgid "SSL error: private key doesn't match"
+msgstr ""
+
+#: src/client/interface_base.cpp:545
+msgid "the certificate public key"
+msgstr ""
+
+#: src/client/interface_base.cpp:559
+msgid "No MBR was found in this image file. We can't continue"
+msgstr ""
+
+#: src/client/interface_base.cpp:563
+msgid "Partition checks found error(s) on partitions"
+msgstr ""
+
+#: src/client/interface_base.cpp:578
+msgid "Impossible to read MBR from disk"
+msgstr ""
+
+#: src/client/interface_base.cpp:581
+#, c-format
+msgid "Invalid or damaged filesystem %s"
+msgstr ""
+
+#: src/client/interface_base.cpp:587
+#, c-format
+msgid "Impossible to zero the block on harddrive: %s"
+msgstr ""
+
+#: src/client/interface_base.cpp:591
+msgid ""
+"Connection refused by server: incompatibles networking options. Try "
+"disabling login option for server with '-L'"
+msgstr ""
+
+#: src/client/interface_base.cpp:596
+msgid "Connection refused by server: versions mismatch"
+msgstr ""
+
+#: src/client/interface_base.cpp:600
+#, c-format
+msgid ""
+"The image file was created by a newer release (%s) of Partition Image. "
+"Please update this software and retry."
+msgstr ""
+
+#: src/client/interface_base.cpp:605
+#, c-format
+msgid ""
+"The image file was created by an older release (%s) of Partition Image. You "
+"must use the old version to restore your image or you have to recreate it "
+"with current version"
+msgstr ""
+
+#: src/client/interface_base.cpp:612
+#, c-format
+msgid ""
+"%s is not a valid Partition Image file or it's damaged. Sorry, can't continue"
+msgstr ""
+
+#: src/client/interface_base.cpp:617
+#, c-format
+msgid "File %s is not a regular file. For security reasons, we can't continue"
+msgstr ""
+
+#: src/client/interface_base.cpp:622
+#, c-format
+msgid "Cannot mount %s"
+msgstr "Ezin da %s muntatu"
+
+#: src/client/interface_base.cpp:626
+#, c-format
+msgid "Cannot unmount %s"
+msgstr "Ezin da %s desmuntatu"
+
+#: src/client/interface_base.cpp:630
+#, c-format
+msgid ""
+"Cannot create temp file [%s]. Please, check there is space enough and you "
+"have access rights."
+msgstr ""
+
+#: src/client/interface_base.cpp:634
+#, c-format
+msgid "Cannot create temp file [%s]. No space left on device."
+msgstr ""
+
+#: src/client/interface_base.cpp:639
+#, c-format
+msgid ""
+"Cannot create temp file in [%s]. Write access is denied for user 'partimag'"
+msgstr ""
+
+#: src/client/interface_base.cpp:642
+#, c-format
+msgid "Cannot create temp file in [%s]. Write access is denied."
+msgstr ""
+
+#: src/client/interface_base.cpp:647
+msgid ""
+"File too large. (larger than 2 GiB). Can't continue. This problem can come "
+"from the kernel, the glibc, the file system which where the image is written"
+msgstr ""
+
+#: src/client/interface_base.cpp:651
+#, c-format
+msgid "Unknown error %d -> %s"
+msgstr "Errore ezezaguna %d -> %s"
+
+#: src/client/interface_newt.cpp:45
+msgid "Newt debug information"
+msgstr ""
+
+#: src/client/interface_newt.cpp:45 src/client/interface_newt.cpp:125
+#: src/client/interface_newt.cpp:376 src/client/interface_newt.cpp:408
+#: src/client/interface_newt.cpp:461 src/client/interface_newt.cpp:628
+msgid "Ok"
+msgstr "OK"
+
+#: src/client/interface_newt.cpp:99
+msgid "Please wait..."
+msgstr ""
+
+#: src/client/interface_newt.cpp:166
+msgid "Continue"
+msgstr "Jarraitu"
+
+#: src/client/interface_newt.cpp:189
+msgid "Yes"
+msgstr "Bai"
+
+#: src/client/interface_newt.cpp:189
+msgid "No"
+msgstr "Ez"
+
+#: src/client/interface_newt.cpp:206
+#, c-format
+msgid "%s [* to cancel, CtrlS to pause, CtrlQ to resume]"
+msgstr ""
+
+#: src/client/interface_newt.cpp:228
+msgid "* Partition to save/restore"
+msgstr "*Gorde/berrezarri behar den partizioa"
+
+#: src/client/interface_newt.cpp:230
+msgid "* Image file to create/use"
+msgstr "*Sortu/erabili beharreko irudi artxiboa"
+
+#: src/client/interface_newt.cpp:234
+msgid "Action to be done:"
+msgstr "Egin beharreko eragiketa:"
+
+#: src/client/interface_newt.cpp:235
+msgid "Save partition into a new image file"
+msgstr ""
+
+#: src/client/interface_newt.cpp:236
+msgid "Restore partition from an image file"
+msgstr ""
+
+#: src/client/interface_newt.cpp:237
+#, fuzzy
+msgid "Restore an MBR from the image file"
+msgstr "Berrezarri partizioa irudi artxibo batetik"
+
+#: src/client/interface_newt.cpp:239
+msgid "Connect to server"
+msgstr "Konektatu zerbitzariarekin"
+
+#: src/client/interface_newt.cpp:241
+msgid "Encrypt data on the network with SSL"
+msgstr ""
+
+#: src/client/interface_newt.cpp:244
+msgid "SSL disabled at compile time"
+msgstr ""
+
+#: src/client/interface_newt.cpp:246
+msgid "SSL&login disabled at compile time"
+msgstr ""
+
+#: src/client/interface_newt.cpp:249
+msgid "IP/name of the server:"
+msgstr ""
+
+#: src/client/interface_newt.cpp:251
+msgid "Port:"
+msgstr "Portua:"
+
+#: src/client/interface_newt.cpp:255
+msgid "Next (F5)"
+msgstr "(F5)Hurrengoa"
+
+#: src/client/interface_newt.cpp:256
+msgid "About"
+msgstr "Honi buruz"
+
+#: src/client/interface_newt.cpp:300
+msgid "The \"Image\" field is empty. Cannot continue"
+msgstr ""
+
+#: src/client/interface_newt.cpp:308
+msgid "The \"Server IP/Name\" field is empty. Cannot continue"
+msgstr ""
+
+#: src/client/interface_newt.cpp:314
+msgid "The \"Server Port\" field is not a valid integer. Cannot continue"
+msgstr ""
+
+#: src/client/interface_newt.cpp:372 src/client/misc.cpp:904
+msgid "Partition description"
+msgstr "Partizioaren deskribapena"
+
+#: src/client/interface_newt.cpp:374
+msgid "You can enter a description of the saved partition:"
+msgstr "Idatzi dezakezu gordetako partizoaren deskribapen bat:"
+
+#: src/client/interface_newt.cpp:426 src/client/interface_newt.cpp:482
+msgid "Text cannot be empty"
+msgstr ""
+
+#: src/client/interface_newt.cpp:451
+msgid "Password required"
+msgstr "Pasahitza behar da"
+
+#: src/client/interface_newt.cpp:454
+msgid "Enter your login"
+msgstr "Sartu zure logina"
+
+#: src/client/interface_newt.cpp:458
+msgid "Enter your password"
+msgstr "Sartu zure pasahitza"
+
+#: src/client/interface_newt.cpp:497
+#, c-format
+msgid ""
+"Disk full! Can't write next volume file (%s.%.3d)\n"
+"to %s\n"
+"Please, enter another directory path (without filename):"
+msgstr ""
+
+#: src/client/interface_newt.cpp:501
+msgid "New Volume location"
+msgstr "Bolumenaren kokapen berria"
+
+#: src/client/interface_newt.cpp:555
+#, c-format
+msgid "%6.2f GiB"
+msgstr ""
+
+#: src/client/interface_newt.cpp:560
+#, c-format
+msgid "%6.2f MiB"
+msgstr ""
+
+#: src/client/interface_newt.cpp:565
+#, c-format
+msgid "%7d Bytes"
+msgstr ""
+
+#: src/client/interface_newt.cpp:623
+msgid "Select path"
+msgstr ""
+
+#: src/client/interface_newt.cpp:632
+msgid "Create dir"
+msgstr ""
+
+#: src/client/interface_none.cpp:35
+#, c-format
+msgid "partimage: no equals in `%s'\n"
+msgstr ""
+
+#: src/client/interface_none.cpp:47
+msgid "partimage: invalid programmed response.\n"
+msgstr ""
+
+#: src/client/interface_none.cpp:66
+#, c-format
+msgid "partimage: %s (%s) no default\n"
+msgstr ""
+
+#: src/client/interface_none.cpp:78
+#, c-format
+msgid ""
+"partimage: %s [%s]\n"
+"partimage:  "
+msgstr ""
+
+#: src/client/interface_none.cpp:81
+#, c-format
+msgid "partimage:  => %s\n"
+msgstr ""
+
+#: src/client/interface_none.cpp:121
+#, c-format
+msgid "partimage: internal error: %s\n"
+msgstr ""
+
+#: src/client/interface_none.cpp:134
+#, c-format
+msgid "partimage: %s (%s) too long (>%lu)\n"
+msgstr ""
+
+#: src/client/interface_none.cpp:143
+#, c-format
+msgid "partimage: status: %s\n"
+msgstr ""
+
+#: src/client/interface_none.cpp:149
+#, fuzzy
+msgid "partimage: "
+msgstr "Partimagetik irten?"
+
+#: src/client/interface_none.cpp:151
+msgid " not supported in CInterfaceNone\n"
+msgstr ""
+
+#: src/client/main.cpp:264 src/client/misc.cpp:1949
+msgid "server's port must be between 1 and 65535\n"
+msgstr ""
+
+#: src/client/main.cpp:274
+msgid "Compression mode must be 0 (none), 1(gzip), 2(bzip2)\n"
+msgstr ""
+
+#: src/client/main.cpp:284
+msgid "Finish mode must be 0 (wait), 1(halt), 2(reboot) or 3(quit)\n"
+msgstr ""
+
+#: src/client/main.cpp:294
+msgid ""
+"The debug level must be 0(none), 1(user), 2(developer) or 3(debugging)\n"
+msgstr ""
+
+#: src/client/main.cpp:303
+#, c-format
+msgid "Volume size: %<PRIu64> bytes (%ld MiB)\n"
+msgstr ""
+
+#: src/client/main.cpp:333
+#, c-format
+msgid "Partition Image version %s (distributed under the GNU GPL2).\n"
+msgstr ""
+
+#: src/client/main.cpp:382
+msgid "Cannot open debug file.\n"
+msgstr ""
+
+#: src/client/main.cpp:567
+msgid ""
+"You have devfs enabled but not mounted. You have to do it to continue. You "
+"can also boot with non-devfs kernel if you have one."
+msgstr ""
+
+#: src/client/main.cpp:625
+#, c-format
+msgid "The file system of [%s] is [%s], and is not supported"
+msgstr ""
+
+#: src/client/main.cpp:758 src/client/main.cpp:773
+msgid "commiting buffer cache to disk."
+msgstr ""
+
+#: src/client/main.cpp:828
+msgid "The MBR was successfully restored"
+msgstr ""
+
+#: src/client/main.cpp:833 src/client/main.cpp:857
+msgid "Simulation"
+msgstr "Simulazioa"
+
+#: src/client/main.cpp:835 src/client/main.cpp:859
+msgid "Operation"
+msgstr "Erakigeta"
+
+#: src/client/main.cpp:850
+msgid "Error: Cannot halt the computer"
+msgstr ""
+
+#: src/client/main.cpp:867
+msgid "Error: Cannot reboot the computer"
+msgstr "Errorrea: Ezin da konputagailua berrasi"
+
+#: src/client/main.cpp:904 src/client/main.cpp:927 src/client/main.cpp:955
+msgid "Error: Cannot count remaining partimages"
+msgstr "Errorea: ezin dira zenbatu gelditzen diren partimageak"
+
+#: src/client/main.cpp:914
+#, fuzzy
+msgid "Error: Cannot create countfile"
+msgstr "Errorrea: Ezin da konputagailua berrasi"
+
+#: src/client/main.cpp:944
+msgid "DEBUG: reboot the computer"
+msgstr "DEBUG: berrasi konputagailua"
+
+#: src/client/main.cpp:985
+#, c-format
+msgid ""
+"Partition Image (http://www.partimage.org/) version %s [%s]\n"
+"---- distributed under the GPL 2 license (GNU General Public License) ----\n"
+"\n"
+"Supported file systems: Ext2/3, ReiserFS, FAT16/32, HPFS, JFS, XFS,\n"
+"                        UFS(beta), HFS(beta), NTFS(experimental)\n"
+"\n"
+"usage: partimage [options] <action> <device> <image_file>\n"
+"       partimage <imginfo/restmbr> <image_file>\n"
+"\n"
+"ex: partimage -z1 -o -d save /dev/hda12 /mnt/backup/redhat-6.2.partimg.gz\n"
+"ex: partimage restore /dev/hda13 /mnt/backup/suse-6.4.partimg\n"
+"ex: partimage restmbr /mnt/backup/debian-potato-2.2.partimg.bz2\n"
+"ex: partimage -z1 -om save /dev/hda9 /mnt/backup/win95-osr2.partimg.gz\n"
+"ex: partimage imginfo /mnt/backup/debian-potato-2.2.partimg.bz2\n"
+"ex: partimage -a/dev/hda6#/mnt/partimg#vfat -V1440 save /dev/hda12 /mnt/"
+"partimg/redhat-6.2.partimg.gz\n"
+"\n"
+"Arguments:\n"
+"* <action>:\n"
+"  - save: save the partition datas in an image file\n"
+"  - restore: restore the partition from an image file\n"
+"  - restmbr: restore a MBR of the image file to an hard disk\n"
+"  - imginfo: show informations about the image file\n"
+"* <device>: partition to save/restore (example: /dev/hda1)\n"
+"* <image_file>: file where data will be read/written. Can be very big.\n"
+"                For restore, <image_file> can have the value 'stdin'. This "
+"allows\n"
+"                for providing image files through a pipe.\n"
+"\n"
+"Options:\n"
+"* -z,  --compress      (image file compression level):\n"
+"  -z0, --compress=0    don't compress: very fast but very big image file\n"
+"  -z1, --compress=1    compress using gzip: fast and small image file "
+"(default)\n"
+"  -z2, --compress=2    compress using bzip2: very slow and very small image "
+"file:\n"
+"* -c,  --nocheck       don't check the partition before saving\n"
+"* -o,  --overwrite     overwrite the existing image file without "
+"confirmation\n"
+"* -d,  --nodesc        don't ask any description for the image file\n"
+"* -V,  --volume        (split image into multiple volumes files)\n"
+"  -VX, --volume=X      create volumes with a size of X MiB\n"
+"* -w,  --waitvol       wait for a confirmation after each volume change\n"
+"* -e,  --erase         erase empty blocks on restore with zero bytes\n"
+"* -m,  --allowmnt      don't fail if the partition is mounted. Dangerous!\n"
+"* -M,  --nombr         don't create a backup of the MBR (Mast Boot Record) "
+"in the image file\n"
+"* -h,  --help          show help\n"
+"* -v,  --version       show version\n"
+"* -i,  --compilinfo    show compilation options used\n"
+"* -f,  --finish        (action to do if finished successfully):\n"
+"  -f0, --finish=0      wait: don't make anything\n"
+"  -f1, --finish=1      halt: power off the computer\n"
+"  -f2, --finish=2      reboot: restart the computer\n"
+"  -f3, --finish=3      quit\n"
+"* -b,  --batch         batch mode: the GUI won't wait for an user action\n"
+"* -BX, --fully-batch=X batch mode without GUI, X is a challenge response "
+"string\n"
+"* -y,  --nosync        don't synchronize the disks at the end of the "
+"operation. Dangerous!\n"
+"* -sX, --server=X      give partimaged server's ip address\n"
+"* -pX, --port=X        give partimaged server's listening port\n"
+"* -g,  --debug=X       set the debug level to X (default: 1)\n"
+"* -L,  --nologin       disable login in network mode\n"
+"* -n,  --nossl         disable SSL in network mode\n"
+"* -S,  --simulate      simulation of restoration mode\n"
+"* -aX, --automnt=X     automatic mount with X options. Read the doc for more "
+"details\n"
+"* -UX  --username=X    username to authenticate to server\n"
+"* -PX  --password=X    password for authentication of user to server\n"
+msgstr ""
+
+#: src/client/main.cpp:1041
+msgid "stable"
+msgstr "Egonkorra"
+
+#: src/client/main.cpp:1041
+msgid "unstable"
+msgstr "Ezegonkorra"
+
+#: src/client/main.cpp:1052
+#, c-format
+msgid "Error: sizeof(DWORD) != 4 (%zd)\n"
+msgstr ""
+
+#: src/client/main.cpp:1058
+#, c-format
+msgid "Error: sizeof(QWORD) != 8 (%zd)\n"
+msgstr ""
+
+#: src/client/main.cpp:1067
+#, c-format
+msgid "Error: main header size != 16384 (%zd)\n"
+msgstr ""
+
+#: src/client/main.cpp:1075
+#, c-format
+msgid "Error: ext2 header size != %d (%zd)\n"
+msgstr ""
+
+#: src/client/main.cpp:1083
+#, c-format
+msgid "Error: reiserfs header size != %d (%zd)\n"
+msgstr ""
+
+#: src/client/main.cpp:1091
+#, c-format
+msgid "Error: fat header size != %d (%zd)\n"
+msgstr ""
+
+#: src/client/main.cpp:1099
+#, c-format
+msgid "Error: ntfs header size != %d (%zd)\n"
+msgstr ""
+
+#: src/client/main.cpp:1107
+#, c-format
+msgid "Error: hpfs header size != %d (%zd)\n"
+msgstr ""
+
+#: src/client/main.cpp:1115 src/client/main.cpp:1139
+#, c-format
+msgid "Error: jfs header size != %d (%zd)\n"
+msgstr ""
+
+#: src/client/main.cpp:1123
+#, c-format
+msgid "Error: xfs header size != %d (%zd)\n"
+msgstr ""
+
+#: src/client/main.cpp:1131
+#, c-format
+msgid "Error: hfs header size != %d (%zd)\n"
+msgstr ""
+
+#: src/client/main.cpp:1147
+#, c-format
+msgid "Error: main footer size != 16384 (%zd)\n"
+msgstr ""
+
+#: src/client/main.cpp:1155
+#, c-format
+msgid "Error: volume header size != 512 (%zd)\n"
+msgstr ""
+
+#: src/client/main.cpp:1163
+#, c-format
+msgid "Error: MBR size != 2048 (%zd)\n"
+msgstr ""
+
+#: src/client/main.cpp:1170
+#, c-format
+msgid "Error: local header size != 16384 (%zd)\n"
+msgstr ""
+
+#: src/client/main.cpp:1178
+msgid "This version has been compiled with an uncompatible version of gcc.\n"
+msgstr ""
+
+#: src/client/main.cpp:1200
+#, c-format
+msgid ""
+"%s  successfully finished:\n"
+"\n"
+"Time elapsed: %s\n"
+"Speed: %s/min\n"
+"Data copied: %s"
+msgstr ""
+
+#: src/client/misc.cpp:402
+#, fuzzy
+msgid "initializing the operation."
+msgstr "eragiketa hasieratzen"
+
+#: src/client/misc.cpp:445
+msgid "Bzip2 bug workaround"
+msgstr ""
+
+#: src/client/misc.cpp:446
+msgid ""
+"Because of a bug, you won't be able to restore MBR from any bzip2 compressed "
+"image unless you manualy run bzip2 -d on them"
+msgstr ""
+
+#: src/client/misc.cpp:547 src/client/misc.cpp:950
+#, c-format
+msgid "partimage: status: Partimage: %s\n"
+msgstr ""
+
+#: src/client/misc.cpp:549 src/client/misc.cpp:952
+msgid "partimage: status: Image type: NONE\n"
+msgstr ""
+
+#: src/client/misc.cpp:550 src/client/misc.cpp:954
+msgid "partimage: status: Image type: GZIP\n"
+msgstr ""
+
+#: src/client/misc.cpp:552 src/client/misc.cpp:956
+msgid "partimage: status: Image type: BZIP2\n"
+msgstr ""
+
+#: src/client/misc.cpp:554 src/client/misc.cpp:958
+msgid "partimage: status: Image type: LZO\n"
+msgstr ""
+
+#: src/client/misc.cpp:636
+msgid "Saving partition to the image file..."
+msgstr "Partizoa irudi artxibo batera gordetzen..."
+
+#: src/client/misc.cpp:752
+msgid "initializing the operation"
+msgstr "eragiketa hasieratzen"
+
+#: src/client/misc.cpp:960
+#, fuzzy
+msgid "Restoring partition from the image file..."
+msgstr "Partizoa irudi artxibo batera gordetzen..."
+
+#: src/client/misc.cpp:1058 src/client/misc.cpp:1072 src/client/misc.cpp:1082
+msgid "Error in Main Tail"
+msgstr ""
+
+#: src/client/misc.cpp:1059
+msgid "Impossible to read the magic: the image is damaged"
+msgstr "Ezin da \"magic\"-a irakurri: irudi artxiboa hondatuta dago"
+
+#: src/client/misc.cpp:1073
+msgid "CRC changed: the image is damaged"
+msgstr "CRC aldatua: irudia hondatuta dago"
+
+#: src/client/misc.cpp:1083
+msgid "volume numbers changed: the image is damaged"
+msgstr ""
+
+#: src/client/misc.cpp:1481
+#, fuzzy
+msgid "-unknown-"
+msgstr "ezezaguna"
+
+#: src/client/misc.cpp:1673
+msgid "inode missing"
+msgstr ""
+
+#: src/client/misc.cpp:1673
+#, c-format
+msgid ""
+"%s inode doesn't exists. Partimage can create it for you. You can also use "
+"the manual mknod command. Do you want this inode to be created for you now?"
+msgstr ""
+
+#: src/client/misc.cpp:1690
+#, c-format
+msgid "%s is not a block device."
+msgstr ""
+
+#: src/client/misc.cpp:1742
+msgid "You haven't access to /proc/mounts."
+msgstr ""
+
+#: src/client/misc.cpp:1748
+msgid "An error occurred trying to read /proc/mounts."
+msgstr ""
+
+#: src/client/misc.cpp:1922
+#, c-format
+msgid ""
+"The %s partition is mounted. Partition Image can't work on mounted "
+"partitions. Please, unmount it before. You can do it with \"umount %s\""
+msgstr ""
+
+#: src/client/misc.cpp:1942
+msgid ""
+"Split volumes size must be an integer greater than 1024 (size >= 1024 KiB)"
+msgstr ""
+
+#: src/client/misc.cpp:1962
+msgid "Invalid automount options. Read the manual for more details"
+msgstr ""
+
+#: src/client/misc.cpp:1970
+#, c-format
+msgid "The second argument [%s] must be a valid device (ex: /dev/hda1)"
+msgstr ""
+
+#: src/client/misc.cpp:1979
+#, c-format
+msgid ""
+"The third argument [%s] must be a valid regular file (not a directory, a "
+"symlink, ...)"
+msgstr ""
+
+#: src/server/netserver.cpp:65
+msgid "private key does not match the certificate public key\n"
+msgstr ""
+
+#: src/server/partimaged.cpp:77
+msgid "waiting ..."
+msgstr ""
+
+#: src/server/partimaged.cpp:85
+#, fuzzy
+msgid "error!"
+msgstr "Errorea"
+
+#: src/server/partimaged.cpp:86
+msgid "connection lost"
+msgstr ""
+
+#: src/server/partimaged.cpp:105
+msgid "getspace ..."
+msgstr ""
+
+#: src/server/partimaged.cpp:119
+#, fuzzy
+msgid "writing ..."
+msgstr "Goiburua idazten"
+
+#: src/server/partimaged.cpp:147
+msgid "opening for write ..."
+msgstr ""
+
+#: src/server/partimaged.cpp:158
+msgid "saving"
+msgstr ""
+
+#: src/server/partimaged.cpp:163
+msgid "reading ..."
+msgstr ""
+
+#: src/server/partimaged.cpp:189
+msgid "closing ..."
+msgstr ""
+
+#: src/server/partimaged.cpp:201
+msgid "opening for read ..."
+msgstr ""
+
+#: src/server/partimaged.cpp:202
+msgid "restoring"
+msgstr ""
+
+#: src/server/partimaged.cpp:383
+msgid "finished"
+msgstr ""
+
+#: src/server/partimaged-gui_newt.cpp:63 src/server/partimaged-gui_newt.cpp:66
+#: src/server/partimaged-gui_newt.cpp:71 src/server/partimaged-gui_newt.cpp:74
+msgid "Partimaged"
+msgstr ""
+
+#: src/server/partimaged-gui_newt.cpp:85
+msgid "Client #"
+msgstr ""
+
+#: src/server/partimaged-gui_newt.cpp:86
+msgid "State"
+msgstr ""
+
+#: src/server/partimaged-gui_newt.cpp:87
+msgid "Host"
+msgstr ""
+
+#: src/server/partimaged-gui_newt.cpp:88
+msgid "Location"
+msgstr ""
+
+#: src/server/partimaged-gui_newt.cpp:89
+msgid "Size"
+msgstr ""
+
+#: src/server/partimaged-gui_newt.cpp:111
+msgid "waiting"
+msgstr ""
+
+#: src/server/partimaged-gui_newt.cpp:201
+#, c-format
+msgid "%s [Press * to exit]"
+msgstr ""
+
+#: src/server/partimaged-main.cpp:120
+#, c-format
+msgid ""
+"Segmentation fault. Please report the bug and send the [%s] file to authors\n"
+msgstr ""
+
+#: src/server/partimaged-main.cpp:146
+#, c-format
+msgid ""
+"Partition Image Daemon (http://www.partimage.org/) version %s\n"
+"---- distributed under the GPL 2 license (GNU General Public License) ----\n"
+"\n"
+"usage: partimaged [options]\n"
+"\n"
+"Options:\n"
+"* -h,  --help            show help\n"
+"* -v,  --version         show version\n"
+"* -d,  --dest            destination directory\n"
+"* -pX, --port=X          server's port listening (defaults to %d)\n"
+"* -D,  --daemon          start in daemon mode, not foreground\n"
+"* -i,  --compilinfo      show compilation options used\n"
+"* -NX, --number=X        maximum number of clients (default: 15)\n"
+"* -r dir, --chroot dir   use chroot to improve security\n"
+"* -g, --debug=X          set the debug level to X (default: 1)\n"
+"* -L, --nologin          disable login from clients\n"
+"* -n, --nossl            disable SSL\n"
+msgstr ""
+
+#: src/server/partimaged-main.cpp:179
+#, c-format
+msgid "Impossible to open logfile %s: %s\n"
+msgstr ""
+
+#: src/server/partimaged-main.cpp:181
+msgid "Fix this and retry.\n"
+msgstr ""
+
+#: src/server/partimaged-main.cpp:202
+#, c-format
+msgid "impossible to find user \"%s\"\n"
+msgstr ""
+
+#: src/server/partimaged-main.cpp:203
+msgid "add it and retry\n"
+msgstr ""
+
+#: src/server/partimaged-main.cpp:266
+#, c-format
+msgid "Partition Image Daemon version %s+SSL\n"
+msgstr ""
+
+#: src/server/partimaged-main.cpp:268
+#, c-format
+msgid "Partition Image Daemon version %s\n"
+msgstr ""
+
+#: src/server/partimaged-main.cpp:270
+msgid "(distributed under the GNU GPL 2)\n"
+msgstr ""
+
+#: src/server/partimaged-main.cpp:280
+#, c-format
+msgid "Directory %s: %s\n"
+msgstr ""
+
+#: src/server/partimaged-main.cpp:321
+#, c-format
+msgid "failed to chdir to %s: %s\n"
+msgstr ""
+
+#: src/server/partimaged-main.cpp:330
+#, c-format
+msgid "failed to chroot: %s\n"
+msgstr ""
+
+#: src/server/partimaged-main.cpp:338
+#, c-format
+msgid "failed to chdir to /: %s\n"
+msgstr ""
+
+#: src/server/partimaged-main.cpp:427
+msgid "Waiting for client ..."
+msgstr ""
+
+#: src/server/partimaged-main.cpp:446
+msgid "too much client connected"
+msgstr ""
+
+#: src/server/partimaged-main.cpp:448
+msgid "partimaged: too much clients connected\n"
+msgstr ""
+
+#: src/server/partimaged-main.cpp:466
+msgid "connected"
+msgstr ""
+
+#: src/server/partimaged-main.cpp:474
+msgid "error !"
+msgstr ""
+
+#: src/server/partimaged-main.cpp:475
+#, fuzzy
+msgid "(wrong password)"
+msgstr "Sartu zure pasahitza"
+
+#: src/shared/access.cpp:305
+#, c-format
+msgid "error when verifying %s, check logfile for help\n"
+msgstr ""
+
+#: src/shared/access.cpp:307
+#, c-format
+msgid "logfile is %s\n"
+msgstr ""
+
+#: src/shared/access.cpp:308
+msgid "if you don't have logfile, use partimaged --debug=1\n"
+msgstr ""
+
+#: src/shared/common.cpp:78
+msgid "==== Partition Image: compilation options used ====\n"
+msgstr ""
+
+#: src/shared/common.cpp:79
+#, c-format
+msgid ""
+"\n"
+"* Version is %s [%s].\n"
+msgstr ""
+
+#: src/shared/common.cpp:81
+msgid ""
+"\n"
+"* Supported file systems:\n"
+"  - "
+msgstr ""
+
+#: src/shared/common.cpp:83
+msgid "\n"
+msgstr ""
+
+#: src/shared/common.cpp:86
+msgid "  - Ext2fs support: based on libext2fs library\n"
+msgstr ""
+
+#: src/shared/common.cpp:88
+msgid "  - Ext2fs support: internal code\n"
+msgstr ""
+
+#: src/shared/common.cpp:91
+msgid ""
+"\n"
+"* Debug options:\n"
+msgstr ""
+
+#: src/shared/common.cpp:94
+#, c-format
+msgid "  - PARTIMAGE_LOG=%s\n"
+msgstr ""
+
+#: src/shared/common.cpp:97
+#, c-format
+msgid "  - PARTIMAGED_LOG=%s\n"
+msgstr ""
+
+#: src/shared/common.cpp:101
+msgid "  - DEVEL ENABLED\n"
+msgstr ""
+
+#: src/shared/common.cpp:103
+msgid "  - DEVEL DISABLED\n"
+msgstr ""
+
+#: src/shared/common.cpp:106
+#, c-format
+msgid "  - DEFAULT_DEBUG_LEVEL=%d\n"
+msgstr ""
+
+#: src/shared/common.cpp:108
+#, c-format
+msgid "  - APPEND_PID=%s\n"
+msgstr ""
+
+#: src/shared/common.cpp:108
+msgid "true"
+msgstr ""
+
+#: src/shared/common.cpp:109
+msgid "false"
+msgstr ""
+
+#: src/shared/common.cpp:112
+msgid ""
+"\n"
+"* Other options:\n"
+msgstr ""
+
+#: src/shared/common.cpp:113
+#, c-format
+msgid "  - CURRENT_IMAGE_FORMAT=%s\n"
+msgstr ""
+
+#: src/shared/common.cpp:116
+msgid "  - USERS MUST LOGIN\n"
+msgstr ""
+
+#: src/shared/common.cpp:117
+#, c-format
+msgid "  - PARTIMAGED_USERS=%s\n"
+msgstr ""
+
+#: src/shared/common.cpp:119
+msgid "  - USERS DON'T LOGIN\n"
+msgstr ""
+
+#: src/shared/common.cpp:120
+msgid "  - PARTIMAGED_USERS not used\n"
+msgstr ""
+
+#: src/shared/common.cpp:123
+msgid "  - SSL ENABLED\n"
+msgstr ""
+
+#: src/shared/common.cpp:125
+msgid "  - SSL DISABLED\n"
+msgstr ""
+
+#: src/shared/common.cpp:128
+msgid "  - CHEUID ENABLED\n"
+msgstr ""
+
+#: src/shared/common.cpp:130
+msgid "  - CHEUID DISABLED\n"
+msgstr ""
+
+#: src/shared/common.cpp:274
+#, c-format
+msgid "%<PRId64> bytes"
+msgstr ""
+
+#: src/shared/common.cpp:279
+#, c-format
+msgid "%.2f KiB"
+msgstr ""
+
+#: src/shared/common.cpp:284
+#, c-format
+msgid "%.2f MiB"
+msgstr ""
+
+#: src/shared/common.cpp:289
+#, c-format
+msgid "%.2f GiB"
+msgstr ""
+
+#: src/shared/common.cpp:294
+#, c-format
+msgid "%.2f TiB"
+msgstr ""
+
+#: src/shared/common.cpp:313
+#, c-format
+msgid "%<PRId64> Bytes"
+msgstr ""
+
+#: src/shared/common.cpp:318
+#, c-format
+msgid "%4.0f KiB"
+msgstr ""
+
+#: src/shared/common.cpp:323
+#, c-format
+msgid "%4.0f MiB"
+msgstr ""
+
+#: src/shared/common.cpp:328
+#, c-format
+msgid "%1.2f GiB"
+msgstr ""
+
+#: src/shared/common.cpp:333
+#, c-format
+msgid "%1.2f TiB"
+msgstr ""
+
+#: src/shared/privs.cpp:63
+#, c-format
+msgid "Changing to user '%s' failed:\n"
+msgstr ""
+
+#: src/shared/privs.cpp:64
+#, c-format
+msgid "impossible to get user '%s' from /etc/passwd.\n"
+msgstr ""
+
+#: src/shared/privs.cpp:66
+#, c-format
+msgid "You must add '%s' to your password file.\n"
+msgstr ""
+
+#: src/shared/privs.cpp:67
+msgid "See: 'man adduser' or 'man useradd' for help.\n"
+msgstr ""
+
+#~ msgid "initializing the operation. Please wait..."
+#~ msgstr "eragiketa hasieratzen. Itxaron, mesedez..."
+
+#~ msgid "Can't read FSInfo sector"
+#~ msgstr "Ezin da FSInfo sektorea irakurri"
+
+#~ msgid "Kilo-Bytes"
+#~ msgstr "Kilo-Bytes"
+
+#, fuzzy
+#~ msgid "mount: %s"
+#~ msgstr "No se puede montar %s"
+
+#~ msgid "Overwrite image ?"
+#~ msgstr "¿Sobreescribir imagen ?"

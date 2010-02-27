@@ -1,0 +1,7 @@
+Instructions to make an official release:
+-----------------------------------------
+* ./autogen.sh
+* ./configure
+* (cd po; make update-po)
+* make distcheck
+
