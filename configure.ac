@@ -8,7 +8,7 @@ AC_REVISION([[$Revision: 1.4 $]])
 
 AC_PREREQ(2.59c)
 
-AC_INIT([partimage], [0.6.9_beta3])
+AC_INIT([partimage], [0.6.9_beta4])
 AC_DEFINE([PACKAGE_NETPROTOVER], "PiMgNet001", [Define the version of the network protocol])
 
 AC_CANONICAL_SYSTEM
