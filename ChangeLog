@@ -1,4 +1,4 @@
-0.6.9 (2010-03-01):
+0.6.9 (YYYY-MM-DD):
 - applied modifications by Vadim S. (vvs1@slackware.ru)
 - applied patch nvieville_server_closenowait_clients_number.patch from Nicolas Vieville
 - applied patch nvieville_filesel_NEWT_FLAG_SCROLL.patch from Nicolas Vieville

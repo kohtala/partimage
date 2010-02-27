@@ -1,6 +1,6 @@
 Begin3
 Title:          partimage 
-Version:        0.6.9_beta2
+Version:        0.6.9_beta3
 Entered-date:   27FEB2010
 Description:    saves used blocks of a partition to a compressed image file. It is very useful
                 to backup all data of a system. Then you can restore it on virus, crash, error...
