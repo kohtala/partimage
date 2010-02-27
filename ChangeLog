@@ -8,6 +8,7 @@
 - applied patches from Nicolas Vieville to improve internationalisation (mostly on partimaged)
 - applied patches from Nicolas Vieville to free ressources in netclient (fixes memory leaks)
 - applied patches from Nicolas Vieville to fix issues with openssl-1.0.0
+- allow different versions to connect as long as they use the same protocol and ssl/login options
 
 0.6.8 (2009-09-24):
 - applied ufs patch from Reyk Floeter the patch fixes UFS mode (tested with OpenBSD FFS1 partitions). 

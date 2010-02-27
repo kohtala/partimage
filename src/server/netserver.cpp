@@ -118,12 +118,12 @@ unsigned int CNetServer::AcceptClient()
   socklen_t len = sizeof(struct sockaddr_in);
   int sock;
   unsigned int client;
-  char * szBanner;
-  char * szClientBanner = (char *) malloc(BANNER_SIZE+1);
-  char * pos;
-  int n;
+  char *szBanner;
+  char szClientBanner[BANNER_SIZE+1];
   bool bMustLogin;
   bool bUseSSL;
+  char szError[1024];
+  int nError;
 
   BEGIN;
 
@@ -156,26 +156,28 @@ unsigned int CNetServer::AcceptClient()
   *(szClientBanner+BANNER_SIZE) = '\0';
   showDebug(1, "received banner for client %d: %s\n", client, szClientBanner);
 
-  if (strcmp(szBanner, szClientBanner))
+  if ((nError=CompareBanner(szBanner, szClientBanner, szError, sizeof(szError)))!=BANNERCMP_COMPAT)
     { // banners mismatch, client can't log on
       showDebug(3, "wrong banner received from %s:%d\n", 
          inet_ntoa(client_sa.sin_addr), ntohs(client_sa.sin_port));
       Send(client, "nack", 5);
-
-// return reason of refuse
-      pos = strchr(szBanner, ' ');
-      if (!pos)
-        Send(client, "1234567", 8); // useless but must be 8 caracters long
-      n = (pos-szBanner);
-      if (strncmp(szBanner, szClientBanner, n))
-        Send(client, "version", 8);
-      else
-        Send(client, "banners", 8);
+      // send reason of refuse
+      switch (nError)
+      {
+          case BANNERCMP_DIFFVER:
+             Send(client, "version", 8);
+             break;
+          case BANNERCMP_DIFFLOG:
+          case BANNERCMP_DIFFSSL:
+             Send(client, "banners", 8);
+             break;
+          default:
+             Send(client, "1234567", 8); // useless but must be 8 caracters long
+             break;
+      }
       Release(client);
       free(szBanner);
-      free(szClientBanner);
       szBanner = NULL;
-      szClientBanner = NULL;
       THROW(ERR_REFUSED);
     }
 
@@ -185,9 +187,7 @@ unsigned int CNetServer::AcceptClient()
       Send(client, "toomany", 8); 
       Release(client);
       free(szBanner);
-      free(szClientBanner);
       szBanner = NULL;
-      szClientBanner = NULL;
       THROW(ERR_TOOMANY);
     }
   
@@ -228,9 +228,7 @@ unsigned int CNetServer::AcceptClient()
   Clients->Set(client, sock, client_sa, ssl); 
 
   free(szBanner);
-  free(szClientBanner);
   szBanner = NULL;
-  szClientBanner = NULL;
   showDebug(9, "end\n");
   return client;
 }

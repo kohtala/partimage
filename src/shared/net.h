@@ -55,6 +55,8 @@
   #include <openssl/err.h>
 #endif
 
+enum {BANNERCMP_COMPAT=0, BANNERCMP_DIFFVER, BANNERCMP_DIFFLOG, BANNERCMP_DIFFSSL};
+
 class CNet
 {
 public:
@@ -71,6 +73,8 @@ public:
   size_t nRecvStr(CIdefRemote remote, const char * str, size_t len);
 
   char * Banner(bool bUseSSL, bool bMustLogin);
-};  
+  void CopyProtoVersion(char *szDestBufData, int nDestBufSize, char *szBanner);
+  bool CompareBanner(char *szBanner1, char *szBanner2, char *szErrorBufDat, int nErrorBufSize);
+};
 
 #endif // _NET_H_

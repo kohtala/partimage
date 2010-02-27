@@ -107,7 +107,7 @@ char * CNet::Banner(bool bUseSSL, bool bMustLogin)
   char * szBanner = (char *) malloc (BANNER_SIZE+1);
   memset(szBanner, ' ', BANNER_SIZE);
   *(szBanner+BANNER_SIZE) = '\0';
-  strcpy(szBanner, PACKAGE_VERSION);
+  strcpy(szBanner, PACKAGE_NETPROTOVER);
 #ifdef HAVE_SSL
   if (bUseSSL)
     { strcat(szBanner, " SSL"); }
@@ -120,4 +120,58 @@ char * CNet::Banner(bool bUseSSL, bool bMustLogin)
   showDebug(1, "generated banner: %s\n", szBanner);
   return szBanner;
 }
-  
+
+void CNet::CopyProtoVersion(char *szDestBufData, int nDestBufSize, char *szBanner)
+{
+    char szVersion[BANNER_SIZE];
+    int i;
+
+    // partimage versions compatible with network protocol "PiMgNet001"
+    const char *szCompatPiMgNet001[]={"0.6.7", "0.6.8", "0.6.9_beta1", "0.6.9_beta2", NULL};
+
+    memset(szVersion, 0, sizeof(szVersion));
+    for (i=0; (i<BANNER_SIZE) && (szBanner[i]!=0) && (szBanner[i]!=' '); i++)
+        szVersion[i]=szBanner[i];
+
+    snprintf(szDestBufData, nDestBufSize, "%s", szVersion);
+    for (i=0; szCompatPiMgNet001[i]!=NULL; i++)
+        if (strcmp(szVersion, szCompatPiMgNet001[i])==0)
+            snprintf(szDestBufData, nDestBufSize, "PiMgNet001");
+}
+
+bool CNet::CompareBanner(char *szBanner1, char *szBanner2, char *szErrorBufDat, int nErrorBufSize)
+{
+    char szVersion1[BANNER_SIZE];
+    char szVersion2[BANNER_SIZE];
+    bool bLogin1, bLogin2;
+    bool bSsl1, bSsl2;
+
+    memset(szErrorBufDat, 0, nErrorBufSize);
+    CopyProtoVersion(szVersion1, sizeof(szVersion1), szBanner1);
+    CopyProtoVersion(szVersion2, sizeof(szVersion2), szBanner2);
+
+    bLogin1=strstr(szBanner1, "LOG");
+    bLogin2=strstr(szBanner2, "LOG");
+    bSsl1=strstr(szBanner1, "SSL");
+    bSsl2=strstr(szBanner2, "SSL");
+
+    showDebug(3, "CompareBanner([%s], [%s]): ver1=[%s], ver2=[%s]\n", szBanner1, szBanner2, szVersion1, szVersion2);
+
+    if (strcmp(szVersion1, szVersion2)!=0) // versions differ
+    {
+        snprintf(szErrorBufDat, nErrorBufSize, "Client and server are using versions with incompatible protocols");
+        return BANNERCMP_DIFFVER;
+    }
+    if (bLogin1 != bLogin2)
+    {
+        snprintf(szErrorBufDat, nErrorBufSize, "Client and server are using different login options");
+        return BANNERCMP_DIFFLOG;
+    }
+    if (bSsl1 != bSsl2)
+    {
+        snprintf(szErrorBufDat, nErrorBufSize, "Client and server are using different ssl options");
+        return BANNERCMP_DIFFSSL;
+    }
+
+    return BANNERCMP_COMPAT; // banners are compatible
+}
