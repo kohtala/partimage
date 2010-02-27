@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: partimage 0.6.2\n"
 "Report-Msgid-Bugs-To: partimage-debug@sourceforge.net\n"
-"POT-Creation-Date: 2010-02-19 20:26+0100\n"
+"POT-Creation-Date: 2010-02-27 19:14+0100\n"
 "PO-Revision-Date: 2002-09-08 12:26GMT +2\n"
 "Last-Translator: Henri Westerberg <henkka@tr.spt.fi>\n"
 "Language-Team: Suomi <fi@li.org>\n"
@@ -2087,7 +2087,7 @@ msgstr ""
 #: src/client/main.cpp:1200
 #, fuzzy, c-format
 msgid ""
-"%s  successfully finished:\n"
+"%s successfully finished:\n"
 "\n"
 "Time elapsed: %s\n"
 "Speed: %s/min\n"
@@ -2240,7 +2240,7 @@ msgstr ""
 msgid "waiting ..."
 msgstr "Odotetaan:..."
 
-#: src/server/partimaged.cpp:85
+#: src/server/partimaged.cpp:85 src/server/partimaged-main.cpp:474
 #, fuzzy
 msgid "error!"
 msgstr "virhe !"
@@ -2345,9 +2345,9 @@ msgid ""
 "* -i,  --compilinfo      show compilation options used\n"
 "* -NX, --number=X        maximum number of clients (default: 15)\n"
 "* -r dir, --chroot dir   use chroot to improve security\n"
-"* -g, --debug=X          set the debug level to X (default: 1)\n"
-"* -L, --nologin          disable login from clients\n"
-"* -n, --nossl            disable SSL\n"
+"* -g,  --debug=X         set the debug level to X (default: 1)\n"
+"* -L,  --nologin         disable login from clients\n"
+"* -n,  --nossl           disable SSL\n"
 msgstr ""
 "Partition Image Daemon (http://www.partimage.org/) versio %s\n"
 "---- distributed under the GPL 2 license (GNU General Public License) ----\n"
@@ -2431,10 +2431,6 @@ msgstr "liikaa asiakkaita kytkeytyneenä"
 #: src/server/partimaged-main.cpp:466
 msgid "connected"
 msgstr ""
-
-#: src/server/partimaged-main.cpp:474
-msgid "error !"
-msgstr "virhe !"
 
 #: src/server/partimaged-main.cpp:475
 #, fuzzy
@@ -2646,6 +2642,9 @@ msgstr ""
 #: src/shared/privs.cpp:67
 msgid "See: 'man adduser' or 'man useradd' for help.\n"
 msgstr ""
+
+#~ msgid "error !"
+#~ msgstr "virhe !"
 
 #~ msgid "initializing the operation. Please wait..."
 #~ msgstr "aloitetaan toimintoa. Odota..."

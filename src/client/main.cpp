@@ -1197,7 +1197,7 @@ void formatOperationSucessMsg(char *szMsg, int nMaxLen, char *szOperation)
   fMinElapsed = ((float)timeElapsed) / 60.0;
   qwBytesPerMin = (QWORD) (((float)g_qwCopiedBytesCount) / fMinElapsed);
   
-  snprintf(szMsg, nMaxLen, i18n("%s  successfully finished:\n\n"
+  snprintf(szMsg, nMaxLen, i18n("%s successfully finished:\n\n"
                                 "Time elapsed: %s\n"
                                 "Speed: %s/min\n"
                                 "Data copied: %s"),

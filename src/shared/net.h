@@ -41,8 +41,8 @@
 #ifndef _NET_H_
 #define _NET_H_
 
-// banner format is "version( capability)+\0" 
-// for now, banner is in form "0.5.7 SSL LOG                   "
+// banner format is "protocol version( capability)+\0" 
+// for now, banner is in form "PiMgNet001 SSL LOG              "
 // true banner depends on configure options --disable-ssl, --disable-login
 #define BANNER_SIZE 32
 

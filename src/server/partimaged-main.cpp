@@ -155,9 +155,9 @@ void Usage()
 	       "* -i,  --compilinfo      show compilation options used\n"
            "* -NX, --number=X        maximum number of clients (default: 15)\n"
 	       "* -r dir, --chroot dir   use chroot to improve security\n"
-	       "* -g, --debug=X          set the debug level to X (default: 1)\n"
-               "* -L, --nologin          disable login from clients\n"
-               "* -n, --nossl            disable SSL\n"),
+	       "* -g,  --debug=X         set the debug level to X (default: 1)\n"
+	       "* -L,  --nologin         disable login from clients\n"
+	       "* -n,  --nossl           disable SSL\n"),
 	  PACKAGE_VERSION, SERVER_LISTEN_PORT);
   printf ("======================================================="
 	  "========================\n");
@@ -471,7 +471,7 @@ int main(int argc, char *argv[])
       nRes = g_Server->ValidatePass(client);
       if (nRes)
         {
-          g_Window->SetState(client, i18n("error !"));
+          g_Window->SetState(client, i18n("error!"));
           g_Window->SetLocation(client, i18n("(wrong password)"));
         }
       else
@@ -488,7 +488,7 @@ int main(int argc, char *argv[])
 			   // Store child process PID
 	           if (!g_Server->SetClientPid(client, rv))
 			     {
-			       showDebug(1, "Cannot store client PID for client : %d\n", client);
+			       showDebug(1, "Cannot store client PID for client: %d\n", client);
 				   
 				 }
             }

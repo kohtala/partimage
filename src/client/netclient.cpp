@@ -93,9 +93,9 @@ void CNetClient::Connect(char * adr, unsigned short int port)
       THROW(ERR_ERRNO, errno);
     }
 
-  showDebug(2, "connected, waitting for banner\n");
+  showDebug(2, "connected, waiting for banner\n");
 
-  IdfServer.Ssl = NULL; // desactive SSL until server allows it
+  IdfServer.Ssl = NULL; // deactivate SSL until server allows it
   Recv(szServerBanner, BANNER_SIZE+1); // +1 -> preserve endding \0
   showDebug(2, "Banner received: %s\n", szServerBanner);
 

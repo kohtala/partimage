@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: partimage 0.6.0\n"
 "Report-Msgid-Bugs-To: partimage-debug@sourceforge.net\n"
-"POT-Creation-Date: 2010-02-19 20:26+0100\n"
+"POT-Creation-Date: 2010-02-27 19:14+0100\n"
 "PO-Revision-Date: 2001-12-28 14:46+0100\n"
 "Last-Translator: Herman Bruyninckx <herman.bruyninckx@mech.kuleuven.ac.be>\n"
 "Language-Team: Dutch <nl@li.org>\n"
@@ -2412,7 +2412,7 @@ msgstr ""
 #: src/client/main.cpp:1200
 #, fuzzy, c-format
 msgid ""
-"%s  successfully finished:\n"
+"%s successfully finished:\n"
 "\n"
 "Time elapsed: %s\n"
 "Speed: %s/min\n"
@@ -2586,7 +2586,7 @@ msgid "waiting ..."
 msgstr "Aan het wachten ..."
 
 # src/server/partimaged.cpp:76
-#: src/server/partimaged.cpp:85
+#: src/server/partimaged.cpp:85 src/server/partimaged-main.cpp:474
 #, fuzzy
 msgid "error!"
 msgstr "error !"
@@ -2709,9 +2709,9 @@ msgid ""
 "* -i,  --compilinfo      show compilation options used\n"
 "* -NX, --number=X        maximum number of clients (default: 15)\n"
 "* -r dir, --chroot dir   use chroot to improve security\n"
-"* -g, --debug=X          set the debug level to X (default: 1)\n"
-"* -L, --nologin          disable login from clients\n"
-"* -n, --nossl            disable SSL\n"
+"* -g,  --debug=X         set the debug level to X (default: 1)\n"
+"* -L,  --nologin         disable login from clients\n"
+"* -n,  --nossl           disable SSL\n"
 msgstr ""
 "Partition Image Daemon (http://www.partimage.org/) versie %s\n"
 "---- verdeeld onder de GPL 2 licentie (GNU General Public License) ----\n"
@@ -2805,11 +2805,6 @@ msgstr "te veel clients verbonden"
 #: src/server/partimaged-main.cpp:466
 msgid "connected"
 msgstr ""
-
-# src/server/partimaged.cpp:76
-#: src/server/partimaged-main.cpp:474
-msgid "error !"
-msgstr "error !"
 
 # src/client/interface_newt.cpp:402
 #: src/server/partimaged-main.cpp:475
@@ -3058,6 +3053,10 @@ msgstr ""
 #: src/shared/privs.cpp:67
 msgid "See: 'man adduser' or 'man useradd' for help.\n"
 msgstr ""
+
+# src/server/partimaged.cpp:76
+#~ msgid "error !"
+#~ msgstr "error !"
 
 # src/client/misc.cpp:367
 #~ msgid "initializing the operation. Please wait..."

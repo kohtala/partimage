@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Partimage\n"
 "Report-Msgid-Bugs-To: partimage-debug@sourceforge.net\n"
-"POT-Creation-Date: 2010-02-19 20:26+0100\n"
+"POT-Creation-Date: 2010-02-27 19:14+0100\n"
 "PO-Revision-Date: 2001-08-12 18:51+0100\n"
 "Last-Translator: Marek L. Kozak <marko@terabajt.pl>\n"
 "Language-Team: Polonais <pl@li.org>\n"
@@ -1951,7 +1951,7 @@ msgstr ""
 #: src/client/main.cpp:1200
 #, c-format
 msgid ""
-"%s  successfully finished:\n"
+"%s successfully finished:\n"
 "\n"
 "Time elapsed: %s\n"
 "Speed: %s/min\n"
@@ -2089,7 +2089,7 @@ msgstr ""
 msgid "waiting ..."
 msgstr ""
 
-#: src/server/partimaged.cpp:85
+#: src/server/partimaged.cpp:85 src/server/partimaged-main.cpp:474
 #, fuzzy
 msgid "error!"
 msgstr "B³±d"
@@ -2191,9 +2191,9 @@ msgid ""
 "* -i,  --compilinfo      show compilation options used\n"
 "* -NX, --number=X        maximum number of clients (default: 15)\n"
 "* -r dir, --chroot dir   use chroot to improve security\n"
-"* -g, --debug=X          set the debug level to X (default: 1)\n"
-"* -L, --nologin          disable login from clients\n"
-"* -n, --nossl            disable SSL\n"
+"* -g,  --debug=X         set the debug level to X (default: 1)\n"
+"* -L,  --nologin         disable login from clients\n"
+"* -n,  --nossl           disable SSL\n"
 msgstr ""
 
 #: src/server/partimaged-main.cpp:179
@@ -2262,10 +2262,6 @@ msgstr ""
 
 #: src/server/partimaged-main.cpp:466
 msgid "connected"
-msgstr ""
-
-#: src/server/partimaged-main.cpp:474
-msgid "error !"
 msgstr ""
 
 #: src/server/partimaged-main.cpp:475
