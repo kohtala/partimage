@@ -126,6 +126,7 @@ unsigned int CheckAccess(bool bMustLogin, char * szLogin, char * szPasswd)
   int found;
   char * str = (char *) malloc (1024);
   char * ptr, * ptr2;
+  char *tmp;
   BEGIN;
 
   f = fopen(PARTIMAGED_USERS, "r");
@@ -138,7 +139,7 @@ unsigned int CheckAccess(bool bMustLogin, char * szLogin, char * szPasswd)
   found = 0;
   while (!feof(f))
     {
-      fgets(str, 1023, f);
+      tmp=fgets(str, 1023, f);
       while (str[strlen(str)-1] == '\n')
         str[strlen(str)-1] = '\0';
       ptr = strchr(str, '#');

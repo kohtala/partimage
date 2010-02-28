@@ -432,7 +432,7 @@ int CNtfsPart::readFileRecord(BYTE *cRecordData, CNtfsRunList *runlist, QWORD *q
   cData = cRecordData + nOffsetSequenceAttribute;
   
   showDebug(1, "\n\n=============== begin FILE RECORD ================\n");
-  fwrite(cRecordData, m_info.dwFileRecordSize, 1, g_fDebug);
+  nRes=fwrite(cRecordData, m_info.dwFileRecordSize, 1, g_fDebug);
   showDebug(1, "\n=============== end FILE RECORD ================\n\n\n");
   
   do
