@@ -76,7 +76,7 @@ void formatCompilOptions(char *szDest, int nMaxLen)
   memset(szDest, 0, nMaxLen);
 
   addText(i18n("==== Partition Image: compilation options used ====\n"));
-  addText(i18n("\n* Version is %s [%s].\n"), PACKAGE_VERSION, __VERSION__);
+  addText(i18n("\n* Version is %s [gcc %s].\n"), PACKAGE_VERSION, __VERSION__);
 
   addText(i18n("\n* Supported file systems:\n  - "));
   addText("%s", g_szSupportedFileSystems);
@@ -110,7 +110,8 @@ void formatCompilOptions(char *szDest, int nMaxLen)
 #endif
 
   addText(i18n("\n* Other options:\n"));
-  addText(i18n("  - CURRENT_IMAGE_FORMAT=%s\n"), CURRENT_IMAGE_FORMAT);
+  addText(i18n("  - CURRENT_IMAGE_FORMAT=%s (version of the image file format)\n"), CURRENT_IMAGE_FORMAT);
+  addText(i18n("  - PACKAGE_NETPROTOVER=%s (version of the network protocol)\n"), PACKAGE_NETPROTOVER);
 
 #ifdef MUST_LOGIN
   addText(i18n("  - USERS MUST LOGIN\n"));
