@@ -427,12 +427,13 @@ int CNtfsPart::readFileRecord(BYTE *cRecordData, CNtfsRunList *runlist, QWORD *q
   DWORD dwAttribLen;
   bool bAttribResident;
   int nRes;
+  size_t sRet __attribute__ ((unused)) ;
   
   nOffsetSequenceAttribute = NTFS_GETU16(cRecordData+0x14);
   cData = cRecordData + nOffsetSequenceAttribute;
   
   showDebug(1, "\n\n=============== begin FILE RECORD ================\n");
-  nRes=fwrite(cRecordData, m_info.dwFileRecordSize, 1, g_fDebug);
+  sRet = fwrite(cRecordData, m_info.dwFileRecordSize, 1, g_fDebug);
   showDebug(1, "\n=============== end FILE RECORD ================\n\n\n");
   
   do

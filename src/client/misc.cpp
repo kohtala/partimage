@@ -1736,7 +1736,7 @@ int isDevfsMounted()
 {
 	FILE *f;
 	char buf[256];
-	int nRes;
+	int nRes __attribute__ ((unused));
 
 	if (access("/proc/mounts",R_OK)==-1)
 	{
@@ -1752,7 +1752,7 @@ int isDevfsMounted()
 
 	while (!feof(f))
 	{
-		nRes=fscanf(f,"%255s",buf); *(buf+255)='\0';
+		nRes = fscanf(f,"%255s",buf); *(buf+255)='\0';
 		if (!strcmp(buf,"devfs"))
 		{
 			fclose(f);
@@ -2485,7 +2485,7 @@ void rest_all(char *szImageDir, COptions *options)
 
   char **sfdisk;
   unsigned int sfdisk_nb_lines = 0;
-  int nRes;
+  int nRes __attribute__ ((unused));
 
   char aux[MAXPATHLEN];
   CImage image(options);
@@ -2556,7 +2556,7 @@ void rest_all(char *szImageDir, COptions *options)
     } else if (strstr(sfdisk[i], "Id=82")) {
       SNPRINTF(aux, "mkswap %s >>" PARTIMAGE_LOG, device);
       showDebug(2, "%s\n", aux);
-      nRes=system(aux);
+      nRes = system(aux);
     }
     free(device);
   }
@@ -2593,7 +2593,7 @@ void save_file(char *szImageFile, COptions *options)
 void rest_file(char *szImageFile, COptions *options)
 {
   BEGIN;  
-  int nRes;
+  size_t stRet __attribute__ ((unused)) ;
 
   CImage image(options);
 
@@ -2604,7 +2604,7 @@ void rest_file(char *szImageFile, COptions *options)
     unsigned int len = read_unsigned(&image);
     char *s = (char *) malloc(len + 1);
     image.read(s, len, true);
-    nRes=fwrite(s, 1, len, stdout);
+    stRet = fwrite(s, 1, len, stdout);
     free(s);
     
     // since sfdisk.lst is not really nice to the library, we can't close the thread from procReadBufferFromImage which has already exited
