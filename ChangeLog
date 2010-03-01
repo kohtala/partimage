@@ -4,7 +4,7 @@
 - applied patch nvieville_filesel_NEWT_FLAG_SCROLL.patch from Nicolas Vieville
 - applied patch partimage-0.6.7-chown.patch from mandriva (on Makefile.am)
 - applied patch partimage-0.6.8-format-security.patch from mandriva
-- applied patches from Nicolas Vieville to fix compilation warnings with gcc-4.4
+- applied patches from Nicolas Vieville to fix compilation warnings with gcc-4.4 / glibc-2.10
 - applied patches from Nicolas Vieville to improve internationalisation (mostly on partimaged)
 - applied patches from Nicolas Vieville to free ressources in netclient (fixes memory leaks)
 - applied patches from Nicolas Vieville to fix issues with openssl-1.0.0

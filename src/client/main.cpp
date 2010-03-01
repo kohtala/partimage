@@ -151,6 +151,7 @@ int main(int argc, char *argv[])
 {
   int nRes;
   int nOptCh;
+  int iRet __attribute__ ((unused)) ;
   COptions options;
   int nChoice;
   char szDevice[MAX_DEVICENAMELEN];
@@ -366,7 +367,7 @@ int main(int argc, char *argv[])
       SNPRINTF(szAux, "%s", PARTIMAGE_LOG);
 #endif 
       unlink(szAux2);
-      nRes=symlink(szAux, szAux2);
+      iRet = symlink(szAux, szAux2);
       g_fDebug = openFileDescriptorSecure(szAux, "a", O_WRONLY | O_CREAT | O_NOFOLLOW | O_TRUNC, S_IRUSR | S_IWUSR);
 
       g_nDebugThreadMain = getpid();
@@ -927,7 +928,7 @@ int main(int argc, char *argv[])
 	      fprintf(stderr, i18n("Error: Cannot count remaining partimages"));
 	      return EXIT_SUCCESS;
 	    }
-	  nRes=fscanf(fCountFile, "%d\n", &nValue);
+	  iRet = fscanf(fCountFile, "%d\n", &nValue);
 	  showDebug(1, "RESTANT: %d\n", nValue);
 	  if (nValue <= 1)
  	    { // we are the last running partimage -> shutdown
