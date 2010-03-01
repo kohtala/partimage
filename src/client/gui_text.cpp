@@ -346,12 +346,12 @@ int CSaveOptWindow::create(char *szImageFile, COptions options)
   m_labelSplitSizeKB = newtLabel(52, 14, i18n("MiB"));
   m_checkSplitWait = newtCheckbox(1, 15, i18n("Wait after each volume change"), (!!options.bSplitWait ? 'X' : ' '), " X", NULL);
 
-  m_labelFinish = newtLabel(43, 7, i18n("If finished successfully:"));
-  m_radioFinishWait = newtRadiobutton(43, 8, i18n("Wait"), options.dwFinish == FINISH_WAIT, NULL);
-  m_radioFinishHalt = newtRadiobutton(43, 9, i18n("Halt"), options.dwFinish == FINISH_HALT, m_radioFinishWait);
-  m_radioFinishReboot = newtRadiobutton(43, 10, i18n("Reboot"), options.dwFinish == FINISH_REBOOT, m_radioFinishHalt);
-  m_radioFinishQuit = newtRadiobutton(43,11,i18n("Quit"), options.dwFinish == FINISH_QUIT, m_radioFinishReboot);
-  m_radioFinishLast = newtRadiobutton(43,12,i18n("Last"), options.dwFinish == FINISH_LAST, m_radioFinishQuit);
+  m_labelFinish = newtLabel(48, 7, i18n("If finished successfully:"));
+  m_radioFinishWait = newtRadiobutton(48, 8, i18n("Wait"), options.dwFinish == FINISH_WAIT, NULL);
+  m_radioFinishHalt = newtRadiobutton(48, 9, i18n("Halt"), options.dwFinish == FINISH_HALT, m_radioFinishWait);
+  m_radioFinishReboot = newtRadiobutton(48, 10, i18n("Reboot"), options.dwFinish == FINISH_REBOOT, m_radioFinishHalt);
+  m_radioFinishQuit = newtRadiobutton(48,11,i18n("Quit"), options.dwFinish == FINISH_QUIT, m_radioFinishReboot);
+  m_radioFinishLast = newtRadiobutton(48,12,i18n("Last"), options.dwFinish == FINISH_LAST, m_radioFinishQuit);
 
   addButtons();
   
