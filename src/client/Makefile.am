@@ -33,7 +33,7 @@ partimage_SOURCES =         \
     mbr_backup.cpp
 
 # all libs are added in LIBS, we needn't add them to partimage_LDADD 
-partimage_LDADD = -L$(libdir) -lslang fs/libfs.a ../shared/libshared.a
+partimage_LDADD = -lslang fs/libfs.a ../shared/libshared.a
 partimage_LDFLAGS = @PARTIMAGE_LDFLAGS@
 
 DEFS=@DEFS@ -DLOCALEDIR=\"${localedir}\" -D_REENTRANT -D_FILE_OFFSET_BITS=64

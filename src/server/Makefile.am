@@ -21,7 +21,7 @@ noinst_HEADERS = netserver.h partimaged-client.h partimaged-gui.h \
                  partimaged-gui_dummy.h partimaged-gui_newt.h partimaged.h
 
 #partimaged_LDADD = -L/usr/lib -lz -lbz2 -lnewt -lpthread -lcrypt -lslang -lcom_err -lext2fs ../shared/libshared.a
-partimaged_LDADD = -L$(libdir) -lslang ../shared/libshared.a
+partimaged_LDADD = -lslang ../shared/libshared.a
 
 partimaged_LDFLAGS = @PARTIMAGE_LDFLAGS@
 
