@@ -46,7 +46,7 @@ install-data-local:
           $(DESTDIR)${sysconfdir}/partimaged/partimagedusers ;\
 	echo -n "#add only users allowed to " >>  \
            $(DESTDIR)${sysconfdir}/partimaged/partimagedusers ;\
-	echo "connect partimaged" >> ${sysconfdir}/partimaged/partimagedusers ;\
+	echo "connect partimaged" >> $(DESTDIR)${sysconfdir}/partimaged/partimagedusers ;\
 	echo "# (only one login per line)" >> \
            $(DESTDIR)${sysconfdir}/partimaged/partimagedusers ;\
 	echo "" >> $(DESTDIR)${sysconfdir}/partimaged/partimagedusers ;\
