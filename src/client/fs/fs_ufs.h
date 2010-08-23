@@ -187,7 +187,7 @@ struct ufsSuperBlock
   ufs_daddr_t fs_dblkno;		/* offset of first data after cg */
   int32_t	 fs_cgoffset;		/* cylinder group offset in cylinder */
   int32_t	 fs_cgmask;		/* used to calc mod fs_ntrak */
-  time_t 	 fs_time;		/* last time written */
+  int32_t 	 fs_time;		/* last time written */
   int32_t	 fs_size;		/* number of blocks in fs */
   int32_t	 fs_dsize;		/* number of data blocks in fs */
   int32_t	 fs_ncg;		/* number of cylinder groups */
@@ -336,7 +336,7 @@ struct cylinderGroupHeader
 {
   int32_t	 cg_firstfield;		/* historic cyl groups linked list */
   int32_t	 cg_magic;		/* magic number */
-  time_t	 cg_time;		/* time last written */
+  int32_t	 cg_time;		/* time last written */
   int32_t	 cg_cgx;		/* we are the cgx'th cylinder group */
   int16_t	 cg_ncyl;		/* number of cyl's this cg */
   int16_t	 cg_niblk;		/* number of inode blocks this cg */
