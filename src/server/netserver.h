@@ -51,7 +51,7 @@ private:
 #endif
 
 public:
-  CNetServer(unsigned short int port);
+  CNetServer( uint32_t ip4_addr, unsigned short int port);
   ~CNetServer();
   unsigned int AcceptClient();
   char * GetPeer(unsigned int client);

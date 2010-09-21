@@ -26,7 +26,7 @@ extern bool g_bMustLogin;
 extern bool g_bUseSSL;
 
 // ================================================
-CNetServer::CNetServer(unsigned short int port):CNet()
+CNetServer::CNetServer( uint32_t ip4_addr, unsigned short int port):CNet()
 {
   int option = 1;
   BEGIN;
@@ -79,7 +79,12 @@ CNetServer::CNetServer(unsigned short int port):CNet()
   /* we want to reuse the (addr,port) -> SO_REUSEADDR */
   setsockopt(sock_listen, SOL_SOCKET, SO_REUSEADDR, &option, sizeof(int));
   local_sa.sin_family = AF_INET;
-  local_sa.sin_addr.s_addr = htonl(INADDR_ANY);
+
+  if ( ip4_addr )
+      local_sa.sin_addr.s_addr = ip4_addr ;
+  else
+      local_sa.sin_addr.s_addr = htonl(INADDR_ANY);
+
   local_sa.sin_port = htons(port);
 
   if (bind(sock_listen, (struct sockaddr *) &local_sa, sizeof(struct sockaddr_in)))

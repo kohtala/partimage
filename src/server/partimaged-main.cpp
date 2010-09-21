@@ -34,6 +34,12 @@
 #include <cstring>
 #include <sys/wait.h>
 
+#ifdef __linux__
+#include <net/if.h>
+#include <net/if_arp.h>
+#include <ifaddrs.h>
+#endif
+
 #include "net.h"
 #include "netserver.h"
 #include "messages.h"
@@ -79,11 +85,20 @@ static struct option const long_options[] =
   {"number", required_argument, NULL, 'N'},
   {"nologin", no_argument, NULL, 'L'},
   {"nossl", no_argument, NULL, 'n'},
+
+#ifdef __linux__
+  {"interface", required_argument, NULL, 'I' },
+#endif
+
   {NULL, 0, NULL, 0}
 };
 #endif //HAVE_GETOPT_H
 
-static char optstring[]="ip:hvDd:r:g:N:Ln"; 
+#ifdef __linux__
+static char optstring[]="ip:hvDd:r:g:N:LnI:"; 
+#else
+static char optstring[]="ip:hvDd:r:g:N:Ln";
+#endif
 
 bool g_bSigKill = false;
 bool g_bSigInt = false;
@@ -157,7 +172,10 @@ void Usage()
 	       "* -r dir, --chroot dir   use chroot to improve security\n"
 	       "* -g,  --debug=X         set the debug level to X (default: 1)\n"
 	       "* -L,  --nologin         disable login from clients\n"
-	       "* -n,  --nossl           disable SSL\n"),
+	       "* -n,  --nossl           disable SSL\n"
+#ifdef __linux__
+           "* -I,  --interface name  bind to network interface (defaults to any)\n"),
+#endif
 	  PACKAGE_VERSION, SERVER_LISTEN_PORT);
   printf ("======================================================="
 	  "========================\n");
@@ -219,8 +237,51 @@ void Initialize()
   if (!g_privs)
     exit(0);  
 }
+
+
+#ifdef __linux__
+// ==============================================================
+// Returns the network interface IPv4 address
+// Return 0 on error, 1 on success
+
+int get_iface_addr( struct sockaddr_in *ip_addr, char *name )
+{
+	struct ifaddrs *addrs, *iap;
+	struct sockaddr_in *sa;
+	int ret = 0 ;
+	
+	if ( name && ip_addr )
+	{
+		if ( getifaddrs( &addrs ) != -1 )
+		{
+			for( iap = addrs ; iap != NULL ; iap = iap->ifa_next ) 
+			{
+				if ( iap->ifa_addr && (iap->ifa_flags & IFF_UP) && ( iap->ifa_addr->sa_family == AF_INET ) )
+				{
+					sa = (struct sockaddr_in *)(iap->ifa_addr) ;
+					
+					if ( strlen( iap->ifa_name ) )
+					{
+						if ( ! strcmp( iap->ifa_name, name ) )
+						{
+							ip_addr->sin_addr.s_addr = sa->sin_addr.s_addr ;
+							ret = 1 ;
+							break ;
+						}
+					}
+				}
+			}
+			freeifaddrs( addrs );
+		}
+	}
+  
+	return ret ;
+}
+
+#endif
   
 // =======================================================
+
 int main(int argc, char *argv[])
 {
   unsigned int client;
@@ -228,6 +289,9 @@ int main(int argc, char *argv[])
   char * szRootDir = NULL;
   char * szPeerName;
   char szTemp[2048];
+  struct sockaddr_in server_addr ;
+
+  memset( &server_addr, 0, sizeof( struct sockaddr_in ) );
 
   // initialize language for i18n
   setlocale(LC_ALL, "");
@@ -306,6 +370,16 @@ int main(int argc, char *argv[])
           case 'n':  // no SSL
             g_bUseSSL = false;
             break;
+
+#ifdef __linux__        
+          case 'I': // Bind the daemon to this interface...
+            if ( ! get_iface_addr( &server_addr, optarg ) )
+            {
+               printf(i18n("Bad network interface name: %s\n"), optarg );
+               exit( -1 );
+            }
+            break;
+#endif
 
           default:
             break;
@@ -413,7 +487,7 @@ int main(int argc, char *argv[])
     }
       
   
-  try { g_Server = new CNetServer(nServerPort); }
+  try { g_Server = new CNetServer( server_addr.sin_addr.s_addr, nServerPort); }
   catch ( CExceptions * excep )
     {
       showDebug(1, "fatal error: get exception %d\n", excep->GetExcept());

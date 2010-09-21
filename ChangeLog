@@ -1,3 +1,6 @@
+0.6.10:
+- new option (-I) in partimaged to bind it to a network interface (Alfredo Andrés Omella)
+
 0.6.9 (2010-07-25):
 - applied modifications by Vadim S. (vvs1@slackware.ru)
 - applied patch nvieville_server_closenowait_clients_number.patch from Nicolas Vieville
