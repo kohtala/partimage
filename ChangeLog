@@ -1,5 +1,6 @@
 0.6.10:
 - new option (-I) in partimaged to bind it to a network interface (Alfredo Andrés Omella)
+- show Continue/Cancel message box if partimage cannot determine if partition is mounted (Nagy Elemer Karoly)
 
 0.6.9 (2010-07-25):
 - applied modifications by Vadim S. (vvs1@slackware.ru)

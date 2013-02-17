@@ -1903,6 +1903,7 @@ int systemChecks(char *szDevice, bool bFailIfMounted, char *szFullyBatchMode)
 {
   char szMountPoint[1024];
   int nRes;
+  int iMRV; // isMounted() Return Value
   
   // ----------- check for inode
   nRes = checkInodeForDevice(szDevice, szFullyBatchMode);
@@ -1918,10 +1919,15 @@ int systemChecks(char *szDevice, bool bFailIfMounted, char *szFullyBatchMode)
     }		
   
   // ----------- check the partition is not mounted
-  if ((bFailIfMounted == true) && (isMounted(szDevice, szMountPoint) != false))
+  if ((bFailIfMounted == true) && ((iMRV=isMounted(szDevice, szMountPoint)) != false))
     {
+      if (iMRV==-1) {
+        nRes = g_interface->msgBoxContinueCancel(i18n("Error"), i18n("Can not find out if %s partition is mounted or not. Backing up mounted partitions is dangerous and mostly pointless. "
+								   "Please, cancel unless you are very sure it is a good idea to continue."), szDevice);
+      } else {
       nRes = g_interface->msgBoxContinueCancel(i18n("Error"), i18n("The %s partition is mounted. Partition Image can't work on mounted partitions. "
 								   "Please, unmount it before. You can do it with \"umount %s\""), szDevice, szMountPoint);
+      }
       if (nRes == MSGBOX_CANCEL)
 	RETURN_int(-1);
     }	
