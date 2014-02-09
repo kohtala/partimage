@@ -41,7 +41,7 @@ class CImage
   COptions m_options;
 
   FILE *m_fImageFile;
-  gzFile *m_gzImageFile;
+  gzFile m_gzImageFile;
   BZFILE *m_bzImageFile;
 
   int m_nFdImage;

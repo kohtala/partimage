@@ -783,7 +783,7 @@ void CImage::openWriting()
   else if (m_options.dwCompression == COMPRESS_GZIP) // Gzip compression
     {
       showDebug(1, "open gzip\n");
-      m_gzImageFile = (gzFile *) gzdopen(m_nFdImage, "wb"); //"wb1h");
+      m_gzImageFile = gzdopen(m_nFdImage, "wb"); //"wb1h");
       if (m_gzImageFile == NULL)
 	{
 	  showDebug(1, "error:%d %s\n", errno, strerror(errno));
@@ -1098,7 +1098,7 @@ void CImage::openReading(CVolumeHeader *vh /* = NULL */)
     }
   else if (m_options.dwCompression == COMPRESS_GZIP) // Gzip compression
     {
-      m_gzImageFile = (gzFile *) gzdopen(m_nFdImage, "rb");
+      m_gzImageFile = gzdopen(m_nFdImage, "rb");
       if (m_gzImageFile == NULL)
         THROW(ERR_ERRNO, errno);
       else
