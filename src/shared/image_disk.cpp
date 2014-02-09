@@ -277,14 +277,16 @@ void CImageDisk::close() // [Main-Thread]
   
   unlockImageFile();
 
-  int nRes = 0;
   errno = 0;
 
   destroySpaceFile();
 
-  nRes = fclose(m_fImageFile);	
-  if (nRes)
-    THROW(ERR_ERRNO, errno);
+  if (m_fImageFile != stdin && m_fImageFile != stdout)
+    {
+      int nRes = fclose(m_fImageFile);
+      if (nRes)
+	THROW(ERR_ERRNO, errno);
+    }
 
   m_bIsOpened = false;
   
