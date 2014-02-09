@@ -206,7 +206,6 @@ void CExt2Part::readBitmap(COptions *options) // FULLY WORKING
   DWORD i, j;
   CExt2GroupDesc *desc;
   int nRes;
-  DWORD dwBlocksInThisGroup;
   DWORD dwBootBlocks;
   char *cTempBitmap;
   DWORD dwBit, dwByte;
@@ -263,11 +262,6 @@ void CExt2Part::readBitmap(COptions *options) // FULLY WORKING
   showDebug(1, "m_info.dwBlocksPerGroup = %lu\n", m_info.dwBlocksPerGroup);  
   for (i = 0; i < m_info.dwGroupsCount; i++) 
     {
-      if (m_info.dwFirstBlock+((i+1)*m_info.dwBlocksPerGroup) > m_info.dwTotalBlocksCount)
-	dwBlocksInThisGroup = (m_info.dwTotalBlocksCount-m_info.dwFirstBlock) - (i*m_info.dwBlocksPerGroup);
-      else
-	dwBlocksInThisGroup = m_info.dwBlocksPerGroup;
-
       if (Le32ToCpu(desc[i].bg_block_bitmap))
 	{
 	  // -- read the bitmap block

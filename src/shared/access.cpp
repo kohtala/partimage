@@ -140,6 +140,12 @@ unsigned int CheckAccess(bool bMustLogin, char * szLogin, char * szPasswd)
   while (!feof(f))
     {
       tmp = fgets(str, 1023, f);
+      if (!tmp)
+	{
+	  if (ferror(f))
+	    showDebug(1, "can't read: %d %s\n", errno, strerror(errno));
+	  break;
+	}
       while (str[strlen(str)-1] == '\n')
         str[strlen(str)-1] = '\0';
       ptr = strchr(str, '#');

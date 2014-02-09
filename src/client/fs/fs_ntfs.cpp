@@ -425,7 +425,6 @@ int CNtfsPart::readFileRecord(BYTE *cRecordData, CNtfsRunList *runlist, QWORD *q
   WORD nOffsetSequenceAttribute;
   DWORD dwAttribType;
   DWORD dwAttribLen;
-  bool bAttribResident;
   int nRes;
   size_t sRet __attribute__ ((unused)) ;
   
@@ -441,7 +440,6 @@ int CNtfsPart::readFileRecord(BYTE *cRecordData, CNtfsRunList *runlist, QWORD *q
       // szData points to the beginning of an attribute
       dwAttribType = NTFS_GETU32(cData);
       dwAttribLen = NTFS_GETU32(cData+4);
-      bAttribResident = (NTFS_GETU8(cData+8)==0);
       
       if(dwAttribType == 0x20) // "attribute list"
 	{
@@ -487,10 +485,10 @@ int CNtfsPart::readDataAttribute(BYTE *cAttribData, CNtfsRunList *runlist, QWORD
   if(bAttribResident)
     {
       // TODO: decode resident data
-      WORD nAttrSize;
+      /*WORD nAttrSize;
       BYTE *cDataResident;
       nAttrSize = NTFS_GETU16(cAttribData+0x10);
-      cDataResident = cAttribData+NTFS_GETU16(cAttribData+0x14);
+      cDataResident = cAttribData+NTFS_GETU16(cAttribData+0x14);*/
       /*WORD nOffsetOfStream;
 	nOffsetOfStream=NTFS_GETU16(cAttribData+0x14);
 	qwDataSize = (QWORD) NTFS_GETU16(cAttribData+0x10);*/
@@ -756,7 +754,6 @@ int CNtfsPart::checkFilenameForRecordIs(BYTE *cRecordData, const char *szFilenam
   WORD nOffsetSequenceAttribute;
   DWORD dwAttribType;
   DWORD dwAttribLen;
-  bool bAttribResident;
   int nRes;
   
   nOffsetSequenceAttribute = NTFS_GETU16(cRecordData+0x14);
@@ -775,7 +772,6 @@ int CNtfsPart::checkFilenameForRecordIs(BYTE *cRecordData, const char *szFilenam
       // szData points to the beginning of an attribute
       dwAttribType = NTFS_GETU32(cData);
       dwAttribLen = NTFS_GETU32(cData+4);
-      bAttribResident = (NTFS_GETU8(cData+8)==0);
       
       if(dwAttribType == 0x30) // "filename"
 	{

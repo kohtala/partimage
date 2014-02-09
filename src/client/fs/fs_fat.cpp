@@ -55,7 +55,6 @@ void CFatPart::compareFatCopies()
 {	
   BEGIN;
 
-  int nResult;
   int nRes;
   DWORD dwReservedBytes;
   const DWORD dwBufSize = 256*1024;
@@ -70,7 +69,6 @@ void CFatPart::compareFatCopies()
     RETURN;
 
   // init
-  nResult = 0;
   dwReservedBytes = m_info.wReservedSectorsCount * m_info.wBytesPerSector;
   
   if (m_info.dwFileSystem == FS_FAT16) // if FAT16

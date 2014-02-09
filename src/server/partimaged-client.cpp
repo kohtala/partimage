@@ -89,9 +89,9 @@ void CPartimagedClients::Release(unsigned int client)
   pthread_mutex_lock(&mClients);
   showDebug(1, "%d released\n", client);
   shutdown(Clients[client].Sock, SHUT_RDWR);
-  Clients[client].Sock = NULL;
+  Clients[client].Sock = 0;
   Clients[client].Present = false;
-  Clients[client].MyPid = NULL;
+  Clients[client].MyPid = 0;
   pthread_mutex_unlock(&mClients);
 }
 
@@ -109,9 +109,9 @@ void CPartimagedClients::ReleaseClientByPid(unsigned int client_pid)
           found = true;
           showDebug(1, "client %d pid = %d released by pid\n", next, client_pid);
           shutdown(Clients[next].Sock, SHUT_RDWR);
-          Clients[next].Sock = NULL;
+          Clients[next].Sock = 0;
           Clients[next].Present = false;
-          Clients[next].MyPid = NULL;
+          Clients[next].MyPid = 0;
 	    }
       else
         next++;

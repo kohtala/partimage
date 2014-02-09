@@ -134,7 +134,6 @@ char *processHardDrive(char *cPtr, newtComponent editPartition)
   char cFormat[1024];
   char szTemp[1024];
   char *szDeviceName;
-  int nRes;
   QWORD qwSize;
 
   cOldPtr = cPtr;
@@ -159,7 +158,7 @@ char *processHardDrive(char *cPtr, newtComponent editPartition)
 	  
 	  if (nBlocks > 1) // a standard device
 	    {
-	      nRes = detectFileSystem(szFullDevice, szTemp);
+	      detectFileSystem(szFullDevice, szTemp);
 	      memcpy(cFormat+37, szTemp, strlen(szTemp)); // File system
 	      
 	      qwSize = getPartitionSize(szFullDevice);

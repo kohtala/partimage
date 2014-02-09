@@ -517,13 +517,12 @@ static fde *dir_here(newtComponent lb, char *dr)
 	int n, sz2, i;
 	double sz1;
 	char szb[20];
-	char buf[128], *bf; // really, we have newt listbox->width-7 (7 is for frame with listbox)
+	char buf[128]; // really, we have newt listbox->width-7 (7 is for frame with listbox)
 	time_t tt, ttt;
 	struct tm *tmm;
 	fde *dp, *dpp;
 	
 	tt=time(NULL);
-	bf=buf;
 	
 	dp=(fde*)malloc(sizeof(fde));
 	dp->name=dirname(strdup(dr));
@@ -610,7 +609,7 @@ static void set_lb_cursor(newtComponent lb, char *key)
 // return a malloc()ed path
 char *filesel(char *dr)
 {
-	newtComponent	lb, b1, b2, b3, l1, l2, f, f1;
+	newtComponent	lb, b1, b2, b3, l1, l2, f;
 	const char	*enr2, *enr3;
 	char		*curv;
 	char		curvv[PATH_MAX]; // stupid, but who cares...
@@ -624,7 +623,6 @@ char *filesel(char *dr)
 	
 	f = newtForm(NULL, NULL, 0);
 	
-	f1 = newtForm(NULL, NULL, 0);
 	b1 = newtCompactButton(59, 14, i18n("Ok"));
 	b3 = newtCompactButton(45, 14, i18n("Cancel"));
 	

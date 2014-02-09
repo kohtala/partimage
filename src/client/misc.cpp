@@ -1772,7 +1772,6 @@ int isDevfsEnabled()
 {
   FILE *fPart;
   char cBuffer[32768];
-  char *cPtr;
   int nSize;
   
   errno = 0;
@@ -1793,8 +1792,6 @@ int isDevfsEnabled()
       cBuffer[nSize] = fgetc(fPart);
       nSize++;
     }
-  
-  cPtr = cBuffer;
   
   fclose(fPart);
 
