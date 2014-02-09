@@ -39,8 +39,7 @@ CNetServer::CNetServer( uint32_t ip4_addr, unsigned short int port):CNet()
     {
       SSL_load_error_strings();
       SSLeay_add_ssl_algorithms();
-      meth = SSLv23_server_method();
-      ctx = SSL_CTX_new(meth);
+      ctx = SSL_CTX_new(SSLv23_server_method());
       if (!ctx)
         {
           ERR_print_errors_fp(stderr);

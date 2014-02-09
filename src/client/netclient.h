@@ -35,12 +35,6 @@ private:
 #ifdef HAVE_SSL
   SSL_CTX * ctx;
   X509 * server_cert;
-#if OPENSSL_VERSION_NUMBER >= 0x10000000L
-  SSL_METHOD const * meth;
-#else
-  SSL_METHOD * meth;
-#endif // OPENSSL_VERSION_NUMBER
-
 #endif
   bool m_bUseSSL;
   bool m_bMustLogin;
