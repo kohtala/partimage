@@ -36,7 +36,7 @@ struct COptions;
 #endif
 
 #ifndef makedev
-  #define makedev(maj,min) (((maj) << 8) | min))
+  #define makedev(maj,min) (((maj) << 8) | (min))
 #endif
 
 // =======================================================
