@@ -240,7 +240,7 @@ if test "$SSL" = "yes"; then
   AC_CHECKING([ for SSL Library and Header files ... ])
   AC_SEARCH_HEADERS(rsa.h crypto.h x509.h pem.h ssl.h err.h,
     $SSL_HDR_DIR /usr/include/ssl /usr/include/openssl /usr/include,
-    [  AC_CHECK_LIB(crypto, CRYPTO_lock, [LIBS="$LIBS -lcrypto"],
+    [  AC_CHECK_LIB(crypto, CRYPTO_free, [LIBS="$LIBS -lcrypto"],
         AC_MSG_ERROR([ Required for SSL Crypto Library not found. ])
       )
        AC_CHECK_LIB(ssl, SSL_CTX_new,
