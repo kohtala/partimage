@@ -544,11 +544,12 @@ void savePartition(char *szDevice, char *szImageName, //, char *szFileSystem,
   // gui = no
   if (strlen(options->szFullyBatchMode)>0)
   {
-                 showDebug(3,"szFullyBatchMode=%s\n, len=%d",options->szFullyBatchMode,strlen(options->szFullyBatchMode));
+    showDebug(3,"szFullyBatchMode=%s\n, len=%d",options->szFullyBatchMode,strlen(options->szFullyBatchMode));
     fprintf(stderr,i18n("partimage: status: Partimage: %s\n"), headMain.szVersion);
     if (options->dwCompression == 0)
       fprintf(stderr,i18n("partimage: status: Image type: NONE\n"));
-    else if (options->dwCompression == 1) +      fprintf(stderr,i18n("partimage: status: Image type: GZIP\n"));
+    else if (options->dwCompression == 1)
+      fprintf(stderr,i18n("partimage: status: Image type: GZIP\n"));
     else if (options->dwCompression == 2)
       fprintf(stderr,i18n("partimage: status: Image type: BZIP2\n"));
     else if (options->dwCompression == 3)
